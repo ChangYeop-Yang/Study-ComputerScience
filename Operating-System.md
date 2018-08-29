@@ -25,18 +25,26 @@
 * 목적 프로그램(기계어로 구성 된 파일)을 실행 가능한 파일로 변환하기 위해 주기억 장소를 할당하거나, 여러개의 프로그램을 연계 편집하여 CPU가 처리될 수 있는 프로그램으로 변환한다.
 * 일반적으로 로더는 프로그램을 실행하기 위하여 프로그램을 보조 기억 장치로부터 컴퓨터의 주기억 장치에 올려놓은 기능을 가진 프로그램으로 **할당->연결->재배치->적재**의 순서로 진행된다.
 
+# 프로세스(Process)
+
 ## ★ 프로세스(Process)의 개념
 * 파일로 작성 된 프록램은 로더(Loader)에 의해 주기억 장치에 상주되어 CPU에 의해서 처리된다. 이때 주기억 장치에 상주된 프로그램이 CPU에 의해서 처리되는 상태를 프로세스라고 한다.
 * CPU에 의해서 현재 실행되고 있는 프로그램이다.
+* 비동기적 행위를 일으키는 주체이며 프로시저가 활동 중인 상태이다.
+* 운영체제가 관리하는 최소 단위의 작업(프로그램)이다.
 
-> PCB (Process Control Block)
+> **PCB (Process Control Block)**
 > * 프로세스 제어 블록(Process Control Block, 줄여서 PCB)은 특정한 프로세스를 관리할 필요가 있는 정보를 포함하는 운영 체제 커널의 자료 구조이다. 작업 제어 블록(Task Control Block, 줄여서 TCB) 또는 작업 구조라고도 한다. "PCB는 운영 체제가 프로세스를 표현한 것이다."
 > * PCB가 프로세스의 중요한 정보를 포함하고 있기 때문에, 일반 사용자가 접근하지 못하도록 보호된 메모리 영역 안에 남는다. 일부 운영 체제에서 PCB는 커널 스택의 처음에 위치한다. (이 메모리 영역은 편리하면서도 보호를 받는 위치이기 때문이다.)
 
+## ★ 프로세스의 상태 (Process Status)
 
+## ★ 용어 정리
+* 프로시저(Procedure): 루틴, 서브루틴, 함수와 같은 뜻으로 사용되며 하나의 프로시저는 특정 작업을 수행하기 위한 프로그램의 일부이다. 또는 어떤 행동을 수행하기 위한 일련의 작업 순서를 말한다.
 
 ## ★ REFERENCE
 1. [2018 정보처리기사 필기 기본서 - NaverBook](https://book.naver.com/bookdb/book_detail.nhn?bid=12696851)
 2. [당신을 블로깅하세요. - 운영체제](http://dongbo.tistory.com/21)
 3. [jiransnc님의블로그 - 네이버 ](https://m.blog.naver.com/PostView.nhnblogId=jiransnc&logNo=60195780909&proxyReferer=https%3A%2F%2Fwww.google.co.kr%2F)
 4. [프로세스 제어 블록 - 위키백과](https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EC%A0%9C%EC%96%B4_%EB%B8%94%EB%A1%9D)
+5. [텀즈 - Procedure](http://www.terms.co.kr/procedure.htm)
