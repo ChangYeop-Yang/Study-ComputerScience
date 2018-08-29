@@ -39,6 +39,34 @@
 
 ## ★ 프로세스의 상태 (Process Status)
 
+* In a multitasking computer system, processes may occupy a variety of states. These distinct states may not be recognized as such by the operating system kernel. However, they are a useful abstraction for the understanding of processes.
+
+<p align=center>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Process_states.svg/400px-Process_states.svg.png">
+
+</p>
+
+1. **준비(Ready) 상태**
+* 프로세스가 처리기(CPU)를 사용하고 있지는 않지만 언제든 사용할 수 있는 상태이다.
+* 프로세스가 처리기의 배정을 기다리고 있는 상태이다.
+* 다른 프로세스 실행을 위해서 일시적으로 정지해 있는 상태이다.
+* CPU에 의해 처리되기 위해 주 기억장치에 존재하는 상태이다.
+
+2. **실행(Run) 상태**
+* 프로세스가 CPU를 차지하고 있는 상태이다.
+* 프로세스의 명령이 실행되고 있는 상태이다.
+
+3. **대기(Block, Wait) 상태**
+* 프로세스가 어떤 사건이 일어나기를 기다리고 있는 상태이다.
+* 처리 속도가 느린 I/O 작업 중인 상태이다.
+* 외부적인 사건이 생길 때까지 실행할 수 없는 상태이다.
+
+> **Additional process states**
+> * Two additional states are available for processes in systems that support virtual memory. In both of these states, processes are "stored" on secondary memory (typically a hard disk).
+> * **Swapped out and waiting** : (Also called suspended and waiting.) In systems that support virtual memory, a process may be swapped out, that is, removed from main memory and placed on external storage by the scheduler. From here the process may be swapped back into the waiting state.
+> * **Swapped out and blocked** : (Also called suspended and blocked.) Processes that are blocked may also be swapped out. In this event the process is both swapped out and blocked, and may be swapped back in again under the same circumstances as a swapped out and waiting process (although in this case, the process will move to the blocked state, and may still be waiting for a resource to become available).
+
 ## ★ 용어 정리
 * 프로시저(Procedure): 루틴, 서브루틴, 함수와 같은 뜻으로 사용되며 하나의 프로시저는 특정 작업을 수행하기 위한 프로그램의 일부이다. 또는 어떤 행동을 수행하기 위한 일련의 작업 순서를 말한다.
 
@@ -48,3 +76,4 @@
 3. [jiransnc님의블로그 - 네이버 ](https://m.blog.naver.com/PostView.nhnblogId=jiransnc&logNo=60195780909&proxyReferer=https%3A%2F%2Fwww.google.co.kr%2F)
 4. [프로세스 제어 블록 - 위키백과](https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EC%A0%9C%EC%96%B4_%EB%B8%94%EB%A1%9D)
 5. [텀즈 - Procedure](http://www.terms.co.kr/procedure.htm)
+6. [Process state - 위키백과](https://en.wikipedia.org/wiki/Process_state)
