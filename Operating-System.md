@@ -67,6 +67,8 @@
 > * **Swapped out and waiting** : (Also called suspended and waiting.) In systems that support virtual memory, a process may be swapped out, that is, removed from main memory and placed on external storage by the scheduler. From here the process may be swapped back into the waiting state.
 > * **Swapped out and blocked** : (Also called suspended and blocked.) Processes that are blocked may also be swapped out. In this event the process is both swapped out and blocked, and may be swapped back in again under the same circumstances as a swapped out and waiting process (although in this case, the process will move to the blocked state, and may still be waiting for a resource to become available).
 
+## ★ 교착상태 (DeadLock)
+
 ## ★ 용어 정리
 * 프로시저(Procedure): 루틴, 서브루틴, 함수와 같은 뜻으로 사용되며 하나의 프로시저는 특정 작업을 수행하기 위한 프로그램의 일부이다. 또는 어떤 행동을 수행하기 위한 일련의 작업 순서를 말한다.
 
