@@ -1,3 +1,5 @@
+# 운영체제 (Operating System)
+
 ## ★ 운영체제의 정의
 * 하드웨어를 제어하는 소프트웨어이다.
 * 컴퓨터 본체 및 각 주변 장치를 가장 능률적이고, 경제적으로 사용할 수 있도록 하는 프로그램이다.
@@ -32,6 +34,8 @@
 * 비동기적 행위를 일으키는 주체이며 프로시저가 활동 중인 상태이다.
 * 운영체제가 관리하는 최소 단위의 작업(프로그램)이다.
 
+* * *
+
 > **PCB (Process Control Block)**
 > * 프로세스 제어 블록(Process Control Block, 줄여서 PCB)은 특정한 프로세스를 관리할 필요가 있는 정보를 포함하는 운영 체제 커널의 자료 구조이다. 작업 제어 블록(Task Control Block, 줄여서 TCB) 또는 작업 구조라고도 한다. "PCB는 운영 체제가 프로세스를 표현한 것이다."
 > * PCB가 프로세스의 중요한 정보를 포함하고 있기 때문에, 일반 사용자가 접근하지 못하도록 보호된 메모리 영역 안에 남는다. 일부 운영 체제에서 PCB는 커널 스택의 처음에 위치한다. (이 메모리 영역은 편리하면서도 보호를 받는 위치이기 때문이다.)
@@ -61,15 +65,51 @@
 * 처리 속도가 느린 I/O 작업 중인 상태이다.
 * 외부적인 사건이 생길 때까지 실행할 수 없는 상태이다.
 
-> **Additional process states**
+* * *
+
+> **＃ Additional process states (추가적인 프로세스 상태)**
 > * Two additional states are available for processes in systems that support virtual memory. In both of these states, processes are "stored" on secondary memory (typically a hard disk).
 > * **Swapped out and waiting** : (Also called suspended and waiting.) In systems that support virtual memory, a process may be swapped out, that is, removed from main memory and placed on external storage by the scheduler. From here the process may be swapped back into the waiting state.
 > * **Swapped out and blocked** : (Also called suspended and blocked.) Processes that are blocked may also be swapped out. In this event the process is both swapped out and blocked, and may be swapped back in again under the same circumstances as a swapped out and waiting process (although in this case, the process will move to the blocked state, and may still be waiting for a resource to become available).
 
 ## ★ 교착상태 (DeadLock)
+* 교착 상태(膠着狀態, 영어: deadlock)란 두 개 이상의 작업이 서로 상대방의 작업이 끝나기 만을 기다리고 있기 때문에 결과적으로 아무것도 완료되지 못하는 상태를 가리킨다. 예를 들어 하나의 사다리가 있고, 두 명의 사람이 각각 사다리의 위쪽과 아래쪽에 있다고 가정한다. 이때 아래에 있는 사람은 위로 올라 가려고 하고, 위에 있는 사람은 아래로 내려오려고 한다면, 두 사람은 서로 상대방이 사다리에서 비켜줄 때까지 하염없이 기다리고 있을 것이고 결과적으로 아무도 사다리를 내려오거나 올라가지 못하게 되듯이, 전산학에서 교착 상태란 다중 프로그래밍 환경에서 흔히 발생할 수 있는 문제이다. 이 문제를 해결하는 일반적인 방법은 아직 없는 상태이다.
+
+* * *
+
+> **＃ 교착상태의 조건**
+> 1. 상호배제(Mutual exclusion) : 프로세스들이 필요로 하는 자원에 대해 배타적인 통제권을 요구한다.
+> 2. 점유대기(Hold and wait) : 프로세스가 할당된 자원을 가진 상태에서 다른 자원을 기다린다.
+> 3. 비선점(No preemption) : 프로세스가 어떤 자원의 사용을 끝낼 때까지 그 자원을 뺏을 수 없다.
+> 4. 순환대기(Circular wait) : 각 프로세스는 순환적으로 다음 프로세스가 요구하는 자원을 가지고 있다.
+
+### ※ 교착상태의 관리 
+
+> **＃ 교착상태 예방**
+> 1. 상호배제 조건의 제거 : 교착 상태는 두 개 이상의 프로세스가 공유가능한 자원을 사용할 때 발생하는 것이므로 공유 불가능한, 즉 상호 배제 조건을 제거하면 교착 상태를 해결할 수 있다.
+> 2. 점유와 대기 조건의 제거 : 한 프로세스에 수행되기 전에 모든 자원을 할당시키고 나서 점유하지 않을 때에는 다른 프로세스가 자원을 요구하도록 하는 방법이다. 자원 과다 사용으로 인한 효율성, 프로세스가 요구하는 자원을 파악하는 데에 대한 비용, 자원에 대한 내용을 저장 및 복원하기 위한 비용, 기아 상태, 무한대기 등의 문제점이 있다.
+> 3. 비선점 조건의 제거 : 비선점 프로세스에 대해 선점 가능한 프로토콜을 만들어 준다.
+> 4. 환형 대기 조건의 제거 : 자원 유형에 따라 순서를 매긴다.
+
+* * *
+
+> **＃ 교착상태 회피** <br>
+> 자원이 어떻게 요청될지에 대한 추가정보를 제공하도록 요구하는 것으로 시스템에 circular wait가 발생하지 않도록 자원 할당 상태를 검사한다.
+> 1. 자원 할당 그래프 알고리즘 (Resource Allocation Graph Algorithm)
+> 2. 은행원 알고리즘 (Banker's algorithm)
+
+* * *
+
+> **＃ 교착 상태의 무시** <br>
+> 예방 혹은 회피기법을 프로그래밍해서 넣으면 성능에 큰 영향을 미칠 수 있게 된다. 그렇기 때문에 데드락의 발생 확률이 비교적 낮은 경우 별다른 조치를 취하지 않는다.
+
+* * *
+
+> **＃ 교착 상태의 발견** <br>
+감시/발견을 하는 detection 알고리즘으로 Deadlock 발생을 체크하는 방식. 이 역시 성능에 큰 영향을 미칠 수 있다.
 
 ## ★ 용어 정리
-* 프로시저(Procedure): 루틴, 서브루틴, 함수와 같은 뜻으로 사용되며 하나의 프로시저는 특정 작업을 수행하기 위한 프로그램의 일부이다. 또는 어떤 행동을 수행하기 위한 일련의 작업 순서를 말한다.
+* 프로시저(Procedure): 루틴, 서브루틴, 함수와 같은 뜻으로 사용되며 하나의 프로시저는 특정 작업을 수행하기 위한 프로그램의 일부이다. 또는 **어떤 행동을 수행하기 위한 일련의 작업 순서**를 말한다.
 
 ## ★ REFERENCE
 1. [2018 정보처리기사 필기 기본서 - NaverBook](https://book.naver.com/bookdb/book_detail.nhn?bid=12696851)
