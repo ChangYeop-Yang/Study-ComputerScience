@@ -147,6 +147,14 @@
 
 * 버퍼링(Buffering): CPU와 입출력 장치와의 속도 차이를 줄이기 위해 메모리가 중재한다. 버퍼링은 한 레코드를 읽어서 CPU가 그것에 대한 작업을 시작함과 동시에 입출력 장치가 필요한 레코드를 미리 읽어 CPU에 저장해 두고 CPU가 필요한 레코드를 읽기 위해 기다리는 일이 없도록 한다.
 
+* 임계구역(Critical Section): 임계 구역(critical section) 또는 공유변수 영역은 병렬컴퓨팅에서 둘 이상의 스레드가 동시에 접근해서는 안되는 공유 자원(자료 구조 또는 장치)을 접근하는 코드의 일부를 말한다. 임계 구역은 지정된 시간이 지난 후 종료된다. 때문에 어떤 스레드(태스크 또는 프로세스)가 임계 구역에 들어가고자 한다면 지정된 시간만큼 대기해야 한다. 스레드가 공유자원의 배타적인 사용을 보장받기 위해서 임계 구역에 들어가거나 나올때는 세마포어 같은 동기화 매커니즘이 사용된다.
+
+* 상호배제(Mutual Exclusion): 상호 배제(相互排除, mutual exclusion, Mutex, 뮤텍스)는 동시 프로그래밍에서 공유 불가능한 자원의 동시 사용을 피하기 위해 사용되는 알고리즘으로, 임계 구역(critical section)으로 불리는 코드 영역에 의해 구현된다.
+
+* 세마포어(Semaphore): 에츠허르 다익스트라가 제안한 교착 상태에 대한 해법으로 두개의 Atomic한 함수로 제어되는 정수 변수로 멀티프로그래밍 환경에서 공유자원에 대한 접근 제어를 하는 방식으로 1개의 공유되는 자원에 제한된 개수의 프로세스, 또는 스레드만 접근할 수 있도록 한다. 세마포어의 카운트는 1 이상이며 카운트를 조절하여 진입 가능한 프로세스/스레드 수를 조절할 수 있다. 세마포터 카운트가 항상 1인 것은 아니다.
+
+* 기아상태(Aging): 컴퓨터 과학 용어의 하나로, 프로세스가 끊임없이 필요한 컴퓨터 자원을 가져오지 못하는 상황으로, 이러한 자원 없이는 처리를 끝낼 수 없는 병행 컴퓨팅에서 마주치는 문제이다. 기아 상태는 스케줄링이나 상호 배제 알고리즘의 오류에 기인하지만 자원 누수에 의해 일어날 수도 있으며 포크 폭탄과 같은 서비스 거부 공격을 통해 고의적으로 발생할 수도 있다.
+
 ## ★ REFERENCE
 1. [2018 정보처리기사 필기 기본서 - NaverBook](https://book.naver.com/bookdb/book_detail.nhn?bid=12696851)
 2. [당신을 블로깅하세요. - 운영체제](http://dongbo.tistory.com/21)
@@ -157,3 +165,7 @@
 7. [인터럽트 - iLiFO 지덤](http://www.jidum.com/jidums/view.do?jidumId=445)
 8. [문맥 교환(Context Switch) - 위키백과](https://ko.wikipedia.org/wiki/%EB%AC%B8%EB%A7%A5_%EA%B5%90%ED%99%98)
 9. [Process - 위키백과](https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4)
+10. [Critical Section - 위키백과](https://ko.wikipedia.org/wiki/%EC%9E%84%EA%B3%84_%EA%B5%AC%EC%97%AD)
+11. [Mutual Exclusion - 위키백과](https://ko.wikipedia.org/wiki/%EC%83%81%ED%98%B8_%EB%B0%B0%EC%A0%9C)
+12. [Semaphore- 나무위키](https://namu.wiki/w/%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4)
+13. [Aging - 위키백과](https://ko.wikipedia.org/wiki/%EA%B8%B0%EC%95%84_%EC%83%81%ED%83%9C)
