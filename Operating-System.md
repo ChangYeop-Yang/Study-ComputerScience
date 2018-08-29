@@ -108,6 +108,28 @@
 > **＃ 교착상태 발견** <br>
 감시/발견을 하는 detection 알고리즘으로 Deadlock 발생을 체크하는 방식. 이 역시 성능에 큰 영향을 미칠 수 있다.
 
+## ★ 인터럽트 (Interupt)
+* 프로세스가 수행 중에 다른 프로세스를 수행하기 위하여 현재 수행 중인 프로세스를 중단하거나 외부 입력 장치에 의해 프로세스가 중단되는 상태이다. 인터럽트는 어떤 이유에서든 H/W적, S/W적으로 현재 프로세스를 중단시키는 모든 행위라고 할 수 있다.
+
+<p align=center>
+
+<img src="http://www.jidum.com/upload/ckeditor/2016/09/20160908134022750.png">
+
+</p>
+
+# ★ 문맥교환 (Context Switching)
+* 다중 프로그래밍 시스템에서 CPU가 할당되는 프로세스를 변경하기 위하여 현재 CPU를 사용하여 실행되고 있는 프로세서의 상태 정보를 저장하고 제어권을 인터럽트 서비스 루틴(ISR)에게 넘기는 작업을 말한다.
+
+* 문맥 교환(Context Switch)이란 하나의 프로세스가 CPU를 사용 중인 상태에서 다른 프로세스가 CPU를 사용하도록 하기 위해, 이전의 프로세스의 상태(문맥)를 보관하고 새로운 프로세스의 상태를 적재하는 작업을 말한다. 한 프로세스의 문맥은 그 프로세스의 프로세스 제어 블록에 기록되어 있다.
+
+<p align=center>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Context_switch.png">
+
+</p>
+
+* 문맥교환의 시점으로는 **멀티 태스킹, 인터럽트 핸들링, 사용자 모드와 커널 모드 간 전환**이다.
+
 ## ★ 용어 정리
 * 프로시저(Procedure): 루틴, 서브루틴, 함수와 같은 뜻으로 사용되며 하나의 프로시저는 특정 작업을 수행하기 위한 프로그램의 일부이다. 또는 **어떤 행동을 수행하기 위한 일련의 작업 순서**를 말한다.
 
@@ -122,3 +144,5 @@
 4. [프로세스 제어 블록 - 위키백과](https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EC%A0%9C%EC%96%B4_%EB%B8%94%EB%A1%9D)
 5. [텀즈 - Procedure](http://www.terms.co.kr/procedure.htm)
 6. [Process state - 위키백과](https://en.wikipedia.org/wiki/Process_state)
+7. [인터럽트 - iLiFO 지덤](http://www.jidum.com/jidums/view.do?jidumId=445)
+8. [문맥 교환(Context Switch) - 위키백과](https://ko.wikipedia.org/wiki/%EB%AC%B8%EB%A7%A5_%EA%B5%90%ED%99%98)
