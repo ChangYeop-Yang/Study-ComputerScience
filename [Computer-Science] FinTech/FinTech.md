@@ -26,3 +26,4 @@
 ## ★ REFERENCE
 * [핀테크 (금융용어사전) - 네이버 백과사전](https://terms.naver.com/entry.nhn?docId=2717871&cid=55594&categoryId=55594)
 * [마이데이터 (시사상식사전, 박문각) - 네이버 백과사전](https://terms.naver.com/entry.nhn?docId=5670156&cid=43667&categoryId=43667)
+* [은산분리 (시사상식사전, 박문각) - 네이버 백과사전](https://terms.naver.com/entry.nhn?docId=3584290&cid=43667&categoryId=43667)
