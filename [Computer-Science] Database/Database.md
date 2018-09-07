@@ -6,8 +6,19 @@
 * 통합 데이터 (Integrated Data) : 데이터 집단에서 자료의 중복이나 군더더기를 제거하여 최적화시킨 데이터의 집합이다.
 * 저장 데이터 (Stored Data) : 컴퓨터 시스템이 접근 가능한 저장 매체에 저당 된 데이터의 집합이다.
 
+## ★ DATABASE Structure
+* 논리적 구조 : 사용자나 응용 프로그래머가 데이터베이스를 바라보는 관점에서 데이터 배치 형태를 의미하는 것으로 논리적 레코드를 가지고 사용자나 응용 프로그래머의 상상에 따라 전개한 모양을 의미한다.
+* 물리적 구조 : 데이터가 물리적 저장 장치에 배치된 형태를 의미하는 것으로 저장 레코드를 이용하여 실제 물리적 저장 장치 위에 전개한 모양을 의미한다.
+ 
 ## ★ DATABASE MANAGEMENT SYSTEM (DBMS)
 The database management system (DBMS) is the software that interacts with end users, applications, and the database itself to capture and analyze data. A general-purpose DBMS allows the definition, creation, querying, update, and administration of databases. A database is generally stored in a DBMS-specific format which is not portable, but different DBMSs can share data by using standards such as SQL and ODBC or JDBC. The sum total of the database, the DBMS and its associated applications can be referred to as a "database system". Often the term "database" is used to loosely refer to any of the DBMS, the database system or an application associated the database.
+
+## ★ DATABASE Schema
+데이터베이스 스키마(database schema)는 데이터베이스에서 자료의 구조, 자료의 표현 방법, 자료 간의 관계를 형식 언어로 정의한 구조이다. 데이터베이스 관리 시스템(DBMS)이 주어진 설정에 따라 데이터베이스 스키마를 생성하며, 데이터베이스 사용자가 자료를 저장, 조회, 삭제, 변경할 때 DBMS는 자신이 생성한 데이터베이스 스키마를 참조하여 명령을 수행한다.
+
+* 외부 스키마(External Schema) : 프로그래머나 사용자의 입장에서 데이터베이스의 모습으로 조직의 일부분을 정의한 것
+* 개념 스키마(Conceptual Schema) : 모든 응용 시스템과 사용자들이 필요로하는 데이터를 통합한 조직 전체의 데이터베이스 구조를 논리적으로 정의한 것
+* 내부 스키마(Internal Schema) : 전체 데이터베이스의 물리적 저장 형태를 기술하는 것
 
 ## ★ DATABASE Transation
 트랜잭션은 하나의 논리적 단위를 구성하는 데이터베이스 연산의 모임이다. 동시에 여러 트랜잭션이 수행되기 위해서 데이터베이스의 일관성이 보장되어야 하며 이를 위해 동시성 제어(concurrency control)와 회복 제어(recovery control)를 위한 모듈이 있으며 이 둘을 합쳐 트랜잭션 관리 모듈(transaction management module)이라고 한다. 데이터베이스 시스템은 각각의 트랜잭션에 대해 **원자성(Atomicity), 일관성(Consistency), 고립성(Isolation), 영구성(Durability)** 을 보장한다.
@@ -111,3 +122,4 @@ NoSQL 데이터베이스는 탁월한 사용자 경험을 제공하기 위하여
 5. [ACID - 위키백과](https://ko.wikipedia.org/wiki/ACID)
 6. [NoSQL이란? - Amazon AWS](https://aws.amazon.com/ko/nosql/)
 7. [NoSQL이란 무엇인가? 대량데이터 동시처리위한 DBMS 종류와 특징 - SAMSUNG SDS)[https://www.samsungsds.com/global/ko/support/insights/1195843_2284.html]
+8. [데이터베이스 스키마 - 위키백과](https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4_%EC%8A%A4%ED%82%A4%EB%A7%88)
