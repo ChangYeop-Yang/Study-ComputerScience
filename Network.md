@@ -65,8 +65,23 @@ SOAP(Simple Object Access Protocol)은 일반적으로 널리 알려진 HTTP, HT
 
 * SOAP은 XML을 근간으로 헤더와 바디를 조합하는 디자인 패턴으로 설계되어 있다. 「헤더」는 선택사항으로 반복이나 보안 및 트랜잭션을 정보로 하는 메타 정보를 가지고 있다. 「바디」부분은 주요한 정보인 정보를 가지고 있다.
 
+## ★ Sliding Window
+두 개의 네트워크 호스트간의 패킷의 흐름을 제어하기 위한 방법이다. (슬라이딩 윈도우 방식 = 연속적 ARQ(Continuous ARQ) = Go Back n ARQ)
+
+<p align="center">
+  <img src="http://www.ktword.co.kr/img_data/1469_1.jpg" />
+</p>
+
+* TCP와 같이 데이터의 전달을 보증하는 프로토콜에서는 패킷 하나 하나가 정상적으로 전달되었음을 알리는 확인 신호(acknowledgement, 이하 ACK)를 받아야하며, 만약 패킷이 중도에 잘못되었거나 분실되어 확인받지 못하는 경우, 해당 패킷을 재전송해야하는 필요가 있다. 슬라이딩 윈도는 일단 '윈도(메모리 버퍼의 일정 영역)'에 포함되는 모든 패킷을 전송하고, 그 패킷들의 전달이 확인되는대로 이 윈도를 옆으로 옮김(slide)으로서 그 다음 패킷들을 전송하는 방식이다. 
+
+* 슬라이딩 윈도는 아직 확인을 받지 않고도 여러 패킷을 보내는 것을 가능케 하기 때문에, 매번 전송한 패킷에 대해 확인을 받아야만 그 다음 패킷을 전송하는 방법(stop-and-wait)을 사용하는 것보다 훨씬 네트워크를 효율적으로 사용할 수 있다.
+
+* 흐름제어를 위한 검출후 재전송 방식(ARQ)의 일종 (혼잡제어도 가능)
+
 ## ★ REFERENCE
 * [REST - 위키백과](https://ko.wikipedia.org/wiki/REST)
 * [OSI 모형 - 위키백과](https://ko.wikipedia.org/wiki/OSI_%EB%AA%A8%ED%98%95)
 * [네트워크의 기본 'OSI 7계층'··· 한번에 이해하고 외우는 방법](http://www.ciokorea.com/news/36536#csidxc5d64590057e2ba9a875e48a4a11a61)
-* [OSI 7 계층 (OSI 7 Layer) 과 TCP/IP 4 계층 (TCP/IP 4 Layer) - ](http://jaeri.tistory.com/2)
+* [OSI 7 계층 (OSI 7 Layer) 과 TCP/IP 4 계층 (TCP/IP 4 Layer) - Blog](http://jaeri.tistory.com/2)
+* [슬라이딩 윈도 - 위키백과(https://ko.wikipedia.org/wiki/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%94%A9_%EC%9C%88%EB%8F%84)
+* [GBN - 정보통신기술용어해설](http://www.ktword.co.kr/abbr_view.php?m_temp1=1469)
