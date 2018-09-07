@@ -11,4 +11,6 @@ Personally Computer Science Repository.
 
 * [FINTECT - MARKDOWN](https://github.com/ChangYeop-Yang/Study-ComputerScience/blob/master/%5BComputer-Science%5D%20FinTech/FinTech.md)
 
+* [Data Structure - MARKDOWN](https://github.com/ChangYeop-Yang/Study-DataStructure/blob/master/README.md)
+
 * * *
