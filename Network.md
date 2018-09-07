@@ -78,10 +78,18 @@ SOAP(Simple Object Access Protocol)은 일반적으로 널리 알려진 HTTP, HT
 
 * 흐름제어를 위한 검출후 재전송 방식(ARQ)의 일종 (혼잡제어도 가능)
 
+## ★ Selective Repeat ARQ
+
+<p align="center">
+  <img src="http://www.oocities.org/siliconvalley/pines/1572/images/image9.gif" />
+</p>
+
+Selective Repeat is part of the automatic repeat-request (ARQ). With selective repeat, the sender sends a number of frames specified by a window size even without the need to wait for individual ACK from the receiver as in Go-Back-N ARQ. The receiver may selectively reject a single frame, which may be retransmitted alone; this contrasts with other forms of ARQ, which must send every frame from that point again. The receiver accepts out-of-order frames and buffers them. The sender individually retransmits frames that have timed out.
+
 ## ★ REFERENCE
 * [REST - 위키백과](https://ko.wikipedia.org/wiki/REST)
 * [OSI 모형 - 위키백과](https://ko.wikipedia.org/wiki/OSI_%EB%AA%A8%ED%98%95)
 * [네트워크의 기본 'OSI 7계층'··· 한번에 이해하고 외우는 방법](http://www.ciokorea.com/news/36536#csidxc5d64590057e2ba9a875e48a4a11a61)
 * [OSI 7 계층 (OSI 7 Layer) 과 TCP/IP 4 계층 (TCP/IP 4 Layer) - Blog](http://jaeri.tistory.com/2)
-* [슬라이딩 윈도 - 위키백과(https://ko.wikipedia.org/wiki/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%94%A9_%EC%9C%88%EB%8F%84)
+* [슬라이딩 윈도 - 위키백과](https://ko.wikipedia.org/wiki/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%94%A9_%EC%9C%88%EB%8F%84)
 * [GBN - 정보통신기술용어해설](http://www.ktword.co.kr/abbr_view.php?m_temp1=1469)
