@@ -69,7 +69,7 @@ SOAP(Simple Object Access Protocol)은 일반적으로 널리 알려진 HTTP, HT
 두 개의 네트워크 호스트간의 패킷의 흐름을 제어하기 위한 방법이다. (슬라이딩 윈도우 방식 = 연속적 ARQ(Continuous ARQ) = Go Back n ARQ)
 
 <p align="center">
-  <img src="http://www.ktword.co.kr/img_data/1469_1.jpg" />
+  <img src="https://images.slideplayer.com/33/8175417/slides/slide_4.jpg" />
 </p>
 
 * TCP와 같이 데이터의 전달을 보증하는 프로토콜에서는 패킷 하나 하나가 정상적으로 전달되었음을 알리는 확인 신호(acknowledgement, 이하 ACK)를 받아야하며, 만약 패킷이 중도에 잘못되었거나 분실되어 확인받지 못하는 경우, 해당 패킷을 재전송해야하는 필요가 있다. 슬라이딩 윈도는 일단 '윈도(메모리 버퍼의 일정 영역)'에 포함되는 모든 패킷을 전송하고, 그 패킷들의 전달이 확인되는대로 이 윈도를 옆으로 옮김(slide)으로서 그 다음 패킷들을 전송하는 방식이다. 
@@ -93,3 +93,4 @@ Selective Repeat is part of the automatic repeat-request (ARQ). With selective r
 * [OSI 7 계층 (OSI 7 Layer) 과 TCP/IP 4 계층 (TCP/IP 4 Layer) - Blog](http://jaeri.tistory.com/2)
 * [슬라이딩 윈도 - 위키백과](https://ko.wikipedia.org/wiki/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%94%A9_%EC%9C%88%EB%8F%84)
 * [GBN - 정보통신기술용어해설](http://www.ktword.co.kr/abbr_view.php?m_temp1=1469)
+* [Error Control - SlidePlayer](https://slideplayer.com/slide/8175417/)
