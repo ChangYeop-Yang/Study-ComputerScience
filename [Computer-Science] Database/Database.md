@@ -121,6 +121,6 @@ NoSQL 데이터베이스는 탁월한 사용자 경험을 제공하기 위하여
 4. [NoSQL - 위키백과](https://ko.wikipedia.org/wiki/NoSQL)
 5. [ACID - 위키백과](https://ko.wikipedia.org/wiki/ACID)
 6. [NoSQL이란? - Amazon AWS](https://aws.amazon.com/ko/nosql/)
-7. [NoSQL이란 무엇인가? 대량데이터 동시처리위한 DBMS 종류와 특징 - SAMSUNG SDS)[https://www.samsungsds.com/global/ko/support/insights/1195843_2284.html]
+7. [NoSQL이란 무엇인가? 대량데이터 동시처리위한 DBMS 종류와 특징 - SAMSUNG SDS](https://www.samsungsds.com/global/ko/support/insights/1195843_2284.html)
 8. [데이터베이스 스키마 - 위키백과](https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4_%EC%8A%A4%ED%82%A4%EB%A7%88)
 9. [2018 정보처리기사 필기 기본서 - NaverBook](https://book.naver.com/bookdb/book_detail.nhn?bid=12696851)
