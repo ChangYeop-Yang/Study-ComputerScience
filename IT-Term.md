@@ -16,6 +16,6 @@ T커머스는 텔레비전(Television)과 상거래(commerce)의 합성어다. �
 
 V커머스는 비디오(Video)와 상거래(commerce)의 합성어다. 텔레비전을 넘어 페이스북, 유튜브 같은 모바일 앱이나 웹사이트에서 홈쇼핑 영상을 보고 구매를 유도한다.
 
-## REFERENCE
+## ★ REFERENCE
 * [Television Commerce - 네이버 지식백과](https://terms.naver.com/entry.nhn?docId=3587004&cid=59277&categoryId=59279)
 * [티몬·홈앤쇼핑···, 쇼핑몰들의 비디오 커머스 변신 이유 5가지 - zamong](http://www.zamong.co.kr/archives/20975)
