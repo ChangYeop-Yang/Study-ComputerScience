@@ -22,7 +22,11 @@
 
 * 마이데이터 업체는 은행카드회사 등 금융회사와 통신사 등에 흩어져 있는 개인신용정보를 한 곳에 모아 관리해주고 종합적인 재무관리를 해주는 기업이다.
 
+## ★ 주가지수연동예금 (ELD)
+주가지수연동예금. 수익이 주가지수의 변동에 연계해서 결정되는 은행판매예금. 고객의 투자자금은 정기예금에 넣고 창출되는 이자만 파생상품에 투자하여 추가 수익을 낸다. 투자대상 파생상품은 제한없이 다양하다. 중도 해지가 가능하지만 원금에 손실을 입을 수 있다. 증권사의 주가연계증권(ELS)에 비해 안정성이 높다.
+
 ## ★ REFERENCE
 * [핀테크 (금융용어사전) - 네이버 백과사전](https://terms.naver.com/entry.nhn?docId=2717871&cid=55594&categoryId=55594)
 * [마이데이터 (시사상식사전, 박문각) - 네이버 백과사전](https://terms.naver.com/entry.nhn?docId=5670156&cid=43667&categoryId=43667)
 * [은산분리 (시사상식사전, 박문각) - 네이버 백과사전](https://terms.naver.com/entry.nhn?docId=3584290&cid=43667&categoryId=43667)
+* [](https://terms.naver.com/entry.nhn?docId=18370&cid=43659&categoryId=43659)
