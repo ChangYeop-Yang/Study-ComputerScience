@@ -28,4 +28,4 @@ V커머스는 비디오(Video)와 상거래(commerce)의 합성어다. 텔레비
 * [Television Commerce - 네이버 지식백과](https://terms.naver.com/entry.nhn?docId=3587004&cid=59277&categoryId=59279)
 * [티몬·홈앤쇼핑···, 쇼핑몰들의 비디오 커머스 변신 이유 5가지 - zamong](http://www.zamong.co.kr/archives/20975)
 * [“e커머스가 새 먹거리” … 롯데 8개 온라인몰 통합 - 중앙일보](https://news.joins.com/article/22626357)
-* [온·오프 융합 ‘옴니채널’ 구축 박차… 유통가 “공간·시간의 벽을 부숴라” - ](http://news.kmib.co.kr/article/view.asp?arcid=0922784542](http://news.kmib.co.kr/article/view.asp?arcid=0922784542)
+* [온·오프 융합 ‘옴니채널’ 구축 박차… 유통가 “공간·시간의 벽을 부숴라” - 국민일보](http://news.kmib.co.kr/article/view.asp?arcid=0922784542)
