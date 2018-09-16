@@ -61,5 +61,5 @@
 * [마이데이터 (시사상식사전, 박문각) - 네이버 백과사전](https://terms.naver.com/entry.nhn?docId=5670156&cid=43667&categoryId=43667)
 * [은산분리 (시사상식사전, 박문각) - 네이버 백과사전](https://terms.naver.com/entry.nhn?docId=3584290&cid=43667&categoryId=43667)
 * [ELD - 네이버 백과사전](https://terms.naver.com/entry.nhn?docId=18370&cid=43659&categoryId=43659)
-* [리더스리지 ](http://wvvw.leadersrichplaza.com/fn/fn04.asp)
+* [주가지수연동예금 - 리더스리지 ](http://wvvw.leadersrichplaza.com/fn/fn04.asp)
 * [자본잠식 - 네이버 백과사전](https://terms.naver.com/entry.nhn?docId=3571941&cid=58781&categoryId=58781)
