@@ -9,12 +9,10 @@
 T커머스는 텔레비전(Television)과 상거래(commerce)의 합성어다. 녹화 방송을 통해 소비자가 TV리모컨으로 상품을 살 수 있는 채널을 말한다. T커머스 시장 규모(출처 한국T커머스협회)는 2014년 790억원, 2015년 2500억원, 2016년 7000억원으로 성장하고 있다. 
 
 ## ★ V-Commerce
-
-<p align="center">
-  <img src="http://www.zamong.co.kr/wp-content/uploads/2017/03/333-768x384.jpg" />
-</p>
-
 V커머스는 비디오(Video)와 상거래(commerce)의 합성어다. 텔레비전을 넘어 페이스북, 유튜브 같은 모바일 앱이나 웹사이트에서 홈쇼핑 영상을 보고 구매를 유도한다.
+
+## ★ M-Commerce
+무선 전자상거래. 이동전화기나 PDA 등의 무선기기를 이용한 전자상거래를 말한다. 일반 전자상거래가 가정이나 사무실에서 유선으로 인터넷에 연결하여 물건을 사고 파는 것과 달리 이동 중에도 언제 어디서나 거래가 가능하다는 특징을 가지고 있다.
 
 ## ★ 옴니채널
 
@@ -29,3 +27,4 @@ V커머스는 비디오(Video)와 상거래(commerce)의 합성어다. 텔레비
 * [티몬·홈앤쇼핑···, 쇼핑몰들의 비디오 커머스 변신 이유 5가지 - zamong](http://www.zamong.co.kr/archives/20975)
 * [“e커머스가 새 먹거리” … 롯데 8개 온라인몰 통합 - 중앙일보](https://news.joins.com/article/22626357)
 * [온·오프 융합 ‘옴니채널’ 구축 박차… 유통가 “공간·시간의 벽을 부숴라” - 국민일보](http://news.kmib.co.kr/article/view.asp?arcid=0922784542)
+* [M Commerce - 네이버 ](https://terms.naver.com/entry.nhn?docId=18678&cid=43659&categoryId=43659)
