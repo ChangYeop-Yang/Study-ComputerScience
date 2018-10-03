@@ -125,12 +125,4 @@
 * 이자는 화폐의 차용에 대하여 지불하는 가격이다. 기간당 지급되는 이자를 원금의 비율로서 표시한 것이 이자율이다.
 
 ## ★ REFERENCE
-* [핀테크 (금융용어사전) - 네이버 백과사전](https://terms.naver.com/entry.nhn?docId=2717871&cid=55594&categoryId=55594)
-* [마이데이터 (시사상식사전, 박문각) - 네이버 백과사전](https://terms.naver.com/entry.nhn?docId=5670156&cid=43667&categoryId=43667)
-* [은산분리 (시사상식사전, 박문각) - 네이버 백과사전](https://terms.naver.com/entry.nhn?docId=3584290&cid=43667&categoryId=43667)
-* [ELD - 네이버 백과사전](https://terms.naver.com/entry.nhn?docId=18370&cid=43659&categoryId=43659)
-* [주가지수연동예금 - 리더스리지 ](http://wvvw.leadersrichplaza.com/fn/fn04.asp)
-* [자본잠식 - 네이버 백과사전](https://terms.naver.com/entry.nhn?docId=3571941&cid=58781&categoryId=58781)
-* [[네이버 지식백과] 직접금융시장과 간접금융시장 (대학생을 위한 실용 금융, 금융감독원)](https://terms.naver.com/entry.nhn?docId=3431582&cid=58438&categoryId=58438)
-* [[네이버 지식백과] 피셔 효과 [fisher effect] (한경 경제용어사전, 한국경제신문/한경닷컴 )](https://terms.naver.com/entry.nhn?docId=2062876&cid=42107&categoryId=42107)
-* [금융기관과 금융서비스 - Daum Blog](http://blog.daum.net/thedreama/121)
+:smile: [REFERENCE LIST](https://github.com/ChangYeop-Yang/Study-ComputerScience/issues/2)
