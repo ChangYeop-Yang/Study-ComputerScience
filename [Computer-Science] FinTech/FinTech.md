@@ -133,3 +133,4 @@
 * [자본잠식 - 네이버 백과사전](https://terms.naver.com/entry.nhn?docId=3571941&cid=58781&categoryId=58781)
 * [[네이버 지식백과] 직접금융시장과 간접금융시장 (대학생을 위한 실용 금융, 금융감독원)](https://terms.naver.com/entry.nhn?docId=3431582&cid=58438&categoryId=58438)
 * [[네이버 지식백과] 피셔 효과 [fisher effect] (한경 경제용어사전, 한국경제신문/한경닷컴 )](https://terms.naver.com/entry.nhn?docId=2062876&cid=42107&categoryId=42107)
+* [금융기관과 금융서비스 - Daum Blog](http://blog.daum.net/thedreama/121)
