@@ -87,7 +87,7 @@
 
 ## ★ The Strength of weak ties: SWT - 약한 연결의 힘
 
-* 약하게 연결된 관계로부터 새로운 정보를 획득할 가능서잉 더 높다는 것을 설명하는 이론을 말한다.
+* 약하게 연결된 관계로부터 새로운 정보를 획득할 가능 더 높다는 것을 설명하는 이론을 말한다.
 
 <p align="center">
   <img src="http://mblogthumb4.phinf.naver.net/MjAxODAyMTJfNjIg/MDAxNTE4NDI3NjYyNzM5.L8sdL0tC9jHZWYLXH9ayo1e9sHnbwNMgBPGjJhcB5Zgg.-vOcjaeZA2-yS7R47kwQQwP_I6vby5pVLwtd7mrju_0g.PNG.careerplanet/AAMAAwDGAAgAAQAAAAAAAA5ZAAAAJGQyNzBjYmI4LTZlYmQtNGFhZi04ZTI4LTQwNDk5ODA4ZTMyNw.png?type=w800" width="300" height="300" />
