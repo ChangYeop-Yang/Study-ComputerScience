@@ -87,11 +87,23 @@
 
 ## The Strength of weak ties: SWT - 약한 연결의 힘
 
+* 약하게 연결된 관계로부터 새로운 정보를 획득할 가능서잉 더 높다는 것을 설명하는 이론을 말한다.
+
 <p align="center">
   <img src="http://mblogthumb4.phinf.naver.net/MjAxODAyMTJfNjIg/MDAxNTE4NDI3NjYyNzM5.L8sdL0tC9jHZWYLXH9ayo1e9sHnbwNMgBPGjJhcB5Zgg.-vOcjaeZA2-yS7R47kwQQwP_I6vby5pVLwtd7mrju_0g.PNG.careerplanet/AAMAAwDGAAgAAQAAAAAAAA5ZAAAAJGQyNzBjYmI4LTZlYmQtNGFhZi04ZTI4LTQwNDk5ODA4ZTMyNw.png?type=w800" width="300" height="300" />
 </p>
 
-* 약하게 연결된 관계로부터 새로운 정보를 획득할 가능서잉 더 높다는 것을 설명하는 이론을 말한다.
+* 약한 연결의 힘 이론은 이 두가지 전제를 바탕으로, 약한 연결관계는 새롱누 정보의 원천이 될 가능성이 높다고 추론한다.
+
+001. 첫 번째 전재: 두 사람 간의 연결관계가 강할수록 그들의 사회적 관계는 중복될 가능성이 높다. -> 관계의 이행성(Transitivity)
+002. 두 번째 전재: 다리 역할을 하는 연결관계(Brdiging ties), 즉 브릿지(Bridge)가 중복되지 않는 새로운 정보나 아이디어의 원천이다.
+
+## Network Closure - 네트워크 폐쇄성
+* 밀도 높은 조밀한 네트워크가 사회적 자본의 원천이 된다는 것을 설명한다.
+
+* 네트워크 폐쇄성은 정보의 접근에 영향을 미친다. 정보는 한 사람에서 다른 사람으로 이동하게 되면 그 품질이 저하되기 때문에 직접적 연결관계가 많은 밀도 높은 네트워크는 사람들 간의 협업과 커뮤니케이션을 향상시키고 정보의 접근을 용이하게 한다.
+
+* 네트워크 폐쇄성은 네트워크 내의 사람들이 서로 신뢰할 수 있도록 만든다. 밀도 높은 조밀한 네트워크에서는 사람들의 행동이 쉽게 노출되고 잘못된 행동에 대한 제재가 효과적으로 이루어지기 때문에 이러한 신뢰의 구축이 촉진된다.
 
 ## ★ REFERENCE
 * [소셜 네트워크 서비스 - 위키백과](https://ko.wikipedia.org/wiki/%EC%86%8C%EC%85%9C_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC_%EC%84%9C%EB%B9%84%EC%8A%A4)
