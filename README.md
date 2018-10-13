@@ -7,7 +7,7 @@ Personally Computer Science Repository.
 
 * [OPERATING SYSTEM - MARKDOWN](https://github.com/ChangYeop-Yang/Study-ComputerScience/blob/master/Operating-System.md)
 
-* [NETWORK - MARKDOWN](https://github.com/ChangYeop-Yang/Study-ComputerScience/blob/master/%5BComputer-Science%5D%20Network/Network.md)
+* [NETWORK - MARKDOWN](https://github.com/ChangYeop-Yang/Study-ComputerScience/blob/master/%5BComputer-Science%5D%20Network/README.md)
 
 * [FINTECT - MARKDOWN](https://github.com/ChangYeop-Yang/Study-ComputerScience/blob/master/%5BComputer-Science%5D%20FinTech/README.md)
 
