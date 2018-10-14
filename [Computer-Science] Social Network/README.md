@@ -138,6 +138,21 @@
 
 * 그래프 상의 임의의 두 정점 a와 b사이의 최단경로를 거리(Distance)라고 하며, d(a,b)로 나타낸다. 또한 그래프 상의 임의의 두 정점간의 거리 중 최장거리를 그래프의 직경(Diameter)이라고 한다.
 
+## ★ Euler Graph
+* 그래프 G=(V,E)에 대해 G 안의 모든 정점과 모든 간선이 포함되는 경로를 오일러 경로(Euler Path), 순환을 오일러 순환(Euler cycle)이라고 한다. 또한 오일러 순환이 포함 된 그래프를 오일러 그래프(Euler Graph)라고 한다.
+
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Labelled_Eulergraph.svg/220px-Labelled_Eulergraph.svg.png" />
+</p>
+
+* 그래프 G=(V,E)가 오일러 순환을 갖기 위한 필요충분조건은 연결그래프 G의 모든 정점들의 차수가 짝수인 것이다.
+
+* 그래프 G=(V,E)가 오일러 경로를 갖기 위한 필요충분조건은 그래프 G가 연결 그래프이고, 2개의 정점이 홀수 차수일 때다.
+
+* 오일러 경로 (Euler Path): 그래프 G=(V,E)에 대해 G 안의 모든 정점과 모든 간선이 포함되는 경로이다.
+
+* 오일러 순환 (Euler cycle): 그래프 G=(V,E)에 대해 G 안의 모든 정점과 모든 간선이 포함되는 경로이다.
+
 ## ★ 용어 정리
 ＊ Soical Network Services: 온라인 상의 인맥 구축을 도와주는 Online Platform.
 ＊ Social Media: 사용자들이 커뮤니티를 형성하여 서로 참여하는 매개 기술.
