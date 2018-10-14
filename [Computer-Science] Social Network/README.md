@@ -116,6 +116,17 @@
 
 * SNS (Social Network Services)의 단점: 사생활 침해, 개인정보 유출, 사이버 폭력, 소통의 양극화, 허위사실 유포, 정보 과부하.
 
+## ★ Hamilton path and Hamilton circuit
+
+##### § 해밀턴 경로(Hamilton Path): 한 그래프의 모든 점을 다 포함하는 경로이다.
+
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Hamiltonian_path.svg/220px-Hamiltonian_path.svg.png" />
+</p>
+
+##### § 해밀턴 순환로(Hamilton Cycle) 또는 해밀턴 회로(Hamilton circuit): 닫혀있는 해밀턴 경로. 즉, 해밀턴 순환로는 한 꼭지점에서 출발하여 모든 꼭지 점을 한 번씩만 지나고 다시 출발점으로 되돌아오는 경로이다.
+
+
 ## ★ 용어 정리
 ＊ Soical Network Services: 온라인 상의 인맥 구축을 도와주는 Online Platform.
 ＊ Social Media: 사용자들이 커뮤니티를 형성하여 서로 참여하는 매개 기술.
