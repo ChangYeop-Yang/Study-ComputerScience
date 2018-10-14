@@ -116,6 +116,16 @@
 
 * SNS (Social Network Services)의 단점: 사생활 침해, 개인정보 유출, 사이버 폭력, 소통의 양극화, 허위사실 유포, 정보 과부하.
 
+## ★ 용어 정리
+＊ Soical Network Services: 온라인 상의 인맥 구축을 도와주는 Online Platform.
+＊ Social Media: 사용자들이 커뮤니티를 형성하여 서로 참여하는 매개 기술.
+＊ Socail Web: 전화, 문자, 이메일, 메신저, SNS 등 유무선 의사소통 수단을 통합.
+＊ Social Commerce: 소셜 미디어, 소셜 상호작용을 지원하는 온라인 미디어, 제품, 서비스의 온라인 구매 및 판매를 지원하는 전자 상거래.
+＊ Sharing Economy: 무건이나 공간, 서비스를 빌리고 나눠 쓰는 인터넷과 스마트폰 기반의 사회적 경제 모델.
+＊ Prosumer: 미디어를 소비하고 생산하는 사람
+＊ Cloud Computing: 하드웨어, 데이터베이스, 애플리케이션 및 기타 IT 리소스를 필요에 따라 인터넷을 통하여 제공하고 사용한 만큼 비용을 지불.
+＊ Cloud Funding: 소셜 네트워크 서비스를 이용해 소규모 후원을 받거나 투자 등의 목적으로 인터넷과 같은 플랫폼을 통해 다수의 개인들로부터 자금을 모으는 행위.
+
 ## ★ REFERENCE
 * [소셜 네트워크 서비스 - 위키백과](https://ko.wikipedia.org/wiki/%EC%86%8C%EC%85%9C_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC_%EC%84%9C%EB%B9%84%EC%8A%A4)
 * [Simply Complex - 티스토리](http://exactitude.tistory.com/1003)
