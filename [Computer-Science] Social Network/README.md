@@ -126,6 +126,17 @@
 
 ##### § 해밀턴 순환로(Hamilton Cycle) 또는 해밀턴 회로(Hamilton circuit): 닫혀있는 해밀턴 경로. 즉, 해밀턴 순환로는 한 꼭지점에서 출발하여 모든 꼭지 점을 한 번씩만 지나고 다시 출발점으로 되돌아오는 경로이다.
 
+## ★ Connected Graph - 연결 그래프
+
+<p align="center">
+  <img src="http://mathworld.wolfram.com/images/eps-gif/kConnectedGraph2_600.gif" />
+</p>  
+
+* 모든 정점들 사이에 경로가 존재하는 그래프를 말한다.
+
+* 그래프 이론에서, 연결 그래프(連結graph, 영어: connected graph)는 모든 두 꼭짓점 사이에 경로가 존재하는 그래프이다.
+
+* 그래프 상의 임의의 두 정점 a와 b사이의 최단경로를 거리(Distance)라고 하며, d(a,b)로 나타낸다. 또한 그래프 상의 임의의 두 정점간의 거리 중 최장거리를 그래프의 직경(Diameter)이라고 한다.
 
 ## ★ 용어 정리
 ＊ Soical Network Services: 온라인 상의 인맥 구축을 도와주는 Online Platform.
@@ -140,3 +151,5 @@
 ## ★ REFERENCE
 * [소셜 네트워크 서비스 - 위키백과](https://ko.wikipedia.org/wiki/%EC%86%8C%EC%85%9C_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC_%EC%84%9C%EB%B9%84%EC%8A%A4)
 * [Simply Complex - 티스토리](http://exactitude.tistory.com/1003)
+* [해밀턴 경로 - 위키백과](https://ko.wikipedia.org/wiki/%ED%95%B4%EB%B0%80%ED%84%B4_%EA%B2%BD%EB%A1%9C)
+* [Connected Graph - wolfram](http://mathworld.wolfram.com/ConnectedGraph.html)
