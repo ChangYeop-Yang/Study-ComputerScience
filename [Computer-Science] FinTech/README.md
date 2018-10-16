@@ -299,6 +299,7 @@
 * 유동성이란 자산을 현금으로 전환할 수 있는 정도를 말한다.
 * 투자수익률이란 순이익을 투자금액으로 나눈 비율이다.
 * 이자율이란 투자자가 현재 자금을 빌려주는 대가로 미래 확정적으로 받는 수익률이다.
+* 장외거래란 증권거래소가 개설하는 정규적인 증권시장 이외의 모든 장소에서 이루어지는 증권거래이다.
 
 ## ★ REFERENCE
 :smile: [REFERENCE LIST](https://github.com/ChangYeop-Yang/Study-ComputerScience/issues/2)
