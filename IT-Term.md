@@ -1,5 +1,14 @@
 # IT-TERM
 
+## ★ Top-down and bottom-up design
+
+#### ※ Top-Down
+
+* top-down approach (also known as stepwise design and in some cases used as a synonym of decomposition) is essentially the breaking down of a system to gain insight into its compositional sub-systems in a reverse engineering fashion. In a top-down approach an overview of the system is formulated, specifying, but not detailing, any first-level subsystems. Each subsystem is then refined in yet greater detail, sometimes in many additional subsystem levels, until the entire specification is reduced to base elements. A top-down model is often specified with the assistance of "black boxes", which makes it easier to manipulate. However, black boxes may fail to clarify elementary mechanisms or be detailed enough to realistically validate the model. Top down approach starts with the big picture. It breaks down from there into smaller segments.
+
+#### ※ Bottom-Up
+* A bottom-up approach is the piecing together of systems to give rise to more complex systems, thus making the original systems sub-systems of the emergent system. Bottom-up processing is a type of information processing based on incoming data from the environment to form a perception. From a cognitive psychology perspective, information enters the eyes in one direction (sensory input, or the "bottom"), and is then turned into an image by the brain that can be interpreted and recognized as a perception (output that is "built up" from processing to final cognition). In a bottom-up approach the individual base elements of the system are first specified in great detail. These elements are then linked together to form larger subsystems, which then in turn are linked, sometimes in many levels, until a complete top-level system is formed. This strategy often resembles a "seed" model, by which the beginnings are small but eventually grow in complexity and completeness. However, "organic strategies" may result in a tangle of elements and subsystems, developed in isolation and subject to local optimization as opposed to meeting a global purpose.
+
 ## ★ T-Commerce
 
 <p align="center">
@@ -42,3 +51,4 @@ V커머스는 비디오(Video)와 상거래(commerce)의 합성어다. 텔레비
 * [M Commerce - 네이버 지식백과](https://terms.naver.com/entry.nhn?docId=18678&cid=43659&categoryId=43659)
 * [부채널 공격 - 위키백과](https://ko.wikipedia.org/wiki/%EB%B6%80%EC%B1%84%EB%84%90_%EA%B3%B5%EA%B2%A9)
 * [Side-channel attacks pose growing threat to security](https://ihsmarkit.com/research-analysis/side-channel-attacks-pose-growing-threat-to-security.html)
+* [Top-down and bottom-up design](https://en.wikipedia.org/wiki/Top-down_and_bottom-up_design)
