@@ -3,7 +3,7 @@
 ## ★ Model-View-Controller (MVC)
 
 <p align="center">
-  <table border="1">
+  <table style="margin-left: auto; margin-right: auto">
     <tr>
       <th>● Model–View–Controller IMAGE 001</th>
       <th>● Model–View–Controller IMAGE 002</th>
