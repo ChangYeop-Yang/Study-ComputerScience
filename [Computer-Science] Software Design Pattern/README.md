@@ -12,7 +12,7 @@
     <tr>
       <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/ModelViewControllerDiagram2.svg/200px-ModelViewControllerDiagram2.svg.png" /></td>
       <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Router-MVC-DB.svg/300px-Router-MVC-DB.svg.png" /></td>
-      <td><img src="https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Art/model_view_controller_2x.png" width="300" /></td>
+      <td><img src="https://koenig-media.raywenderlich.com/uploads/2016/04/diagram-mvc-480x241.png" width="300" /></td>
     </tr>
   </table>
 </p>
@@ -22,3 +22,4 @@
 ## ★ REFERENCE
 * [모델-뷰-컨트롤러(Model–View–Controller, MVC) - 위키백과](https://ko.wikipedia.org/wiki/%EB%AA%A8%EB%8D%B8-%EB%B7%B0-%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC)
 * [Model-View-Controller - Apple](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/MVC.html)
+* [Model-View-Controller (MVC) in iOS: A Modern Approach](https://www.raywenderlich.com/1073-model-view-controller-mvc-in-ios-a-modern-approach)
