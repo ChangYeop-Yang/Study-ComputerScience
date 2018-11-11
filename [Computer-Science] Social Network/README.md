@@ -6,6 +6,12 @@
 * 중반부에서는 소셜 네트워크의 이론적인 유형과 특징을 학습하고 실제 소셜 네트워크를 분석하기 위한 방법론을 학습한다. 
 * 후반부에서는 소셜 네트워크 응용 기술을 배우고 그 활용법을 소개한다. 
 
+★ Syllabus for lecture
+
+|Syllabus Image 001|Syllabus Image 002|Syllabus Image 003|
+|:----------------:|:----------------:|:----------------:|
+|![](https://user-images.githubusercontent.com/20036523/48309838-10ebb180-e5c5-11e8-8a84-72e8711195c4.jpg)|![](https://user-images.githubusercontent.com/20036523/48309840-11844800-e5c5-11e8-932a-1e17e0985339.jpg)|![](https://user-images.githubusercontent.com/20036523/48309837-10ebb180-e5c5-11e8-9b4f-632f21c07484.jpg)|
+
 ## ★ Social Network
 * 소셜 네트워킹 서비스(영어: Social Networking Service, 이하 SNS)는 **사용자 간의 자유로운 의사소통과 정보 공유, 그리고 인맥 확대 등을 통해 사회적 관계를 생성하고 강화해주는 온라인 플랫폼**을 의미한다. SNS에서 가장 중요한 부분은 이 서비스를 통해 사회적 관계망을 생성, 유지, 강화, 확장해 나간다는 점이다. 이러한 관계망을 통해 정보가 공유되고 유통될 때 더욱 의미 있을 수 있다.
 
