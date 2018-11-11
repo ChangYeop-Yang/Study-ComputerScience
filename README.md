@@ -20,3 +20,5 @@ Personally Computer Science Repository.
 * [iOS - MARKDOWN](https://github.com/ChangYeop-Yang/Study-iOS/blob/master/README.md)
 
 * [Social Network - MARKDOWN](https://github.com/ChangYeop-Yang/Study-ComputerScience/tree/master/%5BComputer-Science%5D%20Social%20Network)
+
+* [Software Design Pattern - MARKDOWN](https://github.com/ChangYeop-Yang/Study-ComputerScience/blob/master/%5BComputer-Science%5D%20Software%20Design%20Pattern/README.md)
