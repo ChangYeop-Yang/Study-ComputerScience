@@ -6,7 +6,7 @@
 * 중반부에서는 소셜 네트워크의 이론적인 유형과 특징을 학습하고 실제 소셜 네트워크를 분석하기 위한 방법론을 학습한다. 
 * 후반부에서는 소셜 네트워크 응용 기술을 배우고 그 활용법을 소개한다. 
 
-★ Syllabus for lecture
+## ★ Syllabus for lecture
 
 |Syllabus Image 001|Syllabus Image 002|Syllabus Image 003|
 |:----------------:|:----------------:|:----------------:|
