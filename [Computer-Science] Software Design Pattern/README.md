@@ -40,6 +40,12 @@
 
 * The well-ordered and perhaps the most reusable way to organize your code is to use the 'MVVM' pattern. The Model, View, ViewModel (MVVM pattern) is all about guiding you in how to organize and structure your code to write maintainable, testable and extensible applications.
 
+* Model − It simply holds the data and has nothing to do with any of the business logic.
+
+* ViewModel − It acts as the link/connection between the Model and View and makes stuff look pretty.
+
+* View − It simply holds the formatted data and essentially delegates everything to the Model.
+
 |MVVM Image 001|MVVM Image 002|MVVM Image 003|
 |:------------:|:------------:|:------------:|
 |![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/MVVMPattern.png/330px-MVVMPattern.png)|![](https://www.tutorialspoint.com/mvvm/images/separated_presentation.jpg)|![](https://koenig-media.raywenderlich.com/uploads/2018/04/MVVM_Diagram-480x197.png)|
