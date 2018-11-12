@@ -38,6 +38,12 @@
 
 ## ★ Model–View–ViewModel (MVVM)
 
+* The well-ordered and perhaps the most reusable way to organize your code is to use the 'MVVM' pattern. The Model, View, ViewModel (MVVM pattern) is all about guiding you in how to organize and structure your code to write maintainable, testable and extensible applications.
+
+|MVVM Image 001|MVVM Image 002|MVVM Image 003|
+|:------------:|:------------:|:------------:|
+|![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/MVVMPattern.png/330px-MVVMPattern.png)|![](https://www.tutorialspoint.com/mvvm/images/view_model.jpg)|![](https://koenig-media.raywenderlich.com/uploads/2018/04/MVVM_Diagram-480x197.png)|
+
 ## ★ REFERENCE
 * [모델-뷰-컨트롤러(Model–View–Controller, MVC) - 위키백과](https://ko.wikipedia.org/wiki/%EB%AA%A8%EB%8D%B8-%EB%B7%B0-%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC)
 * [Model-View-Controller - Apple](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/MVC.html)
