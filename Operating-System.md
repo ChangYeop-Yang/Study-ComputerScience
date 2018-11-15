@@ -142,11 +142,23 @@
 
 ## ★ [Stack memory vs Heap memory](https://www.gribblelab.org/CBootCamp/7_Memory_Stack_vs_Heap.html)
 
+###### ※ Key Differences Between Stack and Heap
+
+* In a stack, the allocation and deallocation is done by CPU and is automatic whereas, in heap, it needs to be done by the programmer manually.
+* Heap frame handling is costlier than stack frame handling.
+* Implementation of a stack is complex. As against, implementation of a heap is simple.
+* A function call in stack takes O(N) time. In contrast, it takes O(1) time in a heap.
+* Stack implementation mainly suffers from the memory shortage problem. On the contrary, the main issue in a heap is fragmentation.
+* Access to a stack frame is easier than the heap as the stack is confined to the small region of memory and it always hit the cache, but heap frames are dispersed throughout the memory so the memory accessing can cause more cache misses.
+Stack is not flexible, the memory size allotted cannot be changed. On the other hand, a heap is flexible, and the allotted memory can be altered.
+* A heap takes more accessing time than a stack.
+
 <p align="center">
   <img src="https://techdifferences.com/wp-content/uploads/2017/10/Untitled-6.jpg" />
 </p>
 
 ###### ※ Stack Pros and Cons
+
 * very fast access
 * don't have to explicitly de-allocate variables
 * space is managed efficiently by CPU, memory will not become fragmented
@@ -155,6 +167,7 @@
 * variables cannot be resized
 
 ###### ※ Heap Pros and Cons
+
 * variables can be accessed globally
 * no limit on memory size
 * (relatively) slower access
