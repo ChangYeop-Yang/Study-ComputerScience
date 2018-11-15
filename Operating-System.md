@@ -142,11 +142,11 @@
 
 ## ★ [Stack memory vs Heap memory](https://www.gribblelab.org/CBootCamp/7_Memory_Stack_vs_Heap.html)
 
-###### ※ Key Differences Between Stack and Heap
-
 <p align="center">
   <img src="https://techdifferences.com/wp-content/uploads/2017/10/Untitled-6.jpg" />
 </p>
+
+###### ※ Key Differences Between Stack and Heap
 
 * In a stack, the allocation and deallocation is done by CPU and is automatic whereas, in heap, it needs to be done by the programmer manually.
 * Heap frame handling is costlier than stack frame handling.
