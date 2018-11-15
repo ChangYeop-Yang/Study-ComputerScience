@@ -187,4 +187,4 @@
 11. [Mutual Exclusion - 위키백과](https://ko.wikipedia.org/wiki/%EC%83%81%ED%98%B8_%EB%B0%B0%EC%A0%9C)
 12. [Semaphore- 나무위키](https://namu.wiki/w/%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4)
 13. [Aging - 위키백과](https://ko.wikipedia.org/wiki/%EA%B8%B0%EC%95%84_%EC%83%81%ED%83%9C)
-14. [7. Memory : Stack vs Heap](https://www.gribblelab.org/CBootCamp/7_Memory_Stack_vs_Heap.html)
+14. [Difference Between Stack and Heap](https://techdifferences.com/difference-between-stack-and-heap.html)
