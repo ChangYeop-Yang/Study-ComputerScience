@@ -142,6 +142,10 @@
 
 ## ★ [Stack memory vs Heap memory](https://www.gribblelab.org/CBootCamp/7_Memory_Stack_vs_Heap.html)
 
+<p align="center">
+  <img src="https://techdifferences.com/wp-content/uploads/2017/10/Untitled-6.jpg" />
+</p>
+
 ###### ※ Stack Pros and Cons
 * very fast access
 * don't have to explicitly de-allocate variables
