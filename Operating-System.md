@@ -119,7 +119,7 @@
 
 </p>
 
-# ★ 문맥교환 (Context Switching)
+## ★ 문맥교환 (Context Switching)
 * In computing, a context switch is the process of storing the state of a process or of a thread, so that it can be restored and execution resumed from the same point later. This allows multiple processes to share a single CPU, and is an essential feature of a multitasking operating system.
 
 * 문맥 교환(Context Switch)이란 하나의 프로세스가 CPU를 사용 중인 상태에서 다른 프로세스가 CPU를 사용하도록 하기 위해, 이전의 프로세스의 상태(문맥)를 보관하고 새로운 프로세스의 상태를 적재하는 작업을 말한다. 한 프로세스의 문맥은 그 프로세스의 프로세스 제어 블록에 기록되어 있다.
@@ -139,6 +139,24 @@
 > 프로세스들 시간 할당량은 시스템 성능의 중요한 역할을 한다. 시간 할당량이 적을수록 사용자 입장에서는 여러 개의 프로세스가 거의 동시에 수행되는 느낌을 갖지만 인터럽트의 수와 문맥 교환의 수가 늘어난다. 프로세스의 실행을 위한 부가적인 활동을 오버헤드(간접 부담 비용)이라고 하는데, 이 또한 문맥 교환 수와 같이 늘어나게 된다.
 > * 시간 할당량이 적어지면 문맥 교환 수, 인터럽트 횟수, 오버헤드가 증가하지만 여러 개의 프로세스가 동시에 수행되는 느낌을 갖는다.
 > * 시간 할당량이 커지면 문맥 교환 수, 인터럽트 횟수, 오버헤드가 감소하지만 여러 개의 프로세스가 동시에 수행되는 느낌을 갖지 못한다.
+
+## ★ [Stack memory vs Heap memory](https://www.gribblelab.org/CBootCamp/7_Memory_Stack_vs_Heap.html)
+
+###### ※ Stack Pros and Cons
+* very fast access
+* don't have to explicitly de-allocate variables
+* space is managed efficiently by CPU, memory will not become fragmented
+* local variables only
+* limit on stack size (OS-dependent)
+* variables cannot be resized
+
+###### ※ Heap Pros and Cons
+* variables can be accessed globally
+* no limit on memory size
+* (relatively) slower access
+* no guaranteed efficient use of space, memory may become fragmented over time as blocks of memory are allocated, then freed
+* you must manage memory (you're in charge of allocating and freeing variables)
+* variables can be resized using realloc()
 
 ## ★ 용어 정리
 * 프로시저(Procedure): 루틴, 서브루틴, 함수와 같은 뜻으로 사용되며 하나의 프로시저는 특정 작업을 수행하기 위한 프로그램의 일부이다. 또는 **어떤 행동을 수행하기 위한 일련의 작업 순서**를 말한다.
@@ -169,3 +187,4 @@
 11. [Mutual Exclusion - 위키백과](https://ko.wikipedia.org/wiki/%EC%83%81%ED%98%B8_%EB%B0%B0%EC%A0%9C)
 12. [Semaphore- 나무위키](https://namu.wiki/w/%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4)
 13. [Aging - 위키백과](https://ko.wikipedia.org/wiki/%EA%B8%B0%EC%95%84_%EC%83%81%ED%83%9C)
+14. [7. Memory : Stack vs Heap](https://www.gribblelab.org/CBootCamp/7_Memory_Stack_vs_Heap.html)
