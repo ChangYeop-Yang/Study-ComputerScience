@@ -36,9 +36,7 @@
 
 * Communication: A controller object interprets user actions made in view objects and communicates new or changed data to the model layer. When model objects change, a controller object communicates that new model data to the view objects so that they can display it.
 
-* * *
-
-#### ※ Android Model-View-Controller (MVC) - [안드로이드의 MVC, MVP, MVVM 종합 안내서](https://academy.realm.io/kr/posts/eric-maxwell-mvc-mvp-and-mvvm-on-android/)
+#### ※ Model-View-Controller Source Code (MVC) - [안드로이드의 MVC, MVP, MVVM 종합 안내서](https://academy.realm.io/kr/posts/eric-maxwell-mvc-mvp-and-mvvm-on-android/)
 
 ```swift
 public class TicTacToeActivity extends AppCompatActivity {
