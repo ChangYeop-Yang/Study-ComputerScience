@@ -36,6 +36,100 @@
 
 * Communication: A controller object interprets user actions made in view objects and communicates new or changed data to the model layer. When model objects change, a controller object communicates that new model data to the view objects so that they can display it.
 
+* * *
+
+#### ※ Android Model-View-Controller (MVC) - [안드로이드의 MVC, MVP, MVVM 종합 안내서](https://academy.realm.io/kr/posts/eric-maxwell-mvc-mvp-and-mvvm-on-android/)
+
+```swift
+public class TicTacToeActivity extends AppCompatActivity {
+
+    private Board model;
+
+    /* View Components referenced by the controller */
+    private ViewGroup buttonGrid;
+    private View winnerPlayerViewGroup;
+    private TextView winnerPlayerLabel;
+
+    /**
+     * In onCreate of the Activity we lookup & retain references to view components
+     * and instantiate the model.
+     */
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.tictactoe);
+        winnerPlayerLabel = (TextView) findViewById(R.id.winnerPlayerLabel);
+        winnerPlayerViewGroup = findViewById(R.id.winnerPlayerViewGroup);
+        buttonGrid = (ViewGroup) findViewById(R.id.buttonGrid);
+
+        model = new Board();
+    }
+
+    /**
+     * Here we inflate and attach our reset button in the menu.
+     */
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_tictactoe, menu);
+        return true;
+    }
+    /**
+     *  We tie the reset() action to the reset tap event.
+     */
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_reset:
+                reset();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+    /**
+     *  When the view tells us a cell is clicked in the tic tac toe board,
+     *  this method will fire. We update the model and then interrogate it's state
+     *  to decide how to proceed.  If X or O won with this move, update the view
+     *  to display this and otherwise mark the cell that was clicked.
+     */
+    public void onCellClicked(View v) {
+
+        Button button = (Button) v;
+
+        int row = Integer.valueOf(tag.substring(0,1));
+        int col = Integer.valueOf(tag.substring(1,2));
+
+        Player playerThatMoved = model.mark(row, col);
+
+        if(playerThatMoved != null) {
+            button.setText(playerThatMoved.toString());
+            if (model.getWinner() != null) {
+                winnerPlayerLabel.setText(playerThatMoved.toString());
+                winnerPlayerViewGroup.setVisibility(View.VISIBLE);
+            }
+        }
+
+    }
+
+    /**
+     * On reset, we clear the winner label and hide it, then clear out each button.
+     * We also tell the model to reset (restart) it's state.
+     */
+    private void reset() {
+        winnerPlayerViewGroup.setVisibility(View.GONE);
+        winnerPlayerLabel.setText("");
+
+        model.restart();
+
+        for( int i = 0; i < buttonGrid.getChildCount(); i++ ) {
+            ((Button) buttonGrid.getChildAt(i)).setText("");
+        }
+    }
+}
+```
+
 ## ★ Model–View–ViewModel (MVVM)
 
 * The well-ordered and perhaps the most reusable way to organize your code is to use the 'MVVM' pattern. The Model, View, ViewModel (MVVM pattern) is all about guiding you in how to organize and structure your code to write maintainable, testable and extensible applications.
@@ -55,5 +149,5 @@
 - [Model-View-Controller - Apple](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/MVC.html)
 - [Model-View-Controller (MVC) in iOS: A Modern Approach](https://www.raywenderlich.com/1073-model-view-controller-mvc-in-ios-a-modern-approach)
 - [Model–view–viewmodel - 위키백과](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel)
-- [안드로이드의 MVC, MVP, MVVM 종합 안내서](https://academy.realm.io/kr/posts/eric-maxwell-mvc-mvp-and-mvvm-on-android/)
-- [iOS 애플리케이션 아키텍처 : MVVM, MVC, VIPER 전격 비교](https://academy.realm.io/kr/posts/krzysztof-zablocki-mDevCamp-ios-architecture-mvvm-mvc-viper/?w=1)
+- [안드로이드의 MVC, MVP, MVVM 종합 안내서 -Realm](https://academy.realm.io/kr/posts/eric-maxwell-mvc-mvp-and-mvvm-on-android/)
+- [iOS 애플리케이션 아키텍처 : MVVM, MVC, VIPER 전격 비교 - Realm](https://academy.realm.io/kr/posts/krzysztof-zablocki-mDevCamp-ios-architecture-mvvm-mvc-viper/?w=1)
