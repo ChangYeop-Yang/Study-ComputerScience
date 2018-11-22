@@ -57,4 +57,3 @@
 - [Model–view–viewmodel - 위키백과](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel)
 - [안드로이드의 MVC, MVP, MVVM 종합 안내서](https://academy.realm.io/kr/posts/eric-maxwell-mvc-mvp-and-mvvm-on-android/)
 - [iOS 애플리케이션 아키텍처 : MVVM, MVC, VIPER 전격 비교](https://academy.realm.io/kr/posts/krzysztof-zablocki-mDevCamp-ios-architecture-mvvm-mvc-viper/?w=1)
-- [Swift 타입의 비밀](https://academy.realm.io/kr/posts/altconf-2017-manu-rink-secret-life-of-types-in-swift/)
