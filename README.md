@@ -15,7 +15,7 @@ Personally Computer Science Repository.
 
 * [IT TERM - MARKDOWN](https://github.com/ChangYeop-Yang/Study-ComputerScience/blob/master/IT-Term.md)
 
-* [Android - MARKDOWN](https://github.com/ChangYeop-Yang/Study-Android/blob/master/Android.md)
+* [Android - MARKDOWN](https://github.com/ChangYeop-Yang/Study-Android/blob/master/README.md)
 
 * [iOS - MARKDOWN](https://github.com/ChangYeop-Yang/Study-iOS/blob/master/README.md)
 
