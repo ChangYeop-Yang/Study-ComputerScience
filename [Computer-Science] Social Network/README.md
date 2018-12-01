@@ -195,6 +195,14 @@
  <img src="https://user-images.githubusercontent.com/20036523/49327354-0315c480-f5a4-11e8-914e-48012102ee27.jpg" />
 </p>
 
+##### ※ 협업 필터링 (CF: Collaborative Filtering)
+
+* 고객의 행동 이력을 기반으로 고객의 소비 패턴을 마이닝, 고객-고객, 아이템-아이템, 고객-아이템간 유사도를 측정, 유사도에 기반하여 아이템을 추천하는 방식이다.
+
+##### ※ 내용기반 필터링 (CBF: Content-Based Filtering)
+
+* 아이템의 속성에 기반하여 유사 속성 아이템을 추천 협업 필터링이 사용자의 행동이력을 이용하는 반면, 콘텐츠 기반 필터링은 아이템 자체를 분석하여 추천을 구현한다.
+
 ## ★ 용어 정리
 ＊ Soical Network Services: 온라인 상의 인맥 구축을 도와주는 Online Platform.
 
