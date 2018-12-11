@@ -365,7 +365,7 @@
   <img src="https://post-phinf.pstatic.net/MjAxNzExMjlfNTMg/MDAxNTExODg3NzA0MzY3.p4X0w8piuI6jf7icWH_qr3_gU06rU9zfV9xKw8Z_Ix0g.BuejkU1RjlcqUIGE3hh2BmJXQFF52gouPcmVaJpKTQ4g.PNG/how_it_works_FDS.png?type=w1200" width="500" height="300" />
 </p>
 
-* FDS(Fraud Detection System, 이상금융거래탐지시스템)는 결제자의 다양한 정보를 수집해 패턴을 만든 후 패턴과 다른 이상 결제를 잡아내고 결제 경로를 차단하는 보안 방식이다. 보안 솔루션에 의존하던 기존 보안과 달리, 빅데이터를 바탕으로 적극적인 보안 개입을 하는 것이 특징이다. FDS는 정보수집 기능, 분석 및 탐지 기능, 대응 기능, 모니터링 및 감사 기능으로 구성돼 있다. 핀테크가 중요해지는 시점에 FDS도 필수적인 보안 방식으로 주목받고 있다. 해외에서는 페이팔, 국내에서는 신한카드와 유안타증권이 대표적인 FDS 적용 기업으로 손꼽힌다.
+* FDS(Fraud Detection System, 이상금융거래탐지시스템)는 **결제자의 다양한 정보를 수집해 패턴을 만든 후 패턴과 다른 이상 결제를 잡아내고 결제 경로를 차단하는 보안 방식이다. 보안 솔루션에 의존하던 기존 보안과 달리, 빅데이터를 바탕으로 적극적인 보안 개입을 하는 것이 특징이다.** FDS는 정보수집 기능, 분석 및 탐지 기능, 대응 기능, 모니터링 및 감사 기능으로 구성돼 있다. 핀테크가 중요해지는 시점에 FDS도 필수적인 보안 방식으로 주목받고 있다. 해외에서는 페이팔, 국내에서는 신한카드와 유안타증권이 대표적인 FDS 적용 기업으로 손꼽힌다.
 
 #### ＃ 부정거래탐지 (FDS: Fraud Detection System) 구성
 
