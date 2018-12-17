@@ -1,4 +1,4 @@
-# ■ Probability and Statistics [COME311]
+# ■ Probability and Statistics [COME311] <kbd>[Kyungpook National University](http://www.knu.ac.kr/wbbs/)</kbd>
 
 - 본 과목은 컴퓨터학부 전공기반 교과목으로서, 컴퓨터 과학/공학 연구를 위해 필수적으로 요구되는 확률 및 통계 이론에 대하여 학습함.
 
