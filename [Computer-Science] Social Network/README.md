@@ -1,4 +1,4 @@
-# ■ Social Networks [CLTR264002]
+# ■ Social Networks [CLTR264002] <kbd>[Kyungpook National University](http://www.knu.ac.kr/wbbs/)</kbd>
  4차 산업시대에서 소셜 네트워크를 각 분야에서 활용하기 위한 기초적인 방법을 학습하고 응용할 수 있는 능력을 키우는 것을 강의 목표로 한다.
 인문계열 학생들을 포함한 컴퓨터에 대한 기본 지식이 없는 학생들도 수강할 수 있는 수준으로 진행한다. 주로 이론 강의로 진행되며 초보자도 사용할 수 있는 UCINET을 사용(R을 사용 해도 됨)하여 소셜 네트워크 분석을 개인적으로 실습할 수 있도록 안내한다.
 
@@ -278,11 +278,18 @@
 ＊ Cloud Funding: 소셜 네트워크 서비스를 이용해 소규모 후원을 받거나 투자 등의 목적으로 인터넷과 같은 플랫폼을 통해 다수의 개인들로부터 자금을 모으는 행위.
 
 ## ★ REFERENCE
-* [소셜 네트워크 서비스 - 위키백과](https://ko.wikipedia.org/wiki/%EC%86%8C%EC%85%9C_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC_%EC%84%9C%EB%B9%84%EC%8A%A4)
-* [Simply Complex - 티스토리](http://exactitude.tistory.com/1003)
-* [해밀턴 경로 - 위키백과](https://ko.wikipedia.org/wiki/%ED%95%B4%EB%B0%80%ED%84%B4_%EA%B2%BD%EB%A1%9C)
-* [Connected Graph - wolfram](http://mathworld.wolfram.com/ConnectedGraph.html)
-* [추천 시스템 - 위키백과](https://ko.wikipedia.org/wiki/%EC%B6%94%EC%B2%9C_%EC%8B%9C%EC%8A%A4%ED%85%9C)
-* [개인화(personalization) - 위키백과](https://ko.wikipedia.org/wiki/%EA%B0%9C%EC%9D%B8%ED%99%94)
-* [The Long Tail - 위키백과](https://ko.wikipedia.org/wiki/%EA%B8%B4_%EA%BC%AC%EB%A6%AC)
-* [[네이버 지식백과] 텍스트 마이닝 (국립중앙과학관 - 빅데이터, 국립중앙과학관)](https://terms.naver.com/entry.nhn?docId=3386330&cid=58370&categoryId=58370)
+:airplane: [소셜 네트워크 서비스 - 위키백과](https://ko.wikipedia.org/wiki/%EC%86%8C%EC%85%9C_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC_%EC%84%9C%EB%B9%84%EC%8A%A4)
+
+:airplane: [Simply Complex - 티스토리](http://exactitude.tistory.com/1003)
+
+:airplane: [해밀턴 경로 - 위키백과](https://ko.wikipedia.org/wiki/%ED%95%B4%EB%B0%80%ED%84%B4_%EA%B2%BD%EB%A1%9C)
+
+:airplane: [Connected Graph - wolfram](http://mathworld.wolfram.com/ConnectedGraph.html)
+
+:airplane: [추천 시스템 - 위키백과](https://ko.wikipedia.org/wiki/%EC%B6%94%EC%B2%9C_%EC%8B%9C%EC%8A%A4%ED%85%9C)
+
+:airplane: [개인화(personalization) - 위키백과](https://ko.wikipedia.org/wiki/%EA%B0%9C%EC%9D%B8%ED%99%94)
+
+:airplane: [The Long Tail - 위키백과](https://ko.wikipedia.org/wiki/%EA%B8%B4_%EA%BC%AC%EB%A6%AC)
+
+:airplane: [[네이버 지식백과] 텍스트 마이닝 (국립중앙과학관 - 빅데이터, 국립중앙과학관)](https://terms.naver.com/entry.nhn?docId=3386330&cid=58370&categoryId=58370)
