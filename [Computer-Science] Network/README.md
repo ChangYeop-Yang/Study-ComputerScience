@@ -1,4 +1,4 @@
-# Study - NETWORK <kbd>[Kyungpook National University](http://www.knu.ac.kr/wbbs/)</kbd>
+# ■ Study - NETWORK <kbd>[Kyungpook National University](http://www.knu.ac.kr/wbbs/)</kbd>
 
 ## ★ OSI 7 Layer
 OSI 모형(Open Systems Interconnection Reference Model)은 국제표준화기구(ISO)에서 개발한 모델로, 컴퓨터 네트워크 프로토콜 디자인과 통신을 계층으로 나누어 설명한 것이다. 일반적으로 OSI 7 계층 모형이라고 한다.
