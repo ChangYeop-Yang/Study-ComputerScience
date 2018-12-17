@@ -44,11 +44,19 @@ V커머스는 비디오(Video)와 상거래(commerce)의 합성어다. 텔레비
 * 앱 외부의 악의적인 공격자가 악성스크립트가 포함된 조작된 url을 인텐트 등을 통하여 주입하고 이를 웹뷰가 로드하도록 하여 앱 컨텍스트 내의 브라우저 쿠키 등 민감한 정보에 접근할 수 있는 취약점입니다.
 
 ## ★ REFERENCE
-* [Television Commerce - 네이버 지식백과](https://terms.naver.com/entry.nhn?docId=3587004&cid=59277&categoryId=59279)
-* [티몬·홈앤쇼핑···, 쇼핑몰들의 비디오 커머스 변신 이유 5가지 - zamong](http://www.zamong.co.kr/archives/20975)
-* [“e커머스가 새 먹거리” … 롯데 8개 온라인몰 통합 - 중앙일보](https://news.joins.com/article/22626357)
-* [온·오프 융합 ‘옴니채널’ 구축 박차… 유통가 “공간·시간의 벽을 부숴라” - 국민일보](http://news.kmib.co.kr/article/view.asp?arcid=0922784542)
-* [M Commerce - 네이버 지식백과](https://terms.naver.com/entry.nhn?docId=18678&cid=43659&categoryId=43659)
-* [부채널 공격 - 위키백과](https://ko.wikipedia.org/wiki/%EB%B6%80%EC%B1%84%EB%84%90_%EA%B3%B5%EA%B2%A9)
-* [Side-channel attacks pose growing threat to security](https://ihsmarkit.com/research-analysis/side-channel-attacks-pose-growing-threat-to-security.html)
-* [Top-down and bottom-up design](https://en.wikipedia.org/wiki/Top-down_and_bottom-up_design)
+
+:airplane: [Television Commerce - 네이버 지식백과](https://terms.naver.com/entry.nhn?docId=3587004&cid=59277&categoryId=59279)
+
+:airplane: [티몬·홈앤쇼핑···, 쇼핑몰들의 비디오 커머스 변신 이유 5가지 - zamong](http://www.zamong.co.kr/archives/20975)
+
+:airplane: [“e커머스가 새 먹거리” … 롯데 8개 온라인몰 통합 - 중앙일보](https://news.joins.com/article/22626357)
+
+:airplane: [온·오프 융합 ‘옴니채널’ 구축 박차… 유통가 “공간·시간의 벽을 부숴라” - 국민일보](http://news.kmib.co.kr/article/view.asp?arcid=0922784542)
+
+:airplane: [M Commerce - 네이버 지식백과](https://terms.naver.com/entry.nhn?docId=18678&cid=43659&categoryId=43659)
+
+:airplane: [부채널 공격 - 위키백과](https://ko.wikipedia.org/wiki/%EB%B6%80%EC%B1%84%EB%84%90_%EA%B3%B5%EA%B2%A9)
+
+:airplane: [Side-channel attacks pose growing threat to security](https://ihsmarkit.com/research-analysis/side-channel-attacks-pose-growing-threat-to-security.html)
+
+:airplane: [Top-down and bottom-up design](https://en.wikipedia.org/wiki/Top-down_and_bottom-up_design)
