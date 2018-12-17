@@ -1,4 +1,4 @@
-# 운영체제 (Operating System)
+# ■ 운영체제 (Operating System)
 
 ## ★ 운영체제의 정의
 * 하드웨어를 제어하는 소프트웨어이다.
@@ -193,17 +193,31 @@ Stack is not flexible, the memory size allotted cannot be changed. On the other 
 * 기아상태(Aging): 컴퓨터 과학 용어의 하나로, 프로세스가 끊임없이 필요한 컴퓨터 자원을 가져오지 못하는 상황으로, 이러한 자원 없이는 처리를 끝낼 수 없는 병행 컴퓨팅에서 마주치는 문제이다. 기아 상태는 스케줄링이나 상호 배제 알고리즘의 오류에 기인하지만 자원 누수에 의해 일어날 수도 있으며 포크 폭탄과 같은 서비스 거부 공격을 통해 고의적으로 발생할 수도 있다.
 
 ## ★ REFERENCE
-1. [2018 정보처리기사 필기 기본서 - NaverBook](https://book.naver.com/bookdb/book_detail.nhn?bid=12696851)
-2. [당신을 블로깅하세요. - 운영체제](http://dongbo.tistory.com/21)
-3. [jiransnc님의블로그 - 네이버 ](https://m.blog.naver.com/PostView.nhnblogId=jiransnc&logNo=60195780909&proxyReferer=https%3A%2F%2Fwww.google.co.kr%2F)
-4. [프로세스 제어 블록 - 위키백과](https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EC%A0%9C%EC%96%B4_%EB%B8%94%EB%A1%9D)
-5. [텀즈 - Procedure](http://www.terms.co.kr/procedure.htm)
-6. [Process state - 위키백과](https://en.wikipedia.org/wiki/Process_state)
-7. [인터럽트 - iLiFO 지덤](http://www.jidum.com/jidums/view.do?jidumId=445)
-8. [문맥 교환(Context Switch) - 위키백과](https://ko.wikipedia.org/wiki/%EB%AC%B8%EB%A7%A5_%EA%B5%90%ED%99%98)
-9. [Process - 위키백과](https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4)
-10. [Critical Section - 위키백과](https://ko.wikipedia.org/wiki/%EC%9E%84%EA%B3%84_%EA%B5%AC%EC%97%AD)
-11. [Mutual Exclusion - 위키백과](https://ko.wikipedia.org/wiki/%EC%83%81%ED%98%B8_%EB%B0%B0%EC%A0%9C)
-12. [Semaphore- 나무위키](https://namu.wiki/w/%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4)
-13. [Aging - 위키백과](https://ko.wikipedia.org/wiki/%EA%B8%B0%EC%95%84_%EC%83%81%ED%83%9C)
-14. [Difference Between Stack and Heap](https://techdifferences.com/difference-between-stack-and-heap.html)
+
+:airplane: [2018 정보처리기사 필기 기본서 - NaverBook](https://book.naver.com/bookdb/book_detail.nhn?bid=12696851)
+
+:airplane: [당신을 블로깅하세요. - 운영체제](http://dongbo.tistory.com/21)
+
+:airplane: [jiransnc님의블로그 - 네이버 ](https://m.blog.naver.com/PostView.nhnblogId=jiransnc&logNo=60195780909&proxyReferer=https%3A%2F%2Fwww.google.co.kr%2F)
+
+:airplane: [프로세스 제어 블록 - 위키백과](https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EC%A0%9C%EC%96%B4_%EB%B8%94%EB%A1%9D)
+
+:airplane: [텀즈 - Procedure](http://www.terms.co.kr/procedure.htm)
+
+:airplane: [Process state - 위키백과](https://en.wikipedia.org/wiki/Process_state)
+
+:airplane: [인터럽트 - iLiFO 지덤](http://www.jidum.com/jidums/view.do?jidumId=445)
+
+:airplane: [문맥 교환(Context Switch) - 위키백과](https://ko.wikipedia.org/wiki/%EB%AC%B8%EB%A7%A5_%EA%B5%90%ED%99%98)
+
+:airplane: [Process - 위키백과](https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4)
+
+:airplane: [Critical Section - 위키백과](https://ko.wikipedia.org/wiki/%EC%9E%84%EA%B3%84_%EA%B5%AC%EC%97%AD)
+
+:airplane: [Mutual Exclusion - 위키백과](https://ko.wikipedia.org/wiki/%EC%83%81%ED%98%B8_%EB%B0%B0%EC%A0%9C)
+
+:airplane: [Semaphore- 나무위키](https://namu.wiki/w/%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4)
+
+:airplane: [Aging - 위키백과](https://ko.wikipedia.org/wiki/%EA%B8%B0%EC%95%84_%EC%83%81%ED%83%9C)
+
+:airplane: [Difference Between Stack and Heap](https://techdifferences.com/difference-between-stack-and-heap.html)
