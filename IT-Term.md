@@ -1,4 +1,4 @@
-# IT-TERM
+# ■ Study - IT TERM
 
 ## ★ Top-down and bottom-up design
 
