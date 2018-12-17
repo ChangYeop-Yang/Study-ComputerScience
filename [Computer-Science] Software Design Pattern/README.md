@@ -1,4 +1,4 @@
-# ■ Software Design Pattern
+# ■ Software Design Pattern <kbd>[Kyungpook National University](http://www.knu.ac.kr/wbbs/)</kbd>
 
 ## ★ Model-View-Controller (MVC)
 
