@@ -13,7 +13,7 @@
 |금융데이터 분석|개인, 기업 고객과 관련된 다양한 데이터를 수집하여 분석함으로써 새로운 부가가치를 창출|Credit Reference, Capital Markets, Insurance|
 |금융 소프트웨어|진화된 스마트 기술을 활용하여 기존 방식보다 효율적이고 혁신적인 금융업무, 서비스 관련 소프트웨어 제공|Risk Management, ALM Management, Accounting|
 |플랫폼|개인, 기업 고객들이 금융기관의 개입없이 자유롭게 금융거래를 할 수 있는 다양한 거래기반 제공|P2P Lending, Trading Platforms, Personal Finance|
-> 출처: UK Trade & Investment, 2014
+> * 출처: UK Trade & Investment, 2014
 
 ## ★ Syllabus for lecture
 
