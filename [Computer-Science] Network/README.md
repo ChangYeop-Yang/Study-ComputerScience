@@ -64,6 +64,8 @@
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/TCP_CLOSE.svg/1280px-TCP_CLOSE.svg.png" width="300" height="300" />
 </p>
 
+> In telecommunications, a handshake is an automated process of negotiation between two communicating in between participants (example "Alice and Bob") through the exchange of information that establishes the protocols of a communication link at the start of the communication, before full communication begins. The handshaking process usually takes place in order to establish rules for communication when a computer attempts to communicate with another device. Signals are usually exchanged between two devices to establish a communication link. For example, when a computer communicates with another device such as a modem, the two devices will signal each other that they are switched on and ready to work, as well as to agree to which protocols are being used.
+
 ## ★ OSI 7 Layer
 OSI 모형(Open Systems Interconnection Reference Model)은 국제표준화기구(ISO)에서 개발한 모델로, 컴퓨터 네트워크 프로토콜 디자인과 통신을 계층으로 나누어 설명한 것이다. 일반적으로 OSI 7 계층 모형이라고 한다.
 
@@ -173,3 +175,5 @@ Selective Repeat is part of the automatic repeat-request (ARQ). With selective r
 :airplane: [Circuit switching (회선 교환) - 위키백과](https://ko.wikipedia.org/wiki/%ED%9A%8C%EC%84%A0_%EA%B5%90%ED%99%98)
 
 :airplane: [TCP (Transmission Control Protocol) - 위키백과](https://ko.wikipedia.org/wiki/%EC%A0%84%EC%86%A1_%EC%A0%9C%EC%96%B4_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C)
+
+:airplane: [Handshaking - 위키백과](https://en.wikipedia.org/wiki/Handshaking)
