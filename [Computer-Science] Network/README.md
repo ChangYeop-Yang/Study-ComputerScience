@@ -40,6 +40,14 @@
 
 * Overflow 발생으로 인한 Packet 손실이 발생한다.
 
+## ★ Circuit switching (회선 교환)
+
+<p align="center">
+  <img src="https://i.pinimg.com/originals/99/2e/ed/992eed994ae26883c1febabb8cbb90c6.gif" />
+</p>
+
+* 발신자와 수신자 또는 통신 쌍방이 통신을 시작하기 전에 미리 전용 연결(회선 또는 채널)을 설정해야만 하는 네트워크를 말한다. 통신하는 동안에는 해당 연결이 독점적으로 발신자 및 수신자에 의해서만 사용된다. 통신이 끝났을 때는 반드시 연결을 해제하는 절차가 필요하다.
+
 ## ★ OSI 7 Layer
 OSI 모형(Open Systems Interconnection Reference Model)은 국제표준화기구(ISO)에서 개발한 모델로, 컴퓨터 네트워크 프로토콜 디자인과 통신을 계층으로 나누어 설명한 것이다. 일반적으로 OSI 7 계층 모형이라고 한다.
 
@@ -144,4 +152,6 @@ Selective Repeat is part of the automatic repeat-request (ARQ). With selective r
 
 :airplane: [포트 - 위키백과](https://ko.wikipedia.org/wiki/%ED%8F%AC%ED%8A%B8_(%EC%BB%B4%ED%93%A8%ED%84%B0_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%82%B9))
 
-:airplane: [Packet switching (패킷 교환) - ](https://ko.wikipedia.org/wiki/%ED%8C%A8%ED%82%B7_%EA%B5%90%ED%99%98)
+:airplane: [Packet switching (패킷 교환) - 위키백과](https://ko.wikipedia.org/wiki/%ED%8C%A8%ED%82%B7_%EA%B5%90%ED%99%98)
+
+:airplane: [Circuit switching (회선 교환) - ](https://ko.wikipedia.org/wiki/%ED%9A%8C%EC%84%A0_%EA%B5%90%ED%99%98)
