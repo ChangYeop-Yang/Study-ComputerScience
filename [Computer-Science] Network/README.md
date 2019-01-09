@@ -114,4 +114,4 @@ Selective Repeat is part of the automatic repeat-request (ARQ). With selective r
 
 :airplane: [Error Control - SlidePlayer](https://slideplayer.com/slide/8175417/)
 
-:airplane: [포트 -](https://ko.wikipedia.org/wiki/%ED%8F%AC%ED%8A%B8_(%EC%BB%B4%ED%93%A8%ED%84%B0_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%82%B9))
+:airplane: [포트 - ](https://ko.wikipedia.org/wiki/%ED%8F%AC%ED%8A%B8_(%EC%BB%B4%ED%93%A8%ED%84%B0_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%82%B9))
