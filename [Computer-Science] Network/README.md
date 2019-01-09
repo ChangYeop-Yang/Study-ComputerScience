@@ -1,5 +1,17 @@
 # ■ Study - NETWORK <kbd>[Kyungpook National University](http://www.knu.ac.kr/wbbs/)</kbd>
 
+## ★ PORT
+
+* 인터넷 프로토콜 스위트에서 포트(port)는 운영 체제 통신의 종단점이다. 이 용어는 하드웨어 장치에도 사용되지만, 소프트웨어에서는 네트워크 서비스나 특정 프로세스를 식별하는 논리 단위이다. 주로 포트를 사용하는 프로토콜은 전송 계층 프로토콜이라 하며, 예를 들어 전송 제어 프로토콜(TCP)와 사용자 데이터그램 프로토콜(UDP)가 있다. 각 포트는 번호로 구별되며 이 번호를 포트 번호라고 한다. 포트 번호는 IP 주소와 함께 쓰여 해당하는 프로토콜에 의해 사용된다.
+
+##### ※ PORT NUMBER
+
+* 0번 ~ 1023번: 잘 알려진 포트 (well-known port)
+
+* 1024번 ~ 49151번: 등록된 포트 (registered port)
+
+* 49152번 ~ 65535번: 동적 포트 (dynamic port)
+
 ## ★ OSI 7 Layer
 OSI 모형(Open Systems Interconnection Reference Model)은 국제표준화기구(ISO)에서 개발한 모델로, 컴퓨터 네트워크 프로토콜 디자인과 통신을 계층으로 나누어 설명한 것이다. 일반적으로 OSI 7 계층 모형이라고 한다.
 
@@ -101,3 +113,5 @@ Selective Repeat is part of the automatic repeat-request (ARQ). With selective r
 :airplane: [GBN - 정보통신기술용어해설](http://www.ktword.co.kr/abbr_view.php?m_temp1=1469)
 
 :airplane: [Error Control - SlidePlayer](https://slideplayer.com/slide/8175417/)
+
+:airplane: [포트 -](https://ko.wikipedia.org/wiki/%ED%8F%AC%ED%8A%B8_(%EC%BB%B4%ED%93%A8%ED%84%B0_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%82%B9))
