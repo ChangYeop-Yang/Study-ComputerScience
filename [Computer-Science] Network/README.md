@@ -23,7 +23,7 @@
 ## ★ Packet switching (패킷 교환)
 
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Packet_Switching.gif" />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Packet_Switching.gif/350px-Packet_Switching.gif" />
 </p>
 
 * 패킷 교환(Packet switching)은 컴퓨터 네트워크와 통신의 방식 중 하나로 현재 가장 많은 사람들이 사용하는 통신 방식이다. **작은 블록의 패킷으로 데이터를 전송하며 데이터를 전송하는 동안만 네트워크 자원을 사용하도록 하는 방법**을 말한다. 정보 전달의 단위인 패킷은 여러 통신 지점(Node)을 연결하는 데이터 연결 상의 모든 노드들 사이에 개별적으로 경로가 제어된다. 이 방식은 통신 기간 동안 독점적인 사용을 위해 두 통신 노드 사이를 연결하는 회선 교환 방식과는 달리 짤막한 데이터 트래픽에 적합하다.
