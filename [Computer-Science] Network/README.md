@@ -48,6 +48,22 @@
 
 * 발신자와 수신자 또는 통신 쌍방이 통신을 시작하기 전에 미리 전용 연결(회선 또는 채널)을 설정해야만 하는 네트워크를 말한다. 통신하는 동안에는 해당 연결이 독점적으로 발신자 및 수신자에 의해서만 사용된다. 통신이 끝났을 때는 반드시 연결을 해제하는 절차가 필요하다.
 
+## ★ TCP (Transmission Control Protocol)
+
+* 전송 제어 프로토콜(Transmission Control Protocol, TCP, 문화어: 전송조종규약)은 인터넷 프로토콜 스위트(IP)의 핵심 프로토콜 중 하나로, IP와 함께 TCP/IP라는 명칭으로도 널리 불린다. **TCP는 근거리 통신망이나 인트라넷, 인터넷에 연결된 컴퓨터에서 실행되는 프로그램 간에 일련의 옥텟을 안정적으로, 순서대로, 에러없이 교환할 수 있게 한다.** **TCP는 전송 계층에 위치한다.** 네트워크의 정보 전달을 통제하는 프로토콜이자 인터넷을 이루는 핵심 프로토콜의 하나로서 국제 인터넷 표준화 기구(IETF)의 RFC 793에 기술되어 있다.
+
+###### ※ Connection Establishment (3 Way handshaking)
+
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Three-way-handshake-example.gif/500px-Three-way-handshake-example.gif" width="300" height="300" />
+</p>
+
+###### ※ Connection Termination (4 Way handshaking)
+
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/TCP_CLOSE.svg/1280px-TCP_CLOSE.svg.png" width="300" height="300" />
+</p>
+
 ## ★ OSI 7 Layer
 OSI 모형(Open Systems Interconnection Reference Model)은 국제표준화기구(ISO)에서 개발한 모델로, 컴퓨터 네트워크 프로토콜 디자인과 통신을 계층으로 나누어 설명한 것이다. 일반적으로 OSI 7 계층 모형이라고 한다.
 
@@ -154,4 +170,6 @@ Selective Repeat is part of the automatic repeat-request (ARQ). With selective r
 
 :airplane: [Packet switching (패킷 교환) - 위키백과](https://ko.wikipedia.org/wiki/%ED%8C%A8%ED%82%B7_%EA%B5%90%ED%99%98)
 
-:airplane: [Circuit switching (회선 교환) - ](https://ko.wikipedia.org/wiki/%ED%9A%8C%EC%84%A0_%EA%B5%90%ED%99%98)
+:airplane: [Circuit switching (회선 교환) - 위키백과](https://ko.wikipedia.org/wiki/%ED%9A%8C%EC%84%A0_%EA%B5%90%ED%99%98)
+
+:airplane: [TCP (Transmission Control Protocol) - 위키백과](https://ko.wikipedia.org/wiki/%EC%A0%84%EC%86%A1_%EC%A0%9C%EC%96%B4_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C)
