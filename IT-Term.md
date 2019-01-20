@@ -76,3 +76,5 @@ V커머스는 비디오(Video)와 상거래(commerce)의 합성어다. 텔레비
 :airplane: [Side-channel attacks pose growing threat to security](https://ihsmarkit.com/research-analysis/side-channel-attacks-pose-growing-threat-to-security.html)
 
 :airplane: [Top-down and bottom-up design](https://en.wikipedia.org/wiki/Top-down_and_bottom-up_design)
+
+:airplane: [[네이버 지식백과] 전사적자원관리(ERP) (기업을바꾼10대정보시스템, 2014. 4. 15., 커뮤니케이션북스)](https://terms.naver.com/entry.nhn?docId=2274731&cid=42171&categoryId=51120)
