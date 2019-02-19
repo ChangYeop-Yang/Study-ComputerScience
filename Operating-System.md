@@ -36,92 +36,107 @@
 
 * 사용 가능도 (Availability) - **컴퓨터 시스템 내의 한정된 각종 자원을 여러 사용자가 요구할 때, 어느 정도 신속하고 충분하게 지원해 줄 수 있는지의 정도**이다. 이는 사용 가능한 하드웨어 자원의 수나 다중 프로그래밍 정도 등의 요소가 좌우하는 것으로 같은 종류의 시스템 자원수가 많은 경우에는 이것이 높아질 수 있다.
 
-## ★ 로더(Loader)의 역할
+## :mega: 로더(Loader)의 역할
+
 * 목적 프로그램(기계어로 구성 된 파일)을 실행 가능한 파일로 변환하기 위해 주기억 장소를 할당하거나, 여러개의 프로그램을 연계 편집하여 CPU가 처리될 수 있는 프로그램으로 변환한다. (**할당->연결->재배치->적재**)
 
-* 로더(loader)는 컴퓨터 운영 체제의 일부분으로, 하드디스크와 같은 오프라인 저장 장치에 있는 특정 프로그램을 - 대부분의 경우 응용 프로그램이지만, 경우에 따라서는 운영 체제 그 자신의 일부가 될 수도 있다 - 찾아서 주기억장치에 적재하고, 그 프로그램이 실행되도록 하는 역할을 담당한다. 또한 적재되는 프로그램은 그 자체에 초기에는 주기억장치에 적재되지 않지만, 필요할 때 적재될 수 있는 요소들을 포함할 수 있다. 멀티태스킹이 지원되는 운영 체제에서, 디스패처(dispatcher)라는 프로그램은 서로 다른 태스크들 간에 컴퓨터 CPU의 할당시간을 조절하고, 특정 태스크와 관련된 프로그램이 주기억장치에 있지 않을 때에는 로더를 호출한다.
+* 로더(loader)는 컴퓨터 운영 체제의 일부분으로, 하드디스크와 같은 오프라인 저장 장치에 있는 특정 프로그램을 - 대부분의 경우 응용 프로그램이지만, 경우에 따라서는 운영 체제 그 자신의 일부가 될 수도 있다. **로더는 목적 프로그램을 찾아서 주기억장치에 적재하고, 그 프로그램이 실행되도록 하는 역할을 담당한다.** 또한 적재되는 프로그램은 그 자체에 초기에는 주기억장치에 적재되지 않지만, 필요할 때 적재될 수 있는 요소들을 포함할 수 있다. 멀티태스킹이 지원되는 운영 체제에서, **디스패처(dispatcher)라는 프로그램은 서로 다른 태스크들 간에 컴퓨터 CPU의 할당시간을 조절하고, 특정 태스크와 관련된 프로그램이 주기억장치에 있지 않을 때에는 로더를 호출한다.**
 
-# 프로세스(Process)
+## :mega: 프로세스(Process)
 
-* 프로세스(process)는 컴퓨터에서 연속적으로 실행되고 있는 컴퓨터 프로그램을 말한다. 종종 스케줄링의 대상이 되는 작업(task)이라는 용어와 거의 같은 의미로 쓰인다. 여러 개의 프로세서를 사용하는 것을 멀티프로세싱이라고 하며 같은 시간에 여러 개의 프로그램을 띄우는 시분할 방식을 멀티태스킹이라고 한다. 프로세스 관리는 운영 체제의 중요한 부분이 되었다.
+* **컴퓨터에서 연속적으로 실행되고 있는 컴퓨터 프로그램 (A process is a set of activities that interact to achieve a result)** 을 말한다. 종종 스케줄링의 대상이 되는 작업(task)이라는 용어와 거의 같은 의미로 쓰인다. **여러 개의 프로세서를 사용하는 것을 멀티프로세싱**이라고 하며 **같은 시간에 여러 개의 프로그램을 띄우는 시분할 방식을 멀티태스킹**이라고 한다. 프로세스 관리는 운영 체제의 중요한 부분이 되었다.
 
 * 프로그램은 일반적으로 하드 디스크 등에 저장되어 있는 실행코드를 뜻하고, 프로세스는 프로그램을 구동하여 프로그램 자체와 프로그램의 상태가 메모리 상에서 실행되는 작업 단위를 지칭한다. 예를 들어, 하나의 프로그램을 여러 번 구동하면 여러 개의 프로세스가 메모리 상에서 실행된다.
 
-* A process is a set of activities that interact to achieve a result.
+##### :key: PCB (Process Control Block)
 
-* * *
+* **프로세스 제어 블록(Process Control Block, 줄여서 PCB)은 특정한 프로세스를 관리할 필요가 있는 정보를 포함하는 운영 체제 커널의 자료 구조**이다. 작업 제어 블록(Task Control Block, 줄여서 TCB) 또는 작업 구조라고도 한다. "PCB는 운영 체제가 프로세스를 표현한 것이다."
 
-> **PCB (Process Control Block)**
-> * 프로세스 제어 블록(Process Control Block, 줄여서 PCB)은 특정한 프로세스를 관리할 필요가 있는 정보를 포함하는 운영 체제 커널의 자료 구조이다. 작업 제어 블록(Task Control Block, 줄여서 TCB) 또는 작업 구조라고도 한다. "PCB는 운영 체제가 프로세스를 표현한 것이다."
-> * PCB가 프로세스의 중요한 정보를 포함하고 있기 때문에, 일반 사용자가 접근하지 못하도록 보호된 메모리 영역 안에 남는다. 일부 운영 체제에서 PCB는 커널 스택의 처음에 위치한다. (이 메모리 영역은 편리하면서도 보호를 받는 위치이기 때문이다.)
+* **PCB가 프로세스의 중요한 정보를 포함하고 있기 때문에, 일반 사용자가 접근하지 못하도록 보호된 메모리 영역 안에 남는다.** 일부 운영 체제에서 PCB는 커널 스택의 처음에 위치한다. (이 메모리 영역은 편리하면서도 보호를 받는 위치이기 때문이다.)
 
-## ★ 프로세스의 상태 (Process Status)
+## :mega: 프로세스의 상태 (Process Status)
+
+<p align=center>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Process_states.svg/400px-Process_states.svg.png">
+</p>
 
 * In a multitasking computer system, processes may occupy a variety of states. These distinct states may not be recognized as such by the operating system kernel. However, they are a useful abstraction for the understanding of processes.
 
-<p align=center>
+###### :one: 준비(Ready) 상태
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Process_states.svg/400px-Process_states.svg.png">
-
-</p>
-
-**1. 준비(Ready) 상태**
 * 프로세스가 처리기(CPU)를 사용하고 있지는 않지만 언제든 사용할 수 있는 상태이다.
+
 * 프로세스가 처리기의 배정을 기다리고 있는 상태이다.
+
 * 다른 프로세스 실행을 위해서 일시적으로 정지해 있는 상태이다.
+
 * CPU에 의해 처리되기 위해 주 기억장치에 존재하는 상태이다.
 
-**2. 실행(Run) 상태**
+###### :two: 실행(Run) 상태
+
 * 프로세스가 CPU를 차지하고 있는 상태이다.
+
 * 프로세스의 명령이 실행되고 있는 상태이다.
 
-**3. 대기(Block, Wait) 상태**
+###### :three: 대기(Block, Wait) 상태
+
 * 프로세스가 어떤 사건이 일어나기를 기다리고 있는 상태이다.
+
 * 처리 속도가 느린 I/O 작업 중인 상태이다.
+
 * 외부적인 사건이 생길 때까지 실행할 수 없는 상태이다.
 
 * * *
 
-> **＃ Additional process states (추가적인 프로세스 상태)**
-> * Two additional states are available for processes in systems that support virtual memory. In both of these states, processes are "stored" on secondary memory (typically a hard disk).
-> * **Swapped out and waiting** : (Also called suspended and waiting.) In systems that support virtual memory, a process may be swapped out, that is, removed from main memory and placed on external storage by the scheduler. From here the process may be swapped back into the waiting state.
-> * **Swapped out and blocked** : (Also called suspended and blocked.) Processes that are blocked may also be swapped out. In this event the process is both swapped out and blocked, and may be swapped back in again under the same circumstances as a swapped out and waiting process (although in this case, the process will move to the blocked state, and may still be waiting for a resource to become available).
+###### :round_pushpin: Additional process states (추가적인 프로세스 상태)**
 
-## ★ 교착상태 (DeadLock)
-* 교착 상태(膠着狀態, 영어: deadlock)란 두 개 이상의 작업이 서로 상대방의 작업이 끝나기 만을 기다리고 있기 때문에 결과적으로 아무것도 완료되지 못하는 상태를 가리킨다. 예를 들어 하나의 사다리가 있고, 두 명의 사람이 각각 사다리의 위쪽과 아래쪽에 있다고 가정한다. 이때 아래에 있는 사람은 위로 올라 가려고 하고, 위에 있는 사람은 아래로 내려오려고 한다면, 두 사람은 서로 상대방이 사다리에서 비켜줄 때까지 하염없이 기다리고 있을 것이고 결과적으로 아무도 사다리를 내려오거나 올라가지 못하게 되듯이, 전산학에서 교착 상태란 다중 프로그래밍 환경에서 흔히 발생할 수 있는 문제이다. 이 문제를 해결하는 일반적인 방법은 아직 없는 상태이다.
+* Two additional states are available for processes in systems that support virtual memory. In both of these states, processes are "stored" on secondary memory (typically a hard disk).
 
-* * *
+* :four: Swapped out and waiting** : (Also called suspended and waiting.) In systems that support virtual memory, a process may be swapped out, that is, removed from main memory and placed on external storage by the scheduler. From here the process may be swapped back into the waiting state.
 
-> **＃ 교착상태의 조건**
-> 1. 상호배제(Mutual exclusion) : 프로세스들이 필요로 하는 자원에 대해 배타적인 통제권을 요구한다.
-> 2. 점유대기(Hold and wait) : 프로세스가 할당된 자원을 가진 상태에서 다른 자원을 기다린다.
-> 3. 비선점(No preemption) : 프로세스가 어떤 자원의 사용을 끝낼 때까지 그 자원을 뺏을 수 없다.
-> 4. 순환대기(Circular wait) : 각 프로세스는 순환적으로 다음 프로세스가 요구하는 자원을 가지고 있다.
+* :five: Swapped out and blocked** : (Also called suspended and blocked.) Processes that are blocked may also be swapped out. In this event the process is both swapped out and blocked, and may be swapped back in again under the same circumstances as a swapped out and waiting process (although in this case, the process will move to the blocked state, and may still be waiting for a resource to become available).
 
-### ※ 교착상태의 관리 
+## :mega: 교착상태 (DeadLock, 膠着狀態)
 
-> **＃ 교착상태 예방**
-> 1. 상호배제 조건의 제거 : 교착 상태는 두 개 이상의 프로세스가 공유가능한 자원을 사용할 때 발생하는 것이므로 공유 불가능한, 즉 상호 배제 조건을 제거하면 교착 상태를 해결할 수 있다.
-> 2. 점유와 대기 조건의 제거 : 한 프로세스에 수행되기 전에 모든 자원을 할당시키고 나서 점유하지 않을 때에는 다른 프로세스가 자원을 요구하도록 하는 방법이다. 자원 과다 사용으로 인한 효율성, 프로세스가 요구하는 자원을 파악하는 데에 대한 비용, 자원에 대한 내용을 저장 및 복원하기 위한 비용, 기아 상태, 무한대기 등의 문제점이 있다.
-> 3. 비선점 조건의 제거 : 비선점 프로세스에 대해 선점 가능한 프로토콜을 만들어 준다.
-> 4. 환형 대기 조건의 제거 : 자원 유형에 따라 순서를 매긴다.
+* **두 개 이상의 작업이 서로 상대방의 작업이 끝나기 만을 기다리고 있기 때문에 결과적으로 아무것도 완료되지 못하는 상태를 가리킨다.** 예를 들어 하나의 사다리가 있고, 두 명의 사람이 각각 사다리의 위쪽과 아래쪽에 있다고 가정한다. 이때 아래에 있는 사람은 위로 올라 가려고 하고, 위에 있는 사람은 아래로 내려오려고 한다면, 두 사람은 서로 상대방이 사다리에서 비켜줄 때까지 하염없이 기다리고 있을 것이고 결과적으로 아무도 사다리를 내려오거나 올라가지 못하게 되듯이, 전산학에서 교착 상태란 다중 프로그래밍 환경에서 흔히 발생할 수 있는 문제이다. 이 문제를 해결하는 일반적인 방법은 아직 없는 상태이다.
 
-* * *
+##### :key: 교착상태의 조건
 
-> **＃ 교착상태 회피** <br>
-> 자원이 어떻게 요청될지에 대한 추가정보를 제공하도록 요구하는 것으로 시스템에 circular wait가 발생하지 않도록 자원 할당 상태를 검사한다.
-> 1. 자원 할당 그래프 알고리즘 (Resource Allocation Graph Algorithm)
-> 2. 은행원 알고리즘 (Banker's algorithm)
+* 상호배제 (Mutual exclusion) : 프로세스들이 필요로 하는 자원에 대해 배타적인 통제권을 요구한다.
 
-* * *
+* 점유대기 (Hold and wait) : 프로세스가 할당된 자원을 가진 상태에서 다른 자원을 기다린다.
 
-> **＃ 교착상태 무시** <br>
-> 예방 혹은 회피기법을 프로그래밍해서 넣으면 성능에 큰 영향을 미칠 수 있게 된다. 그렇기 때문에 데드락의 발생 확률이 비교적 낮은 경우 별다른 조치를 취하지 않는다.
+* 비선점 (No preemption) : 프로세스가 어떤 자원의 사용을 끝낼 때까지 그 자원을 뺏을 수 없다.
 
-* * *
+* 순환대기 (Circular wait) : 각 프로세스는 순환적으로 다음 프로세스가 요구하는 자원을 가지고 있다.
 
-> **＃ 교착상태 발견** <br>
-감시/발견을 하는 detection 알고리즘으로 Deadlock 발생을 체크하는 방식. 이 역시 성능에 큰 영향을 미칠 수 있다.
+##### :key: 교착상태의 관리 
+
+###### :one: 교착상태 예방
+
+* 상호배제 조건의 제거 : 교착 상태는 두 개 이상의 프로세스가 공유가능한 자원을 사용할 때 발생하는 것이므로 공유 불가능한, 즉 상호 배제 조건을 제거하면 교착 상태를 해결할 수 있다.
+
+* 점유와 대기 조건의 제거 : 한 프로세스에 수행되기 전에 모든 자원을 할당시키고 나서 점유하지 않을 때에는 다른 프로세스가 자원을 요구하도록 하는 방법이다. 자원 과다 사용으로 인한 효율성, 프로세스가 요구하는 자원을 파악하는 데에 대한 비용, 자원에 대한 내용을 저장 및 복원하기 위한 비용, 기아 상태, 무한대기 등의 문제점이 있다.
+
+* 비선점 조건의 제거 : 비선점 프로세스에 대해 선점 가능한 프로토콜을 만들어 준다.
+
+* 환형 대기 조건의 제거 : 자원 유형에 따라 순서를 매긴다.
+
+###### :two: 교착상태 회피
+
+* 자원이 어떻게 요청될지에 대한 추가정보를 제공하도록 요구하는 것으로 시스템에 circular wait가 발생하지 않도록 자원 할당 상태를 검사한다.
+
+* 1. 자원 할당 그래프 알고리즘 (Resource Allocation Graph Algorithm)
+
+* 2. 은행원 알고리즘 (Banker's algorithm) - 다익스트라가 제안한 알고리즘으로, **병렬 수행 프로세스 간의 교착 상태를 방지하기 위해 프로세스가 요구한 자원의 수가 현재 사용 가능한 자원의 수보다 작을 때 프로세스가 요구한 수만큼 더 자원을 할당하는 방식.**
+
+###### :three: 교착상태 무시
+
+* 예방 혹은 회피기법을 프로그래밍해서 넣으면 성능에 큰 영향을 미칠 수 있게 된다. 그렇기 때문에 데드락의 발생 확률이 비교적 낮은 경우 별다른 조치를 취하지 않는다.
+
+###### :four: 교착상태 발견
+
+* 감시/발견을 하는 detection 알고리즘으로 Deadlock 발생을 체크하는 방식. 이 역시 성능에 큰 영향을 미칠 수 있다.
 
 ## ★ 인터럽트 (Interupt)
 * 프로세스가 수행 중에 다른 프로세스를 수행하기 위하여 현재 수행 중인 프로세스를 중단하거나 외부 입력 장치에 의해 프로세스가 중단되는 상태이다. 인터럽트는 어떤 이유에서든 H/W적, S/W적으로 현재 프로세스를 중단시키는 모든 행위라고 할 수 있다.
