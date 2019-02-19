@@ -86,8 +86,6 @@
 
 * 외부적인 사건이 생길 때까지 실행할 수 없는 상태이다.
 
-* * *
-
 ###### :round_pushpin: Additional process states (추가적인 프로세스 상태)**
 
 * Two additional states are available for processes in systems that support virtual memory. In both of these states, processes are "stored" on secondary memory (typically a hard disk).
@@ -126,9 +124,9 @@
 
 * 자원이 어떻게 요청될지에 대한 추가정보를 제공하도록 요구하는 것으로 시스템에 circular wait가 발생하지 않도록 자원 할당 상태를 검사한다.
 
-* 1. 자원 할당 그래프 알고리즘 (Resource Allocation Graph Algorithm)
+* 자원 할당 그래프 알고리즘 (Resource Allocation Graph Algorithm) - **교착 상태를 쉽게 탐색하기 위해 유도된 방향으로 표시된 그래프(방향성 그래프)를 이용하여 자원 할당 사항과 요구 사항을 나타내는 기법.**
 
-* 2. 은행원 알고리즘 (Banker's algorithm) - 다익스트라가 제안한 알고리즘으로, **병렬 수행 프로세스 간의 교착 상태를 방지하기 위해 프로세스가 요구한 자원의 수가 현재 사용 가능한 자원의 수보다 작을 때 프로세스가 요구한 수만큼 더 자원을 할당하는 방식.**
+* 은행원 알고리즘 (Banker's algorithm) - 다익스트라가 제안한 알고리즘으로, **병렬 수행 프로세스 간의 교착 상태를 방지하기 위해 프로세스가 요구한 자원의 수가 현재 사용 가능한 자원의 수보다 작을 때 프로세스가 요구한 수만큼 더 자원을 할당하는 방식.**
 
 ###### :three: 교착상태 무시
 
@@ -138,37 +136,39 @@
 
 * 감시/발견을 하는 detection 알고리즘으로 Deadlock 발생을 체크하는 방식. 이 역시 성능에 큰 영향을 미칠 수 있다.
 
-## ★ 인터럽트 (Interupt)
-* 프로세스가 수행 중에 다른 프로세스를 수행하기 위하여 현재 수행 중인 프로세스를 중단하거나 외부 입력 장치에 의해 프로세스가 중단되는 상태이다. 인터럽트는 어떤 이유에서든 H/W적, S/W적으로 현재 프로세스를 중단시키는 모든 행위라고 할 수 있다.
+## :mega: 인터럽트 (Interupt)
 
 <p align=center>
-
-<img src="http://www.jidum.com/upload/ckeditor/2016/09/20160908134022750.png">
-
+    <img src="http://www.jidum.com/upload/ckeditor/2016/09/20160908134022750.png">
 </p>
 
-## ★ 문맥교환 (Context Switching)
+* **프로세스가 수행 중에 다른 프로세스를 수행하기 위하여 현재 수행 중인 프로세스를 중단하거나 외부 입력 장치에 의해 프로세스가 중단되는 상태**이다. 인터럽트는 **어떤 이유에서든 H/W적, S/W적으로 현재 프로세스를 중단시키는 모든 행위**라고 할 수 있다.
+
+## :mega: 문맥교환 (Context Switching)
+
+<p align=center>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Context_switch.png">
+</p>
+
 * In computing, a context switch is the process of storing the state of a process or of a thread, so that it can be restored and execution resumed from the same point later. This allows multiple processes to share a single CPU, and is an essential feature of a multitasking operating system.
 
-* 문맥 교환(Context Switch)이란 하나의 프로세스가 CPU를 사용 중인 상태에서 다른 프로세스가 CPU를 사용하도록 하기 위해, 이전의 프로세스의 상태(문맥)를 보관하고 새로운 프로세스의 상태를 적재하는 작업을 말한다. 한 프로세스의 문맥은 그 프로세스의 프로세스 제어 블록에 기록되어 있다.
-
-<p align=center>
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Context_switch.png">
-
-</p>
+* 문맥 교환(Context Switch)이란 **하나의 프로세스가 CPU를 사용 중인 상태에서 다른 프로세스가 CPU를 사용하도록 하기 위해, 이전의 프로세스의 상태(문맥)를 보관하고 새로운 프로세스의 상태를 적재하는 작업**을 말한다. **한 프로세스의 문맥은 그 프로세스의 프로세스 제어 블록에 기록**되어 있다.
 
 * 문맥교환의 시점으로는 **멀티 태스킹, 인터럽트 핸들링, 사용자 모드와 커널 모드 간 전환**이다.
 
-> ＃ 문맥 교환과 인터럽트
-> CPU는 하나의 프로세스 정보만을 기억한다. 여러 개의 프로세스가 실행되는 다중 프로그래밍 환경에서 CPU는 각각의 프로세스의 정보를 저장했다 복귀하고 다시 저장했다 복귀하는 일을 반복한다. 프로세스의 저장과 복귀는 프로세스의 중단과 실행을 의미한다. 프로세스의 중단과 실행 시 인터럽트가 발생하므로, 문맥 교환이 많이 일어난다는 것은 인터럽트가 많이 발생한다는 것이다.
+###### :key: 문맥 교환과 인터럽트
 
-> ＃ 문맥 교환과 시간 할당량
-> 프로세스들 시간 할당량은 시스템 성능의 중요한 역할을 한다. 시간 할당량이 적을수록 사용자 입장에서는 여러 개의 프로세스가 거의 동시에 수행되는 느낌을 갖지만 인터럽트의 수와 문맥 교환의 수가 늘어난다. 프로세스의 실행을 위한 부가적인 활동을 오버헤드(간접 부담 비용)이라고 하는데, 이 또한 문맥 교환 수와 같이 늘어나게 된다.
-> * 시간 할당량이 적어지면 문맥 교환 수, 인터럽트 횟수, 오버헤드가 증가하지만 여러 개의 프로세스가 동시에 수행되는 느낌을 갖는다.
-> * 시간 할당량이 커지면 문맥 교환 수, 인터럽트 횟수, 오버헤드가 감소하지만 여러 개의 프로세스가 동시에 수행되는 느낌을 갖지 못한다.
+* CPU는 하나의 프로세스 정보만을 기억한다. 여러 개의 프로세스가 실행되는 다중 프로그래밍 환경에서 CPU는 각각의 프로세스의 정보를 저장했다 복귀하고 다시 저장했다 복귀하는 일을 반복한다. 프로세스의 저장과 복귀는 프로세스의 중단과 실행을 의미한다. 프로세스의 중단과 실행 시 인터럽트가 발생하므로, 문맥 교환이 많이 일어난다는 것은 인터럽트가 많이 발생한다는 것이다.
 
-## ★ [Stack memory vs Heap memory](https://www.gribblelab.org/CBootCamp/7_Memory_Stack_vs_Heap.html)
+###### :key: 문맥 교환과 시간 할당량
+
+* 프로세스들 시간 할당량은 시스템 성능의 중요한 역할을 한다. 시간 할당량이 적을수록 사용자 입장에서는 여러 개의 프로세스가 거의 동시에 수행되는 느낌을 갖지만 인터럽트의 수와 문맥 교환의 수가 늘어난다. 프로세스의 실행을 위한 부가적인 활동을 오버헤드(간접 부담 비용)이라고 하는데, 이 또한 문맥 교환 수와 같이 늘어나게 된다.
+
+* 시간 할당량이 적어지면 문맥 교환 수, 인터럽트 횟수, 오버헤드가 증가하지만 여러 개의 프로세스가 동시에 수행되는 느낌을 갖는다.
+
+* 시간 할당량이 커지면 문맥 교환 수, 인터럽트 횟수, 오버헤드가 감소하지만 여러 개의 프로세스가 동시에 수행되는 느낌을 갖지 못한다.
+
+## :mega: [Stack memory vs Heap memory](https://www.gribblelab.org/CBootCamp/7_Memory_Stack_vs_Heap.html)
 
 <p align="center">
   <img src="https://techdifferences.com/wp-content/uploads/2017/10/Untitled-6.jpg" />
@@ -205,7 +205,8 @@ Stack is not flexible, the memory size allotted cannot be changed. On the other 
 * you must manage memory (you're in charge of allocating and freeing variables)
 * variables can be resized using realloc()
 
-## ★ 용어 정리
+## :mega: 용어 정리
+
 * 프로시저(Procedure): 루틴, 서브루틴, 함수와 같은 뜻으로 사용되며 하나의 프로시저는 특정 작업을 수행하기 위한 프로그램의 일부이다. 또는 **어떤 행동을 수행하기 위한 일련의 작업 순서**를 말한다.
 
 * 스풀(Spool): 프로그램과 이를 이용하는 I/O(입출력) 장치와의 속도 차를 극복하기 위한 장치로 대부분 하드 디스크가 중재한다.
@@ -220,6 +221,6 @@ Stack is not flexible, the memory size allotted cannot be changed. On the other 
 
 * 기아상태(Aging): 컴퓨터 과학 용어의 하나로, 프로세스가 끊임없이 필요한 컴퓨터 자원을 가져오지 못하는 상황으로, 이러한 자원 없이는 처리를 끝낼 수 없는 병행 컴퓨팅에서 마주치는 문제이다. 기아 상태는 스케줄링이나 상호 배제 알고리즘의 오류에 기인하지만 자원 누수에 의해 일어날 수도 있으며 포크 폭탄과 같은 서비스 거부 공격을 통해 고의적으로 발생할 수도 있다.
 
-## ★ REFERENCE
+## :mega: REFERENCE
 
 :laughing: [OPERATING SYSTEM REFERENCE](https://github.com/ChangYeop-Yang/Study-ComputerScience/issues/4)
