@@ -1,5 +1,7 @@
 # ■ Study-ComputerScience
 
+😀😁😂🤣😃😄
+
 ## ★ REFERENCE
 
 :airplane: [DATABASE - MARKDOWN](https://github.com/ChangYeop-Yang/Study-DataBase/blob/master/README.md)
