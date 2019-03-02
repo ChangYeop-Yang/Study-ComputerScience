@@ -244,7 +244,7 @@
 
 #### :triangular_flag_on_post: Scheduling Algorithm Type
 
-###### :card_index: 비선점 프로세스 스케줄링
+###### :card_index: 비선점 프로세스 스케줄링 (Non-preemptive Scheduling Process)
 
 * FCFS 스케줄링(First Come First Served Scheduling)
 
@@ -252,7 +252,7 @@
 
 * HRRN 스케줄링(Highest Response Ratio Next Scheduling)
 
-###### :card_index: 선점 프로세스 스케줄링
+###### :card_index: 선점 프로세스 스케줄링 (Preemptive Scheduling Process)
 
 * RR 스케줄링(Round Robin Scheduling)
 
