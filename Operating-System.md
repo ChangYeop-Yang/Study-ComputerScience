@@ -220,6 +220,52 @@
 
 * variables can be resized using realloc()
 
+## :mega: 스케줄링 (Scheduling)
+
+* 스케줄링(scheduling)은 **다중 프로그래밍을 가능하게 하는 운영 체제의 동작 기법**이다. **운영 체제는 프로세스들에게 CPU 등의 자원 배정을 적절히 함으로써 시스템의 성능을 개선**할 수 있다.
+
+* 수행 → 대기 2. 수행 → 준비 3. 대기 → 준비 4. 수행 → 종료
+
+#### :triangular_flag_on_post: Scheduling Type
+
+* 스케줄링 적용 시점에 따라 비선점형과 선점형의 2가지로 구분할 수 있다. 비선점형은 결정 시점 중 1번과 4번의 상황에서만 수행되며, 선점형은 1번에서 4번까지 모든 상황에서 수행된다. (① 수행 → 대기 / ② 수행 → 준비 / ③ 대기 → 준비 / ④ 수행 → 종료)
+
+* ⓐ 비선점형 스케줄링 (Non-preemptive Scheduling) : **어떤 프로세스가 CPU를 할당 받으면 그 프로세스가 종료되거나 입출력 요구가 발생하여 자발적으로 중지될 때까지 계속 실행되도록 보장한다.** 순서대로 처리되는 공정성이 있고 다음에 처리해야 할 프로세스와 관계없이 응답 시간을 예상할 수 있으며 선점 방식보다 **스케줄러 호출 빈도가 낮고 문맥 교환에 의한 오버헤드가 적다.** 일괄 처리 시스템에 적합하며, CPU 사용 시간이 긴 하나의 프로세스가 CPU 사용 시간이 짧은 여러 프로세스를 오랫동안 대기시킬 수 있으므로, **처리율이 떨어질 수 있다는 단점**이 있다.
+
+* ⓑ 선점형 스케줄링 (Preemptive Scheduling) : **어떤 프로세스가 CPU를 할당받아 실행 중에 있어도 다른 프로세스가 실행 중인 프로세스를 중지하고 CPU를 강제로 점유할 수 있다.** 모든 프로세스에게 CPU 사용 시간을 동일하게 부여할 수 있다. 빠른 응답시간을 요하는 대화식 시분할 시스템에 적합하며 긴급한 프로세서를 제어할 수 있다. '운영 체제가 프로세서 자원을 선점'하고 있다가 각 프로세스의 요청이 있을 때 특정 요건들을 기준으로 자원을 배분하는 방식이다.
+
+* * *
+
+* 프로세스의 우선순위 변동 여부에 따라 정적 스케줄링과 동적 스케줄링으로 구분할 수 있다.
+
+* ⓐ 정적 스케줄링 (Static Scheduling) : **프로세스에 부여된 우선순위가 바뀌지 않는다.** 고정우선순위 스케줄링이라고도 한다.
+
+* ⓑ 동적 스케줄링 (Dynamic Scheduling) : **스케줄링 과정에서 프로세스의 우선순위를 변동시킨다.** 유동우선순위 스케줄링이라고도 한다.
+
+#### :triangular_flag_on_post: Scheduling Algorithm Type
+
+###### :card_index: 비선점 프로세스 스케줄링
+
+* FCFS 스케줄링(First Come First Served Scheduling)
+
+* SJF 스케줄링(Shortest Job First Scheduling)
+
+* HRRN 스케줄링(Highest Response Ratio Next Scheduling)
+
+###### :card_index: 선점 프로세스 스케줄링
+
+* RR 스케줄링(Round Robin Scheduling)
+
+* SRTF 스케줄링(Shortest Remaining-Time First Scheduling)
+
+* 다단계 큐 스케줄링(Multilevel Queue Scheduling)
+
+* 다단계 피드백 큐 스케줄링(Multilevel Feedback Queue Scheduling)
+
+* RM 스케줄링(Rate Monotonic Scheduling)
+
+* EDF 스케줄링(Earliest Deadline First Scheduling)
+
 ## :mega: 용어 정리
 
 * 프로시저(Procedure): 루틴, 서브루틴, 함수와 같은 뜻으로 사용되며 하나의 프로시저는 특정 작업을 수행하기 위한 프로그램의 일부이다. 또는 **어떤 행동을 수행하기 위한 일련의 작업 순서**를 말한다.
