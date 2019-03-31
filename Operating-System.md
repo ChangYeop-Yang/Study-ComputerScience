@@ -250,7 +250,7 @@
 
 * SJF 스케줄링(Shortest Job First Scheduling)
 
-* HRRN 스케줄링(Highest Response Ratio Next Scheduling)
+* HRN 스케줄링(Highest Response Ratio Next Scheduling)
 
 ###### :card_index: 선점 프로세스 스케줄링 (Preemptive Scheduling Process)
 
