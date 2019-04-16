@@ -16,7 +16,7 @@
 
 * 운영 체제는 실행되는 응용 프로그램들이 메모리와 CPU, 입출력 장치 등의 자원들을 사용할 수 있도록 만들어 주고, 이들을 추상화하여 파일 시스템 등의 서비스를 제공한다. 또한 멀티태스킹을 지원하는 경우, 여러 개의 응용 프로그램을 실행하고 있는 동안, 운영 체제는 이러한 모든 프로세스들을 스케줄링하여 마치 그들이 동시에 수행되는 것처럼 보이는 효과를 낸다.
 
-## :mega: 운영체제의 목적 (Operating System Goal)
+## 📣 운영체제의 목적 (Operating System Goal)
 
 * 컴퓨터 시스템의 처리량, 신뢰성을 최대화한다.
 
@@ -26,7 +26,7 @@
 
 * 프로세서, 입출력 장치를 관리한다.
 
-##### :key: 운영체제의 성능 평가 기준 4가지
+##### 🔑 운영체제의 성능 평가 기준 4가지
 
 * 처리량 (Throughput) - **일정한 시간(단위 시간) 내에서 얼마나 많은 작업량을 처리할 수 있는가의 기준**이다. **처리량이 극대화**되어야 성능 좋은 컴퓨터 시스템이라 할 수 있다.
 
@@ -36,7 +36,7 @@
 
 * 사용 가능도 (Availability) - **컴퓨터 시스템 내의 한정된 각종 자원을 여러 사용자가 요구할 때, 어느 정도 신속하고 충분하게 지원해 줄 수 있는지의 정도**이다. 이는 사용 가능한 하드웨어 자원의 수나 다중 프로그래밍 정도 등의 요소가 좌우하는 것으로 같은 종류의 시스템 자원수가 많은 경우에는 이것이 높아질 수 있다.
 
-## :mega: 로더 (Loader)의 역할
+## 📣 로더 (Loader)의 역할
 
 * 목적 프로그램(기계어로 구성 된 파일)을 실행 가능한 파일로 변환하기 위해 주기억 장소를 할당하거나, 여러개의 프로그램을 연계 편집하여 CPU가 처리될 수 있는 프로그램으로 변환한다. (**할당->연결->재배치->적재**)
 
@@ -52,19 +52,19 @@
 
 * 적재 (Load): 명령어와 자료, 프로그램을 기억 장치에 물리적으로 배치하는 기능을 적재라고 한다.
 
-## :mega: 프로세스(Process)
+## 📣 프로세스(Process)
 
 * **컴퓨터에서 연속적으로 실행되고 있는 컴퓨터 프로그램 (A process is a set of activities that interact to achieve a result)** 을 말한다. 종종 스케줄링의 대상이 되는 작업(task)이라는 용어와 거의 같은 의미로 쓰인다. **여러 개의 프로세서를 사용하는 것을 멀티프로세싱**이라고 하며 **같은 시간에 여러 개의 프로그램을 띄우는 시분할 방식을 멀티태스킹**이라고 한다. 프로세스 관리는 운영 체제의 중요한 부분이 되었다.
 
 * 프로그램은 일반적으로 하드 디스크 등에 저장되어 있는 실행코드를 뜻하고, 프로세스는 프로그램을 구동하여 프로그램 자체와 프로그램의 상태가 메모리 상에서 실행되는 작업 단위를 지칭한다. 예를 들어, 하나의 프로그램을 여러 번 구동하면 여러 개의 프로세스가 메모리 상에서 실행된다.
 
-##### :key: PCB (Process Control Block)
+##### 🔑 PCB (Process Control Block)
 
 * **프로세스 제어 블록(Process Control Block, 줄여서 PCB)은 특정한 프로세스를 관리할 필요가 있는 정보를 포함하는 운영 체제 커널의 자료 구조**이다. 작업 제어 블록(Task Control Block, 줄여서 TCB) 또는 작업 구조라고도 한다. "PCB는 운영 체제가 프로세스를 표현한 것이다."
 
 * **PCB가 프로세스의 중요한 정보를 포함하고 있기 때문에, 일반 사용자가 접근하지 못하도록 보호된 메모리 영역 안에 남는다.** 일부 운영 체제에서 PCB는 커널 스택의 처음에 위치한다. (이 메모리 영역은 편리하면서도 보호를 받는 위치이기 때문이다.)
 
-## :mega: 프로세스의 상태 (Process Status)
+## 📣 프로세스의 상태 (Process Status)
 
 <p align=center>
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Process_states.svg/400px-Process_states.svg.png">
@@ -72,7 +72,7 @@
 
 * In a multitasking computer system, processes may occupy a variety of states. These distinct states may not be recognized as such by the operating system kernel. However, they are a useful abstraction for the understanding of processes.
 
-###### :one: 준비(Ready) 상태
+###### 1️⃣ 준비(Ready) 상태
 
 * 프로세스가 처리기(CPU)를 사용하고 있지는 않지만 언제든 사용할 수 있는 상태이다.
 
@@ -82,13 +82,13 @@
 
 * CPU에 의해 처리되기 위해 주 기억장치에 존재하는 상태이다.
 
-###### :two: 실행(Run) 상태
+###### 2️⃣ 실행(Run) 상태
 
 * 프로세스가 CPU를 차지하고 있는 상태이다.
 
 * 프로세스의 명령이 실행되고 있는 상태이다.
 
-###### :three: 대기(Block, Wait) 상태
+###### 3️⃣ 대기(Block, Wait) 상태
 
 * 프로세스가 어떤 사건이 일어나기를 기다리고 있는 상태이다.
 
@@ -96,7 +96,7 @@
 
 * 외부적인 사건이 생길 때까지 실행할 수 없는 상태이다.
 
-###### :round_pushpin: Additional process states (추가적인 프로세스 상태)**
+###### 📍 Additional process states (추가적인 프로세스 상태)**
 
 * Two additional states are available for processes in systems that support virtual memory. In both of these states, processes are "stored" on secondary memory (typically a hard disk).
 
@@ -104,11 +104,11 @@
 
 * :five: Swapped out and blocked** : (Also called suspended and blocked.) Processes that are blocked may also be swapped out. In this event the process is both swapped out and blocked, and may be swapped back in again under the same circumstances as a swapped out and waiting process (although in this case, the process will move to the blocked state, and may still be waiting for a resource to become available).
 
-## :mega: 교착상태 (DeadLock, 膠着狀態)
+## 📣 교착상태 (DeadLock, 膠着狀態)
 
 * **두 개 이상의 작업이 서로 상대방의 작업이 끝나기 만을 기다리고 있기 때문에 결과적으로 아무것도 완료되지 못하는 상태를 가리킨다.** 예를 들어 하나의 사다리가 있고, 두 명의 사람이 각각 사다리의 위쪽과 아래쪽에 있다고 가정한다. 이때 아래에 있는 사람은 위로 올라 가려고 하고, 위에 있는 사람은 아래로 내려오려고 한다면, 두 사람은 서로 상대방이 사다리에서 비켜줄 때까지 하염없이 기다리고 있을 것이고 결과적으로 아무도 사다리를 내려오거나 올라가지 못하게 되듯이, 전산학에서 교착 상태란 다중 프로그래밍 환경에서 흔히 발생할 수 있는 문제이다. 이 문제를 해결하는 일반적인 방법은 아직 없는 상태이다.
 
-##### :key: 교착상태의 조건
+##### 🔑 교착상태의 조건
 
 * 상호배제 (Mutual exclusion) : 프로세스들이 필요로 하는 자원에 대해 배타적인 통제권을 요구한다.
 
@@ -118,9 +118,9 @@
 
 * 순환대기 (Circular wait) : 각 프로세스는 순환적으로 다음 프로세스가 요구하는 자원을 가지고 있다.
 
-##### :key: 교착상태의 관리 
+##### 🔑 교착상태의 관리 
 
-###### :one: 교착상태 예방
+###### 1️⃣ 교착상태 예방
 
 * 상호배제 조건의 제거 : 교착 상태는 두 개 이상의 프로세스가 공유가능한 자원을 사용할 때 발생하는 것이므로 공유 불가능한, 즉 상호 배제 조건을 제거하면 교착 상태를 해결할 수 있다.
 
@@ -130,7 +130,7 @@
 
 * 환형 대기 조건의 제거 : 자원 유형에 따라 순서를 매긴다.
 
-###### :two: 교착상태 회피
+###### 2️⃣ 교착상태 회피
 
 * 자원이 어떻게 요청될지에 대한 추가정보를 제공하도록 요구하는 것으로 시스템에 circular wait가 발생하지 않도록 자원 할당 상태를 검사한다.
 
@@ -138,15 +138,15 @@
 
 * 은행원 알고리즘 (Banker's algorithm) - 다익스트라가 제안한 알고리즘으로, **병렬 수행 프로세스 간의 교착 상태를 방지하기 위해 프로세스가 요구한 자원의 수가 현재 사용 가능한 자원의 수보다 작을 때 프로세스가 요구한 수만큼 더 자원을 할당하는 방식.**
 
-###### :three: 교착상태 무시
+###### 3️⃣  교착상태 무시
 
 * 예방 혹은 회피기법을 프로그래밍해서 넣으면 성능에 큰 영향을 미칠 수 있게 된다. 그렇기 때문에 데드락의 발생 확률이 비교적 낮은 경우 별다른 조치를 취하지 않는다.
 
-###### :four: 교착상태 발견
+###### 4️⃣ 교착상태 발견
 
 * 감시/발견을 하는 detection 알고리즘으로 Deadlock 발생을 체크하는 방식. 이 역시 성능에 큰 영향을 미칠 수 있다.
 
-## :mega: 인터럽트 (Interupt)
+## 📣 인터럽트 (Interupt)
 
 <p align=center>
     <img src="http://www.jidum.com/upload/ckeditor/2016/09/20160908134022750.png">
@@ -154,7 +154,7 @@
 
 * **프로세스가 수행 중에 다른 프로세스를 수행하기 위하여 현재 수행 중인 프로세스를 중단하거나 외부 입력 장치에 의해 프로세스가 중단되는 상태**이다. 인터럽트는 **어떤 이유에서든 H/W적, S/W적으로 현재 프로세스를 중단시키는 모든 행위**라고 할 수 있다.
 
-## :mega: 문맥교환 (Context Switching)
+## 📣 문맥교환 (Context Switching)
 
 <p align=center>
     <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Context_switch.png">
@@ -166,11 +166,11 @@
 
 * 문맥교환의 시점으로는 **멀티 태스킹, 인터럽트 핸들링, 사용자 모드와 커널 모드 간 전환**이다.
 
-###### :key: 문맥 교환과 인터럽트
+###### 🔑 문맥 교환과 인터럽트
 
 * CPU는 하나의 프로세스 정보만을 기억한다. 여러 개의 프로세스가 실행되는 다중 프로그래밍 환경에서 CPU는 각각의 프로세스의 정보를 저장했다 복귀하고 다시 저장했다 복귀하는 일을 반복한다. 프로세스의 저장과 복귀는 프로세스의 중단과 실행을 의미한다. 프로세스의 중단과 실행 시 인터럽트가 발생하므로, 문맥 교환이 많이 일어난다는 것은 인터럽트가 많이 발생한다는 것이다.
 
-###### :key: 문맥 교환과 시간 할당량
+###### 🔑 문맥 교환과 시간 할당량
 
 * 프로세스들 시간 할당량은 시스템 성능의 중요한 역할을 한다. 시간 할당량이 적을수록 사용자 입장에서는 여러 개의 프로세스가 거의 동시에 수행되는 느낌을 갖지만 인터럽트의 수와 문맥 교환의 수가 늘어난다. 프로세스의 실행을 위한 부가적인 활동을 오버헤드(간접 부담 비용)이라고 하는데, 이 또한 문맥 교환 수와 같이 늘어나게 된다.
 
@@ -178,13 +178,13 @@
 
 * 시간 할당량이 커지면 문맥 교환 수, 인터럽트 횟수, 오버헤드가 감소하지만 여러 개의 프로세스가 동시에 수행되는 느낌을 갖지 못한다.
 
-## :mega: [Stack memory vs Heap memory](https://www.gribblelab.org/CBootCamp/7_Memory_Stack_vs_Heap.html)
+## 📣 [Stack memory vs Heap memory](https://www.gribblelab.org/CBootCamp/7_Memory_Stack_vs_Heap.html)
 
 <p align="center">
   <img src="https://techdifferences.com/wp-content/uploads/2017/10/Untitled-6.jpg" />
 </p>
 
-###### :triangular_flag_on_post: Key Differences Between Stack and Heap
+###### 📍 Key Differences Between Stack and Heap
 
 * **In a stack, the allocation and deallocation is done by CPU and is automatic whereas, in heap, it needs to be done by the programmer manually.**
 
@@ -202,7 +202,7 @@
 
 * A heap takes more accessing time than a stack.
 
-###### :triangular_flag_on_post: Stack Pros and Cons
+###### 📍 Stack Pros and Cons
 
 * very fast access
 
@@ -216,7 +216,7 @@
 
 * variables cannot be resized
 
-###### :triangular_flag_on_post: Heap Pros and Cons
+###### 📍 Heap Pros and Cons
 
 * variables can be accessed globally
 
@@ -244,13 +244,13 @@
 
 * FIFO (First In First Out): 가장 먼저 들여온 페이지를 교체시키는 기법이다.
 
-## :mega: 스케줄링 (Scheduling)
+## 📣 스케줄링 (Scheduling)
 
 * 스케줄링(scheduling)은 **다중 프로그래밍을 가능하게 하는 운영 체제의 동작 기법**이다. **운영 체제는 프로세스들에게 CPU 등의 자원 배정을 적절히 함으로써 시스템의 성능을 개선**할 수 있다.
 
 * 수행 → 대기 2. 수행 → 준비 3. 대기 → 준비 4. 수행 → 종료
 
-#### :triangular_flag_on_post: Scheduling Type
+#### 📍 Scheduling Type
 
 * 스케줄링 적용 시점에 따라 비선점형과 선점형의 2가지로 구분할 수 있다. 비선점형은 결정 시점 중 1번과 4번의 상황에서만 수행되며, 선점형은 1번에서 4번까지 모든 상황에서 수행된다. **(① 수행 → 대기 / ② 수행 → 준비 / ③ 대기 → 준비 / ④ 수행 → 종료)**
 
@@ -266,7 +266,7 @@
 
 * ⓑ 동적 스케줄링 (Dynamic Scheduling) : **스케줄링 과정에서 프로세스의 우선순위를 변동시킨다.** 유동우선순위 스케줄링이라고도 한다.
 
-#### :triangular_flag_on_post: Scheduling Algorithm Type
+#### 📍 Scheduling Algorithm Type
 
 ###### :card_index: 비선점 프로세스 스케줄링 (Non-preemptive Scheduling Process)
 
@@ -290,7 +290,7 @@
 
 * EDF 스케줄링(Earliest Deadline First Scheduling)
 
-## :mega: 용어 정리
+## 📣 용어 정리
 
 * 프로시저(Procedure): 루틴, 서브루틴, 함수와 같은 뜻으로 사용되며 하나의 프로시저는 특정 작업을 수행하기 위한 프로그램의 일부이다. 또는 **어떤 행동을 수행하기 위한 일련의 작업 순서**를 말한다.
 
@@ -306,6 +306,6 @@
 
 * 기아상태(Aging): 컴퓨터 과학 용어의 하나로, 프로세스가 끊임없이 필요한 컴퓨터 자원을 가져오지 못하는 상황으로, 이러한 자원 없이는 처리를 끝낼 수 없는 병행 컴퓨팅에서 마주치는 문제이다. 기아 상태는 스케줄링이나 상호 배제 알고리즘의 오류에 기인하지만 자원 누수에 의해 일어날 수도 있으며 포크 폭탄과 같은 서비스 거부 공격을 통해 고의적으로 발생할 수도 있다.
 
-## :mega: REFERENCE
+## 📣 REFERENCE
 
-:laughing: [OPERATING SYSTEM REFERENCE](https://github.com/ChangYeop-Yang/Study-ComputerScience/issues/4)
+🚀 [OPERATING SYSTEM REFERENCE](https://github.com/ChangYeop-Yang/Study-ComputerScience/issues/4)
