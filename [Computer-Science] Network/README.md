@@ -140,6 +140,22 @@ SOAP(Simple Object Access Protocol)은 일반적으로 널리 알려진 HTTP, HT
 
 Selective Repeat is part of the automatic repeat-request (ARQ). With selective repeat, the sender sends a number of frames specified by a window size even without the need to wait for individual ACK from the receiver as in Go-Back-N ARQ. The receiver may selectively reject a single frame, which may be retransmitted alone; this contrasts with other forms of ARQ, which must send every frame from that point again. The receiver accepts out-of-order frames and buffers them. The sender individually retransmits frames that have timed out.
 
+## 📣 Security Algorithms
+
+* 원문과 암호화 키를 입력으로 하여 암호화된 데이터를 출력으로 생성하는 알고리즘이다.
+
+##### 📌 Security Algorithms Types
+
+* MD5: 무선 클라이언트와 네트워크에 대한 상호 인증 단계가 없는 단 방향 인증만을 제공한다.
+
+* TLS: 클라이언트와 AP 사이에 보안강화를 위하여 WEP키 및 세션 기반 WEP키를 동적으로 생선한다.
+
+* TTLS: 암호화된 채널을 통하여 클라이언트와 네트워크에 대한 인증서 기반 상호 인증 방법을 제공한다.
+
+* PEAP: PEAT 클아이언트와 인증서버 간 터널링을 사용하여 기능을 수행한다.
+
+* LEAP: 동적으로 생성된 WEP키를 사용하여 전송 데이터를 암호화하며 상호 인증을 지원한다.
+
 ## ★ REFERENCE
 
 :airplane: [REST - 위키백과](https://ko.wikipedia.org/wiki/REST)
