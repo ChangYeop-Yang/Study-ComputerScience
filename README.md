@@ -1,6 +1,6 @@
 # ■ Study-ComputerScience
 
-😀😁😂🤣😃😍😘😍🤩🤩
+😀😁😂🤣😃😍😘😍🤩🤩😎🤯
 
 ## ★ REFERENCE
 
