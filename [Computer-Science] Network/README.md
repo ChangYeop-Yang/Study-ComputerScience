@@ -108,7 +108,7 @@
 
 3. `Read()/Write()` - 데이터 송수신
 
-4. `Close()` - 
+4. `Close()` - 연결종료
 
 ## 📣 [사용자 데이터그램 프로토콜 (UDP, User Datagram Protocol, `SOCK_DGRAM`)](https://ko.wikipedia.org/wiki/%EC%82%AC%EC%9A%A9%EC%9E%90_%EB%8D%B0%EC%9D%B4%ED%84%B0%EA%B7%B8%EB%9E%A8_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C)
 
