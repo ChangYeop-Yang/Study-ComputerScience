@@ -194,11 +194,11 @@
 
 * REST는 네트워크 아키텍처 원리의 모음이다. 여기서 **'네트워크 아키텍처 원리'란 자원(Image, Video, Data)을 정의하고 자원에 대한 주소를 지정하는 방법 전반**을 일컫는다. 간단한 의미로는, 웹 상의 자료를 HTTP위에서 SOAP이나 쿠키를 통한 세션 트랙킹 같은 별도의 전송 계층 없이 전송하기 위한 아주 간단한 인터페이스를 말한다.
 
+* REST API는 `자원(Resource) - URI`, `행위(Verb) - HTTP METHOD`, `표현(Representations)`으로 구성된다.
+
 <p align="center">
   <img src="https://user-images.githubusercontent.com/20036523/57290221-f1f35580-70f7-11e9-81cd-19931c38f999.png" />
 </p>
-
-* REST API는 `자원(Resource) - URI`, `행위(Verb) - HTTP METHOD`, `표현(Representations)`으로 구성된다.
 
 #### 💊 REST API Purpose
 
@@ -243,6 +243,20 @@
 * REST 서버는 다중 계층으로 구성될 수 있으며 보안, 로드 밸런싱, 암호화 계층을 추가해 구조상의 유연성을 둘 수 있고 PROXY, 게이트웨이 같은 네트워크 기반의 중간매체를 사용할 수 있게 합니다.
 
 * 클라이언트는 보통 대상 서버에 직접 연결되었는지, 또는 중간 서버를 통해 연결되었는지를 알 수 없다. 중간 서버는 로드 밸런싱 기능이나 공유 캐시 기능을 제공함으로써 시스템 규모 확장성을 향상시키는 데 유용하다.
+
+#### 💊 REST API Design Caution
+
+* `/`는 계층 관게를 나타내는데 사용한다.
+
+* URI 마지막 문자로 `/`를 포함하지 않는다.
+
+* `-`은 URI 가독성을 높이는데 사용한다.
+
+* `_`은 URI에 사용하지 않는다.
+
+* URI 경로에는 소문자가 적합하다.
+
+* 파일 확장자는 URI에 포함시키지 않는다.
 
 ## ★ SOAP
 SOAP(Simple Object Access Protocol)은 일반적으로 널리 알려진 HTTP, HTTPS, SMTP 등을 통해 XML 기반의 메시지를 컴퓨터 네트워크 상에서 교환하는 프로토콜이다. SOAP은 웹 서비스에서 기본적인 메시지를 전달하는 기반이 된다. SOAP에는 몇가지 형태의 메시지 패턴이 있지만, 보통의 경우 원격 프로시져 호출(Remote Procedure Call:RPC) 패턴으로, 네트워크 노드(클라이언트)에서 다른 쪽 노드(서버)쪽으로 메시지를 요청 하고, 서버는 메시지를 즉시 응답하게 된다. SOAP는 XML-RPC와 WDDX에서 envelope/header/body로 이루어진 구조와 전송(transport)과 상호 중립성(interaction neutrality)의 개념을 가져왔다.
