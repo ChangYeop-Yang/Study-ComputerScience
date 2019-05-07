@@ -248,26 +248,4 @@ Selective Repeat is part of the automatic repeat-request (ARQ). With selective r
 
 ## ★ REFERENCE
 
-:airplane: [REST - 위키백과](https://ko.wikipedia.org/wiki/REST)
-
-:airplane: [OSI 모형 - 위키백과](https://ko.wikipedia.org/wiki/OSI_%EB%AA%A8%ED%98%95)
-
-:airplane: [네트워크의 기본 'OSI 7계층'··· 한번에 이해하고 외우는 방법](http://www.ciokorea.com/news/36536#csidxc5d64590057e2ba9a875e48a4a11a61)
-
-:airplane: [OSI 7 계층 (OSI 7 Layer) 과 TCP/IP 4 계층 (TCP/IP 4 Layer) - Blog](http://jaeri.tistory.com/2)
-
-:airplane: [슬라이딩 윈도 - 위키백과](https://ko.wikipedia.org/wiki/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%94%A9_%EC%9C%88%EB%8F%84)
-
-:airplane: [GBN - 정보통신기술용어해설](http://www.ktword.co.kr/abbr_view.php?m_temp1=1469)
-
-:airplane: [Error Control - SlidePlayer](https://slideplayer.com/slide/8175417/)
-
-:airplane: [포트 - 위키백과](https://ko.wikipedia.org/wiki/%ED%8F%AC%ED%8A%B8_(%EC%BB%B4%ED%93%A8%ED%84%B0_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%82%B9))
-
-:airplane: [Packet switching (패킷 교환) - 위키백과](https://ko.wikipedia.org/wiki/%ED%8C%A8%ED%82%B7_%EA%B5%90%ED%99%98)
-
-:airplane: [Circuit switching (회선 교환) - 위키백과](https://ko.wikipedia.org/wiki/%ED%9A%8C%EC%84%A0_%EA%B5%90%ED%99%98)
-
-:airplane: [TCP (Transmission Control Protocol) - 위키백과](https://ko.wikipedia.org/wiki/%EC%A0%84%EC%86%A1_%EC%A0%9C%EC%96%B4_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C)
-
-:airplane: [Handshaking - 위키백과](https://en.wikipedia.org/wiki/Handshaking)
+:airplane: [NETWORK REFERENCE URL](https://github.com/ChangYeop-Yang/Study-ComputerScience/issues/5)
