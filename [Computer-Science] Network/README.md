@@ -24,7 +24,7 @@
 
 * 49152번 ~ 65535번: 동적 포트 (dynamic port)
 
-## ★ Endianness
+## 📣 Endianness
 
 <p align="center">
   <img src="https://www.ibm.com/developerworks/library/l-ibm-xl-c-cpp-compiler/image001.png" />
@@ -32,7 +32,7 @@
 
 * 엔디언(Endianness)은 컴퓨터의 메모리와 같은 1차원의 공간에 여러 개의 연속된 대상을 배열하는 방법을 뜻하며, 바이트를 배열하는 방법을 특히 바이트 순서(Byte order)라 한다. **엔디언은 보통 큰 단위가 앞에 나오는 빅 엔디언(Big-endian)과 작은 단위가 앞에 나오는 리틀 엔디언(Little-endian)으로 나눌 수 있으며, 두 경우에 속하지 않거나 둘을 모두 지원하는 것을 미들 엔디언(Middle-endian)이라 부르기도 한다.**
 
-## ★ Packet switching (패킷 교환)
+## 📣 Packet switching (패킷 교환)
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/20036523/50885137-36176780-1430-11e9-9f85-954edc1e2b04.gif" />
@@ -52,7 +52,7 @@
 
 * Overflow 발생으로 인한 Packet 손실이 발생한다.
 
-## ★ Circuit switching (회선 교환)
+## 📣 Circuit switching (회선 교환)
 
 <p align="center">
   <img src="https://i.pinimg.com/originals/99/2e/ed/992eed994ae26883c1febabb8cbb90c6.gif" />
@@ -258,8 +258,39 @@
 
 * 파일 확장자는 URI에 포함시키지 않는다.
 
-## ★ SOAP
-SOAP(Simple Object Access Protocol)은 일반적으로 널리 알려진 HTTP, HTTPS, SMTP 등을 통해 XML 기반의 메시지를 컴퓨터 네트워크 상에서 교환하는 프로토콜이다. SOAP은 웹 서비스에서 기본적인 메시지를 전달하는 기반이 된다. SOAP에는 몇가지 형태의 메시지 패턴이 있지만, 보통의 경우 원격 프로시져 호출(Remote Procedure Call:RPC) 패턴으로, 네트워크 노드(클라이언트)에서 다른 쪽 노드(서버)쪽으로 메시지를 요청 하고, 서버는 메시지를 즉시 응답하게 된다. SOAP는 XML-RPC와 WDDX에서 envelope/header/body로 이루어진 구조와 전송(transport)과 상호 중립성(interaction neutrality)의 개념을 가져왔다.
+## 📣 [멀티캐스트 (Multicast) - UDP](https://ko.wikipedia.org/wiki/%EB%A9%80%ED%8B%B0%EC%BA%90%EC%8A%A4%ED%8A%B8)
+
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Multicast.svg/250px-Multicast.svg.png" />
+</p>
+
+* 인터넷에서 같은 내용의 데이터를 여러 명의 특정한 그룹의 수신자들에게 동시에 전송하는 방식을 말한다. 데이터 중복전송으로 인한 정보체증을 완화하며, 그룹 멤버십 정보를 관리할 수 있다. 즉, 멀티캐스트 전송방식은 데이터 중복전송으로 인한 네트워크 자원낭비를 막고, 그 정보를 필요로 하지 않는 곳에는 부담을 주지 않으면서 실시간 공동작업을 효율적으로 보장하는 전송기법이다.
+
+* 멀티캐스트(Multicast)는 보통 IP 멀티캐스트 형태로 구현되는데, 이는 스트리밍을 위한 인터넷 프로토콜 응용 프로그램(Internet Protocol application) 및 인터넷 텔레비전에서 주로 사용된다. IP 멀티캐스트에서 멀티캐스트는 주로 IP 라우팅 단계에서 구현되며, 이 때 라우터는 데이터그램을 멀티캐스트 대상 주소로 보내기 위한 최적의 전송 경로를 생성한다.
+
+* IP 멀티캐스트(Multicast)는 기업, 증권거래소, 그리고 멀티미디어 컨텐츠 전달 네트워크 등에서 광범위하게 이용된다. 원격 학습이나 원격 화상 회의와 같은 IPTV 응용 프로그램이 일반적으로 기업에서 사용되는 IP 멀티캐스트이다.
+
+## 📣 [유니캐스트 (Unicast) - TCP](https://terms.naver.com/entry.nhn?docId=1207832&cid=40942&categoryId=32851)
+
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Unicast.svg/200px-Unicast.svg.png" />
+</p>
+
+* 한 사람의 특정 수신자에게만 데이터 패킷을 전송하는 방식. 인터넷에서 전자메일, 화상회의를 위한 화상·음성 데이터 등을 하나의 송신자가 다른 하나의 수신자에게 1:1로 전송하는 방식이다. </br></br>이 전송방식은 데이터를 보내는 송신자측에서 지정된 수신자측의 IP 주소로만 데이터가 전송된다. **즉 여러 수신자가 같은 데이터를 원할 때 송신자는 데이터를 여러 번 복사하여 각각의 수신자의 IP 주소로 전송해야 한다. 따라서 받는 사람의 수만큼 데이터 패킷을 반복해서 보내야 하기 때문에 통신망의 효율을 저하시키고, 제한된 회선용량을 접속자들이 서로 나누어 가져야 한다는 문제점 때문에 전송 부담도 크다.**
+
+* 유니캐스트 메시징은 개인적이거나 고유한 리소스가 필요한 모든 네트워크 프로세스에서 사용될 수 있다.
+
+## 📣 [브로드캐스트 (Broadcast) - UDP](https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Broadcast.svg/100px-Broadcast.svg.png)
+
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Broadcast.svg/1024px-Broadcast.svg.png" />
+</p>
+
+* IP 네트워크에 있는 모든 로컬 네트워크 호스트로 데이터를 전송하는 방식이다. 또한 브로드캐스트(Broadcast)는 두 가지의 방식으로 구분이 된다. 첫번째는 Directed Broadcast 방식으로 네트워크 주소를 제외한 나머지 호스트 주소를 전부 1로 설정하여 얻을 수 있는 방식이다. 두번째는 Local Broadcast 방식으로 255.255.255.255의 특별 예약 주소를 사용하여 IP 주소의 모든 호스트에 데이터를 전달하는 방법이 있다.
+
+## 📣 SOAP
+
+* SOAP(Simple Object Access Protocol)은 일반적으로 널리 알려진 HTTP, HTTPS, SMTP 등을 통해 XML 기반의 메시지를 컴퓨터 네트워크 상에서 교환하는 프로토콜이다. SOAP은 웹 서비스에서 기본적인 메시지를 전달하는 기반이 된다. SOAP에는 몇가지 형태의 메시지 패턴이 있지만, 보통의 경우 원격 프로시져 호출(Remote Procedure Call:RPC) 패턴으로, 네트워크 노드(클라이언트)에서 다른 쪽 노드(서버)쪽으로 메시지를 요청 하고, 서버는 메시지를 즉시 응답하게 된다. SOAP는 XML-RPC와 WDDX에서 envelope/header/body로 이루어진 구조와 전송(transport)과 상호 중립성(interaction neutrality)의 개념을 가져왔다.
 
 <p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/SOAP.svg/220px-SOAP.svg.png" />
@@ -267,7 +298,7 @@ SOAP(Simple Object Access Protocol)은 일반적으로 널리 알려진 HTTP, HT
 
 * SOAP은 XML을 근간으로 헤더와 바디를 조합하는 디자인 패턴으로 설계되어 있다. 「헤더」는 선택사항으로 반복이나 보안 및 트랜잭션을 정보로 하는 메타 정보를 가지고 있다. 「바디」부분은 주요한 정보인 정보를 가지고 있다.
 
-## ★ Sliding Window
+## 📣 Sliding Window
 두 개의 네트워크 호스트간의 패킷의 흐름을 제어하기 위한 방법이다. (슬라이딩 윈도우 방식 = 연속적 ARQ(Continuous ARQ) = Go Back n ARQ)
 
 <p align="center">
@@ -280,7 +311,7 @@ SOAP(Simple Object Access Protocol)은 일반적으로 널리 알려진 HTTP, HT
 
 * 흐름제어를 위한 검출후 재전송 방식(ARQ)의 일종 (혼잡제어도 가능)
 
-## ★ Selective Repeat ARQ
+## 📣 Selective Repeat ARQ
 
 <p align="center">
   <img src="http://www.oocities.org/siliconvalley/pines/1572/images/image9.gif" />
