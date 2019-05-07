@@ -194,6 +194,10 @@
 
 * REST는 네트워크 아키텍처 원리의 모음이다. 여기서 **'네트워크 아키텍처 원리'란 자원(Image, Video, Data)을 정의하고 자원에 대한 주소를 지정하는 방법 전반**을 일컫는다. 간단한 의미로는, 웹 상의 자료를 HTTP위에서 SOAP이나 쿠키를 통한 세션 트랙킹 같은 별도의 전송 계층 없이 전송하기 위한 아주 간단한 인터페이스를 말한다.
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/20036523/57290221-f1f35580-70f7-11e9-81cd-19931c38f999.png" />
+</p>
+
 * REST API는 `자원(Resource) - URI`, `행위(Verb) - HTTP METHOD`, `표현(Representations)`으로 구성된다.
 
 #### 💊 REST API Purpose
