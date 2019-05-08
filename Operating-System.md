@@ -58,6 +58,8 @@
 
 * 프로그램은 일반적으로 하드 디스크 등에 저장되어 있는 실행코드를 뜻하고, 프로세스는 프로그램을 구동하여 프로그램 자체와 프로그램의 상태가 메모리 상에서 실행되는 작업 단위를 지칭한다. 예를 들어, 하나의 프로그램을 여러 번 구동하면 여러 개의 프로세스가 메모리 상에서 실행된다.
 
+* 프로세서는 하드웨어적인 측면에서 컴퓨터 내에서 프로그램을 수행하는 하드웨어 유닛입니다. 대표적으로 중앙처리장치(Central Processing Unit - CPU)가 이에 속합니다. 한 컴퓨터가 여러 개의 프로세서를 갖는다면 멀티 프로세서라고 말합니다. 듀얼 프로세서라고 한다면 한 컴퓨터에 두 개의 프로세서가 운용된다고 할 수 있습니다.
+
 ##### 🔑 PCB (Process Control Block)
 
 * **프로세스 제어 블록(Process Control Block, 줄여서 PCB)은 특정한 프로세스를 관리할 필요가 있는 정보를 포함하는 운영 체제 커널의 자료 구조**이다. 작업 제어 블록(Task Control Block, 줄여서 TCB) 또는 작업 구조라고도 한다. "PCB는 운영 체제가 프로세스를 표현한 것이다."
@@ -103,6 +105,20 @@
 * :four: Swapped out and waiting** : (Also called suspended and waiting.) In systems that support virtual memory, a process may be swapped out, that is, removed from main memory and placed on external storage by the scheduler. From here the process may be swapped back into the waiting state.
 
 * :five: Swapped out and blocked** : (Also called suspended and blocked.) Processes that are blocked may also be swapped out. In this event the process is both swapped out and blocked, and may be swapped back in again under the same circumstances as a swapped out and waiting process (although in this case, the process will move to the blocked state, and may still be waiting for a resource to become available).
+
+## 📣 스래드 (Thread)
+
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Multithreaded_process.svg/220px-Multithreaded_process.svg.png" />
+</p>
+
+* 스레드는 **하나의 프로세스 내에서 실행되는 작업흐름의 단위**를 말합니다. 보통 한 프로세스는 하나의 스레드를 가지고 있지만, 프로세스 환경에 따라 둘 이상의 스레드를 동시에 실행할 수 있습니다. 이러한 방식을 멀티스레딩이라고 합니다. 그리고 프로그램 실행이 시작될 때부터 동작하는 스레드를 메인 스레드라 하고 그 외에 나중에 생성된 스레드를 서브 스레드 또는 세컨더리 스레드라고 합니다.
+
+#### 💊 [Processes vs. Threads — Advantages and Disadvantages](https://www.backblaze.com/blog/whats-the-diff-programs-processes-and-threads/)
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/20036523/57359428-a2be2b00-71b2-11e9-9958-5028b78a4663.png" />
+</p>
 
 ## 📣 교착상태 (DeadLock, 膠着狀態)
 
@@ -305,6 +321,12 @@
 * 세마포어(Semaphore): 에츠허르 다익스트라가 제안한 교착 상태에 대한 해법으로 두개의 Atomic한 함수로 제어되는 정수 변수로 멀티프로그래밍 환경에서 공유자원에 대한 접근 제어를 하는 방식으로 1개의 공유되는 자원에 제한된 개수의 프로세스, 또는 스레드만 접근할 수 있도록 한다. 세마포어의 카운트는 1 이상이며 카운트를 조절하여 진입 가능한 프로세스/스레드 수를 조절할 수 있다. 세마포터 카운트가 항상 1인 것은 아니다.
 
 * 기아상태(Aging): 컴퓨터 과학 용어의 하나로, 프로세스가 끊임없이 필요한 컴퓨터 자원을 가져오지 못하는 상황으로, 이러한 자원 없이는 처리를 끝낼 수 없는 병행 컴퓨팅에서 마주치는 문제이다. 기아 상태는 스케줄링이나 상호 배제 알고리즘의 오류에 기인하지만 자원 누수에 의해 일어날 수도 있으며 포크 폭탄과 같은 서비스 거부 공격을 통해 고의적으로 발생할 수도 있다.
+
+* 코어 (Core): 프로세서에서 코어는 주요 연산회로입니다. 싱글코어는 말 그대로 하나의 연산회로가 내장되어있는 것이고 듀얼코어는 두 개의 연산회로가 내장된 것을 뜻합니다. 또, 여러 개의 코어를 가진 프로세서를 멀티 프로세서라고 합니다.
+
+* 프로그램 (Program): 프로그램은 일반적으로 보조기억 장치에 저장된 실행코드 즉, 생명이 없는 상태를 말합니다.
+
+* 프리징 (freezing): 컴퓨터 환경에서 하나의 컴퓨터 프로그램나 시스템 전체가 입력에 대한 응답을 중단할 때 일어난다. 멈춰버린 프로그램에 속한 모든 창이 움직이지 않지만 마우스 커서는 화면에서 움직일 수 있지만 키보드 입력이나 마우스 클릭을 통해서 프로그램의 창에 어떠한 영향도 줄 수 없다.
 
 ## 📣 REFERENCE
 
