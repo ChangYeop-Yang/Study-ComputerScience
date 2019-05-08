@@ -136,7 +136,7 @@
 
 * 동시성(Concurrecny)은 싱글코어 및 멀티코어에서 모두 구현할 수 있지만, 병렬성(Parallelism)은 멀티 코어에서만 구현할 수 있습니다.
 
-## 📣 [병렬성 (Parallelism) 프로그래밍 - 'Physical'](https://www.edwith.org/boostcourse-ios)
+## 📣 [병렬성 (Parallelism) 프로그래밍 - `Physical`](https://www.edwith.org/boostcourse-ios)
 
 * 물리적으로 동시에 정확히 동시에 실행되는 것을 말합니다. 멀티 코어에서 멀티 스레드를 동작시키는 방식으로 데이터 병렬성(Data Parallelism)과 작업 병렬성(Task Parallelism)으로 구분됩니다.
 
