@@ -126,12 +126,18 @@
 
 ## 📣 [동시성 (Concurrency) 프로그래밍 - `Logical`](https://www.edwith.org/boostcourse-ios)
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/20036523/57360536-5a543c80-71b5-11e9-9a93-e15c0dac640e.png" />
+  <figcaption>📎 Image - What’s the Diff: Programs, Processes, and Threads - BACKBLAZE</figcaption>
+</p>
+
 * 논리적인 용어로 동시에 실행되는 것처럼 보이는 것입니다. **싱글 코어(멀티 코어에서도 가능)에서 멀티스레드를 동작시키기 위한 방식으로 멀티 태스킹을 위해 여러 개의 스레드가 번갈아 가면서 실행되는 방식입니다.** 동시성을 이용한 싱글 코어의 멀티 태스킹은 각 스레드들이 병렬적으로 실행되는 것처럼 보이지만 사실은 서로 번갈아 가면서 실행되고 있는 방식입니다.
 
 #### 💊 [동시성(Concurrecny)과 병렬성(Parallelism) 차이](https://www.backblaze.com/blog/whats-the-diff-programs-processes-and-threads/)
 
 <p align="center">
-  <img src="https://www.backblaze.com/blog/wp-content/uploads/2017/08/diagram-thread-concurrency.png" />
+    <img src="https://www.backblaze.com/blog/wp-content/uploads/2017/08/diagram-thread-concurrency.png" />
+    <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
 </p>
 
 * 동시성(Concurrecny)은 싱글코어 및 멀티코어에서 모두 구현할 수 있지만, 병렬성(Parallelism)은 멀티 코어에서만 구현할 수 있습니다.
