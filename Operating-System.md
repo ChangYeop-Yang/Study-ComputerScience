@@ -127,7 +127,7 @@
 ## 📣 [동시성 (Concurrency) 프로그래밍 - `Logical`](https://www.edwith.org/boostcourse-ios)
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/20036523/57360536-5a543c80-71b5-11e9-9a93-e15c0dac640e.png" />
+  <img src="https://user-images.githubusercontent.com/20036523/57360536-5a543c80-71b5-11e9-9a93-e15c0dac640e.png" width="350" height="350" />
   <figcaption><b>📎 Image - 동시성 프로그래밍과 비동기 프로그래밍 - [부스트코스] iOS 프로그래밍</b></figcaption>
 </p>
 
@@ -149,14 +149,16 @@
 #### 💊 데이터 병렬성 - 전체 데이터를 나누어 서브 데이터들로 만든 뒤, 서브 데이터들을 병렬 처리해서 작업을 빠르게 수행하는 방법입니다.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/20036523/57360534-5a543c80-71b5-11e9-8689-9e601ca715a0.png" />
+  <img src="https://user-images.githubusercontent.com/20036523/57360534-5a543c80-71b5-11e9-8689-9e601ca715a0.png" width="350" height="350" />
   <figcaption><b>📎 Image - 동시성 프로그래밍과 비동기 프로그래밍 - [부스트코스] iOS 프로그래밍</b></figcaption>
 </p>
+
+* * *
 
 #### 💊 작업 병렬성 - 서로 다른 작업을 병렬 처리하는 것을 말합니다.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/20036523/57360535-5a543c80-71b5-11e9-9cf5-2a073f40a572.png" />
+  <img src="https://user-images.githubusercontent.com/20036523/57360535-5a543c80-71b5-11e9-9cf5-2a073f40a572.png" width="350" height="350" />
   <figcaption><b>📎 Image - 동시성 프로그래밍과 비동기 프로그래밍 - [부스트코스] iOS 프로그래밍</b></figcaption>
 </p>
 
