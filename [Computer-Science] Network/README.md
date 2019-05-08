@@ -168,6 +168,14 @@
 
 * OSI 디핑 소스의 밑바닥에는 물리 계층이 있다. **시스템의 전기적, 물리적 표현을 나타낸다.** 케이블 종류, (802.11 무선 시스템에서와 같은) 무선 주파수 링크는 물론 핀 배치, 전압, 물리 요건 등이 포함된다. 네트워킹 문제가 발생하면 많은 네트워크 전문가가 물리 계층으로 바로 가서 모든 케이블이 제대로 연결돼 있는지, 라우터나 스위치 또는 컴퓨터에서 전원 플러그가 빠지지 않았는지 확인한다. 
 
+## 📣 [TTL (Time To Live)](https://terms.naver.com/entry.nhn?docId=3483862&cid=58439&categoryId=58439)
+
+<p align="center">
+  <img src="https://www.cloudflare.com/img/learning/cdn/glossary/ttl/icmp-traceroute-diagram.png" />
+</p>
+
+* TTL은 IP헤더 내에서 폐기까지의 시간을 나타낸 부분이다. IP 패킷 내에 있는 값으로서, 그 패킷이 네트워크 내에 너무 오래 있어서 버려져야 하는지의 여부를 라우터에게 알려준다. 패킷들은, 여러 가지 이유로 적당한 시간 내에 지정한 장소에 배달되지 못하는 수가 있다. 예를 들어, 부정확한 라우팅 테이블의 결합은 패킷을 끝없이 순환하게 만들 수도 있다. 일정한 시간이 지나면 그 패킷을 버리고, 재전송할 것인지를 결정하도록 그 사실을 발신인에게 알릴 수 있게 하기 위한 해결책으로 TTL이 사용된다.
+
 ## 📣 TCP/IP Protocol
 
 <p align="center">
@@ -179,14 +187,6 @@
 <p align="center">
   <img src="http://www.ktword.co.kr/img_data/205_2.jpg" />
 </p>
-
-## 📣 [TTL (Time To Live)](https://terms.naver.com/entry.nhn?docId=3483862&cid=58439&categoryId=58439)
-
-<p align="center">
-  <img src="https://www.cloudflare.com/img/learning/cdn/glossary/ttl/icmp-traceroute-diagram.png" />
-</p>
-
-* TTL은 IP헤더 내에서 폐기까지의 시간을 나타낸 부분이다. IP 패킷 내에 있는 값으로서, 그 패킷이 네트워크 내에 너무 오래 있어서 버려져야 하는지의 여부를 라우터에게 알려준다. 패킷들은, 여러 가지 이유로 적당한 시간 내에 지정한 장소에 배달되지 못하는 수가 있다. 예를 들어, 부정확한 라우팅 테이블의 결합은 패킷을 끝없이 순환하게 만들 수도 있다. 일정한 시간이 지나면 그 패킷을 버리고, 재전송할 것인지를 결정하도록 그 사실을 발신인에게 알릴 수 있게 하기 위한 해결책으로 TTL이 사용된다.
 
 ###### 📌 4계층 - 응용 계층 (Application Layer)
 
