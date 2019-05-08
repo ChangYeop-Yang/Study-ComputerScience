@@ -114,11 +114,35 @@
 
 * 스레드는 **하나의 프로세스 내에서 실행되는 작업흐름의 단위**를 말합니다. 보통 한 프로세스는 하나의 스레드를 가지고 있지만, 프로세스 환경에 따라 둘 이상의 스레드를 동시에 실행할 수 있습니다. 이러한 방식을 멀티스레딩이라고 합니다. 그리고 프로그램 실행이 시작될 때부터 동작하는 스레드를 메인 스레드라 하고 그 외에 나중에 생성된 스레드를 서브 스레드 또는 세컨더리 스레드라고 합니다.
 
-#### 💊 [Processes vs. Threads — Advantages and Disadvantages](https://www.backblaze.com/blog/whats-the-diff-programs-processes-and-threads/)
+#### 💊 [Processes vs Threads - Advantages and Disadvantages](https://www.backblaze.com/blog/whats-the-diff-programs-processes-and-threads/)
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/20036523/57359428-a2be2b00-71b2-11e9-9958-5028b78a4663.png" />
 </p>
+
+## 📣 [비동기 (Asynchronous) 프로그래밍](https://www.edwith.org/boostcourse-ios)
+
+* 프로그램의 주 실행 흐름을 멈추어서 기다리는 부분 없이 바로 다음 작업을 실행할 수 있게 하는 방식입니다. 즉, 코드의 실행 결과 처리를 별도의 공간에 맡겨둔 뒤 결과를 기다리지 않고 바로 다음 코드를 실행하는 병렬처리 방식입니다. 비동기 프로그래밍은 언어 및 프레임워크에서 지원하는 여러 방법으로 구현할 수 있습니다.
+
+## 📣 [동시성 (Concurrency) 프로그래밍 - `Logical`](https://www.edwith.org/boostcourse-ios)
+
+* 논리적인 용어로 동시에 실행되는 것처럼 보이는 것입니다. **싱글 코어(멀티 코어에서도 가능)에서 멀티스레드를 동작시키기 위한 방식으로 멀티 태스킹을 위해 여러 개의 스레드가 번갈아 가면서 실행되는 방식입니다.** 동시성을 이용한 싱글 코어의 멀티 태스킹은 각 스레드들이 병렬적으로 실행되는 것처럼 보이지만 사실은 서로 번갈아 가면서 실행되고 있는 방식입니다.
+
+#### 💊 [동시성(Concurrecny)과 병렬성(Parallelism) 차이](https://www.backblaze.com/blog/whats-the-diff-programs-processes-and-threads/)
+
+<p align="center">
+  <img src="https://www.backblaze.com/blog/wp-content/uploads/2017/08/diagram-thread-concurrency.png" />
+</p>
+
+* 동시성(Concurrecny)은 싱글코어 및 멀티코어에서 모두 구현할 수 있지만, 병렬성(Parallelism)은 멀티 코어에서만 구현할 수 있습니다.
+
+## 📣 [병렬성 (Parallelism) 프로그래밍 - 'Physical'](https://www.edwith.org/boostcourse-ios)
+
+* 물리적으로 동시에 정확히 동시에 실행되는 것을 말합니다. 멀티 코어에서 멀티 스레드를 동작시키는 방식으로 데이터 병렬성(Data Parallelism)과 작업 병렬성(Task Parallelism)으로 구분됩니다.
+
+#### 💊 데이터 병렬성 - 전체 데이터를 나누어 서브 데이터들로 만든 뒤, 서브 데이터들을 병렬 처리해서 작업을 빠르게 수행하는 방법입니다.
+
+#### 💊 작업 병렬성 - 서로 다른 작업을 병렬 처리하는 것을 말합니다.
 
 ## 📣 교착상태 (DeadLock, 膠着狀態)
 
