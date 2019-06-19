@@ -506,6 +506,89 @@ if (this->handler == INVALID_HANDLE_VALUE) {
 }
 ```
 
+#### 2️⃣ DCB
+
+* Defines the control setting for a serial communications device.
+
+###### 📋 DCB Syntax
+
+```C++
+typedef struct _DCB {
+  DWORD DCBlength;
+  DWORD BaudRate;
+  DWORD fBinary : 1;
+  DWORD fParity : 1;
+  DWORD fOutxCtsFlow : 1;
+  DWORD fOutxDsrFlow : 1;
+  DWORD fDtrControl : 2;
+  DWORD fDsrSensitivity : 1;
+  DWORD fTXContinueOnXoff : 1;
+  DWORD fOutX : 1;
+  DWORD fInX : 1;
+  DWORD fErrorChar : 1;
+  DWORD fNull : 1;
+  DWORD fRtsControl : 2;
+  DWORD fAbortOnError : 1;
+  DWORD fDummy2 : 17;
+  WORD  wReserved;
+  WORD  XonLim;
+  WORD  XoffLim;
+  BYTE  ByteSize;
+  BYTE  Parity;
+  BYTE  StopBits;
+  char  XonChar;
+  char  XoffChar;
+  char  ErrorChar;
+  char  EofChar;
+  char  EvtChar;
+  WORD  wReserved1;
+} DCB, *LPDCB;
+```
+
+##### 2️⃣↔️1️⃣ [GetCommState](https://docs.microsoft.com/en-us/windows/desktop/api/winbase/nf-winbase-getcommstate)
+
+###### 📋 GetCommState Syntax
+
+```C++
+BOOL GetCommState(
+  HANDLE hFile,
+  LPDCB  lpDCB
+);
+```
+
+##### 2️⃣↔️2️⃣ [SetCommState](https://docs.microsoft.com/en-us/windows/desktop/api/winbase/nf-winbase-setcommstate)
+
+###### 📋 SetCommState Syntax
+
+```C++
+BOOL SetCommState(
+  HANDLE hFile,
+  LPDCB  lpDCB
+);
+```
+
+###### 📋 DCB Source Code
+
+```C++
+/*------------------------------- Setting the Parameters for the SerialPort ------------------------------*/
+DCB dcbSerialParameters = { 0 };
+
+if (!GetCommState(this->handler, &dcbSerialParameters)) {
+	// here CreateFile error (CREATE_DCB_PADDING_ERROR)
+} else {
+
+	dcbSerialParameters.DCBlength	= sizeof(dcbSerialParameters);
+	dcbSerialParameters.BaudRate	= CBR_9600; // BandWidth
+	dcbSerialParameters.ByteSize	= 8;
+	dcbSerialParameters.StopBits	= ONESTOPBIT;
+	dcbSerialParameters.Parity	= NOPARITY;
+	dcbSerialParameters.fDtrControl	= DTR_CONTROL_ENABLE;
+
+	if (!SetCommState(handler, &dcbSerialParameters)) {
+		// here CreateFile error (SETUP_DCB_PADDING_ERROR)
+	}
+```
+
 ## ★ REFERENCE
 
 :airplane: [NETWORK REFERENCE URL](https://github.com/ChangYeop-Yang/Study-ComputerScience/issues/5)
