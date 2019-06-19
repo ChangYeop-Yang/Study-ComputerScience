@@ -469,7 +469,7 @@ Selective Repeat is part of the automatic repeat-request (ARQ). With selective r
 
 ###### 🔍 시리얼 통신 순서 (Serial Communication Logic)
 
-#### 1️⃣ CreateFile
+#### 1️⃣　CreateFile
 
 * Creates or opens a file or I/O device. The most commonly used I/O devices are as follows: file, file stream, directory, physical disk, volume, console buffer, tape drive, communications resource, mailslot, and pipe. The function returns a handle that can be used to access the file or device for various types of I/O depending on the file or device and the flags and attributes specified.
 
@@ -506,7 +506,7 @@ if (this->handler == INVALID_HANDLE_VALUE) {
 }
 ```
 
-#### 2️⃣ DCB
+#### 2️⃣　DCB
 
 * Defines the control setting for a serial communications device.
 
@@ -545,28 +545,6 @@ typedef struct _DCB {
 } DCB, *LPDCB;
 ```
 
-##### 2️⃣↔️1️⃣ [GetCommState](https://docs.microsoft.com/en-us/windows/desktop/api/winbase/nf-winbase-getcommstate)
-
-###### 📋 GetCommState Syntax
-
-```C++
-BOOL GetCommState(
-  HANDLE hFile,
-  LPDCB  lpDCB
-);
-```
-
-##### 2️⃣↔️2️⃣ [SetCommState](https://docs.microsoft.com/en-us/windows/desktop/api/winbase/nf-winbase-setcommstate)
-
-###### 📋 SetCommState Syntax
-
-```C++
-BOOL SetCommState(
-  HANDLE hFile,
-  LPDCB  lpDCB
-);
-```
-
 ###### 📋 DCB Source Code
 
 ```C++
@@ -587,6 +565,71 @@ if (!GetCommState(this->handler, &dcbSerialParameters)) {
 	if (!SetCommState(handler, &dcbSerialParameters)) {
 		// here CreateFile error (SETUP_DCB_PADDING_ERROR)
 	}
+```
+
+##### 2️⃣↔️1️⃣　[GetCommState](https://docs.microsoft.com/en-us/windows/desktop/api/winbase/nf-winbase-getcommstate)
+
+###### 📋 GetCommState Syntax
+
+```C++
+BOOL GetCommState(
+  HANDLE hFile,
+  LPDCB  lpDCB
+);
+```
+
+##### 2️⃣↔️2️⃣　[SetCommState](https://docs.microsoft.com/en-us/windows/desktop/api/winbase/nf-winbase-setcommstate)
+
+###### 📋 SetCommState Syntax
+
+```C++
+BOOL SetCommState(
+  HANDLE hFile,
+  LPDCB  lpDCB
+);
+```
+
+#### 3️⃣　[COMMTIMEOUTS](https://docs.microsoft.com/en-us/windows/desktop/api/winbase/ns-winbase-commtimeouts)
+
+* Contains the time-out parameters for a communications device. The parameters determine the behavior of ReadFile, WriteFile, ReadFileEx, and WriteFileEx operations on the device.
+
+###### 📋 COMMTIMEOUTS Syntax
+
+```C++
+typedef struct _COMMTIMEOUTS {
+  DWORD ReadIntervalTimeout;
+  DWORD ReadTotalTimeoutMultiplier;
+  DWORD ReadTotalTimeoutConstant;
+  DWORD WriteTotalTimeoutMultiplier;
+  DWORD WriteTotalTimeoutConstant;
+} COMMTIMEOUTS, *LPCOMMTIMEOUTS;
+```
+
+###### 📋 COMMTIMEOUTS Source Code
+
+```C++
+// MARK: http://www.devpia.com/MAEUL/Contents/Detail.aspx?BoardID=50&MAEULNo=20&no=232925&ref=232925
+COMMTIMEOUTS timeouts = { 0 };
+timeouts.ReadIntervalTimeout				= 0xFFFFFFFF; // 0xFFFFFFFF
+timeouts.ReadTotalTimeoutMultiplier			= 0;
+timeouts.ReadTotalTimeoutConstant			= 0;
+timeouts.WriteTotalTimeoutConstant			= 5000;
+timeouts.WriteTotalTimeoutMultiplier		= 0;
+
+SetCommTimeouts(this->handler, &timeouts);
+```
+
+##### 3️⃣↔️1️⃣ [SetCommTimeouts](https://docs.microsoft.com/en-us/windows/desktop/api/winbase/nf-winbase-setcommtimeouts)
+
+* Sets the time-out parameters for all read and write operations on a specified communications device.
+
+###### 📋 SetCommTimeouts Syntax
+
+```C++
+BOOL SetCommTimeouts(
+  HANDLE         hFile,
+  LPCOMMTIMEOUTS lpCommTimeouts
+);
 ```
 
 ## ★ REFERENCE
