@@ -779,10 +779,7 @@ while (true) {
 				Sleep(SERIAL_SLEEP_TIME), message.push_back(temp);
 			}
 					
-			const auto * delivery = new CString(message.c_str());
-			if (!delivery->IsEmpty()) {
-				// here receive message processing.
-			}
+			// here receive message processing.
 		}
 	}
 }
