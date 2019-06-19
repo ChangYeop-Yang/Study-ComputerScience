@@ -170,6 +170,12 @@ closesocket(this->hServSock);
 1. `Socket()` - 소켓생성
 
 ```C++
+private:		
+   SOCKET hServSock;
+   SOCKADDR_IN servAddr;
+   
+/* ^---------HEADER---------^ */
+
 this->hServSock = socket(PF_INET, SOCK_STREAM, 0);
 if (this->hServSock == INVALID_SOCKET) { 
 	// here error message and close sock.
