@@ -90,15 +90,70 @@
 
 1. `Socket()` - 소켓생성
 
+```C++
+    // MARK: Create TCP Socket
+		this->hServSock = socket(PF_INET, SOCK_STREAM, 0);
+		if (this->hServSock == INVALID_SOCKET) {
+			// here error message.
+		}
+```
+
 2. `Bind()` - 소켓 주소할당
+
+```C++
+    std::memset(&this->servAddr, 0, sizeof(SOCKADDR_IN));
+		this->servAddr.sin_family		= AF_INET;
+		this->servAddr.sin_addr.s_addr	= htonl(INADDR_ANY); // INADDR_ANY 모든 IP 대역 접속을 허가한다.
+		this->servAddr.sin_port			= htons(port);
+
+		// MARK: bind 함수는 지역주소를 소켓과 함께 결합(연관)시킵니다.
+		if (bind(this->hServSock, (sockaddr *)&this->servAddr, sizeof(SOCKADDR_IN)) == SOCKET_ERROR) {
+			// here error message.
+		}
+```
 
 3. `Listen()` - 연결요청 대기상태
 
+```C++
+    // MARK: listen 함수는 소켓을 들어오는 연결에 대해 listening 상태에 배치합니다.
+		if (listen(this->hServSock, MAX_REQUEST_QUEUE_SIZE) == SOCKET_ERROR) {
+			// here error message.
+		}
+```
+
 4. `Accept()` - 연결허용
+
+```C++
+  // MARK: Accpet 함수는 소켓에 들어오는 연결 시도에 대해서 허가한다.
+  SOCKADDR_IN clientAddr;
+	this->szClntAddr    = sizeof(SOCKADDR_IN);
+	SOCKET hClientSock  = accept(this->hServSock, (SOCKADDR *)&clientAddr, &this->szClntAddr);
+
+	if (hClientSock == INVALID_SOCKET || hClientSock == SOCKET_ERROR) {
+		// here error message and close sock.
+	}
+```
 
 5. `Read()/Write()` - 데이터 송수신
 
+```C++
+const bool OnSendMessage(const SOCKET sock, const std::string message) {
+	return send(sock, message.c_str(), message.size(), 0) == 0 ? true : false; // ZERO == Success, EOF == Fail
+}
+
+const int OnReceiveMessage(const SOCKET sock) {
+    char message[BUFSIZ];
+    const int length = recv(sock, message, BUFSIZ, 0);
+    return length;
+}
+
+```
+
 6. `Close()` - 연결종료
+
+```C++
+closesocket(this->hServSock);
+```
 
 ###### 🔍 TCP Client 함수호출 순서
 
