@@ -165,6 +165,8 @@ const int OnReceiveMessage(const SOCKET sock) {
 closesocket(this->hServSock);
 ```
 
+* * *
+
 ###### 🔍 TCP Client 함수호출 순서
 
 1. `Socket()` - 소켓생성
