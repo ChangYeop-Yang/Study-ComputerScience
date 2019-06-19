@@ -760,6 +760,34 @@ BOOL ReadFile(
 );
 ```
 
+###### 📋 ReadFile Source Code
+
+```C++
+// MARK: https://github.com/xanthium-enterprises/Serial-Programming-Win32API-C/blob/master/USB2SERIAL_Read/Reciever%20(PC%20Side)/USB2SERIAL_Read_W32.c
+std::string message = std::string();
+
+while (true) {
+
+	if (WaitCommEvent(handle->handler, &handle->dwEventMask, 0)) {
+		DWORD read_Byte = 0;
+		message.clear();
+
+		if (handle->dwEventMask & EV_RXCHAR) {
+
+			char temp;
+			while (ReadFile(handle->handler, &temp, sizeof(char), &read_Byte, &handle->overlaped_event.first) && temp != EOF) {
+				Sleep(SERIAL_SLEEP_TIME), message.push_back(temp);
+			}
+					
+			const auto * delivery = new CString(message.c_str());
+			if (!delivery->IsEmpty()) {
+				// here receive message processing.
+			}
+		}
+	}
+}
+```
+
 ## ★ REFERENCE
 
 :airplane: [NETWORK REFERENCE URL](https://github.com/ChangYeop-Yang/Study-ComputerScience/issues/5)
