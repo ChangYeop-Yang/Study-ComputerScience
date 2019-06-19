@@ -89,7 +89,7 @@
 ###### 🔍 TCP Server 함수호출 순서
 
 <p align="center">
-	![](https://www.wut.de/pics/misc/e-58www-16-grus-000.gif)
+	<img src="https://www.wut.de/pics/misc/e-58www-16-grus-000.gif" />
 </p>
 
 1. `Socket()` - 소켓생성
