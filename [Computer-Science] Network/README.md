@@ -157,7 +157,6 @@ const int OnReceiveMessage(const SOCKET sock) {
 	const int length = recv(sock, message, BUFSIZ, 0);
 	return length;
 }
-
 ```
 
 6. `Close()` - 연결종료
@@ -170,11 +169,46 @@ closesocket(this->hServSock);
 
 1. `Socket()` - 소켓생성
 
+```C++
+this->hServSock = socket(PF_INET, SOCK_STREAM, 0);
+if (this->hServSock == INVALID_SOCKET) { 
+	// here error message and close sock.
+}
+```
+
 2. `Connect()` - 연결요청
+
+```C++
+std::memset( &this->servAddr, 0, sizeof(SOCKADDR_IN) );
+this->servAddr.sin_family	= AF_INET; // IPv4
+this->servAddr.sin_addr.s_addr	= inet_addr("127.0.0.1");
+this->servAddr.sin_port		= htons(1234);
+
+// MARK: 생성한 소켓을 통해 서버로 접속을 요청합니다.
+if ( connect(this->hServSock, (SOCKADDR *)&servAddr, sizeof(SOCKADDR)) == SOCKET_FAIL_ERROR) {
+	// here error message and close sock.
+}
+```
 
 3. `Read()/Write()` - 데이터 송수신
 
+```C++
+const bool OnSendMessage(const SOCKET sock, const std::string message) {
+	return send(sock, message.c_str(), message.size(), 0) == 0 ? true : false; // ZERO == Success, EOF == Fail
+}
+
+const int OnReceiveMessage(const SOCKET sock) {
+	char message[BUFSIZ];
+	const int length = recv(sock, message, BUFSIZ, 0);
+	return length;
+}
+```
+
 4. `Close()` - 연결종료
+
+```C++
+closesocket(this->hServSock);
+```
 
 ## 📣 [사용자 데이터그램 프로토콜 (UDP, User Datagram Protocol, `SOCK_DGRAM`)](https://ko.wikipedia.org/wiki/%EC%82%AC%EC%9A%A9%EC%9E%90_%EB%8D%B0%EC%9D%B4%ED%84%B0%EA%B7%B8%EB%9E%A8_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C)
 
