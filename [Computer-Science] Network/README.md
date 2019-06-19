@@ -88,6 +88,13 @@
 
 ###### 🔍 TCP Server 함수호출 순서
 
+```C++
+private:		
+	int szClntAddr;
+	SOCKET hServSock;
+	SOCKADDR_IN servAddr;
+```
+
 1. `Socket()` - 소켓생성
 
 ```C++
