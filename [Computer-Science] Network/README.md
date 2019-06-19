@@ -467,6 +467,41 @@ Selective Repeat is part of the automatic repeat-request (ARQ). With selective r
 
 * 전기 통신과 컴퓨터 과학 분야에서 직렬 통신(Serial Bus,시리얼버스)은 연속적으로 통신 채널이나 컴퓨터 버스를 거쳐 한 번에 하나의 비트 단위로 데이터를 전송하는 과정을 말한다. 이 용어는 여러 개의 병렬 채널을 갖춘 링크 위에서 동시에 여러 개의 비트를 보내는 병렬 통신과 대조된다. </br></br>컴퓨터에서 데이터 처리가 병렬로 되는데, 통신을 위해 병렬 통신을 하려면 여러개의 채널이 필요하다. 거리와 비용을 고려하면 많을 경우 병렬 통신은 문제가 될 수 있다. 결국 병렬로 처리되는 데이터를 통신할 때 시간으로 나누어 차례대로 전송함으로써 문제를 해결할 수 있다. </br></br>직렬 통신에서 데이터가 계속되어 전송되면, 각 비트를 구별할 방법이 필요하다. 디지털 회로의 입장에서 수신된 데이터의 비트가 시간적으로 어디서 부터 시작이고 끝인지를 알 필요가 있다. 이렇게 데이터 비트를 복구하기 위해 데이터의 시간적 위치를 알리기 위해 동기신호를 보내는 경우와 동기 신호 없이 신호 자체에서 데이터 비트를 복원하는 방식으로 나눌 수 있다.
 
+###### 🔍 시리얼 통신 순서 (Serial Communication Logic)
+
+**1️⃣ CreateFile**
+
+* Creates or opens a file or I/O device. The most commonly used I/O devices are as follows: file, file stream, directory, physical disk, volume, console buffer, tape drive, communications resource, mailslot, and pipe. The function returns a handle that can be used to access the file or device for various types of I/O depending on the file or device and the flags and attributes specified.
+
+```C++
+HANDLE CreateFileA(
+  LPCSTR                lpFileName,
+  DWORD                 dwDesiredAccess,
+  DWORD                 dwShareMode,
+  LPSECURITY_ATTRIBUTES lpSecurityAttributes,
+  DWORD                 dwCreationDisposition,
+  DWORD                 dwFlagsAndAttributes,
+  HANDLE                hTemplateFile
+);
+```
+
+```C++
+this->handler = CreateFileA(static_cast<LPCSTR>(port.second.c_str()),
+			GENERIC_READ | GENERIC_WRITE,
+			0,
+			NULL,
+			OPEN_EXISTING,
+			FILE_ATTRIBUTE_NORMAL | FILE_FLAG_OVERLAPPED,
+			NULL);
+
+if (this->handler == INVALID_HANDLE_VALUE) {
+	if (GetLastError() == ERROR_FILE_NOT_FOUND) {
+		// here CreateFile error (SETUP_SERIAL_PORT_ERROR)
+	}
+	// here CreateFile error (CREATE_FILE_HANDLE_ERROR)
+}
+```
+
 ## ★ REFERENCE
 
 :airplane: [NETWORK REFERENCE URL](https://github.com/ChangYeop-Yang/Study-ComputerScience/issues/5)
