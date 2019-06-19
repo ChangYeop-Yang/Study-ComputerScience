@@ -457,7 +457,7 @@ Selective Repeat is part of the automatic repeat-request (ARQ). With selective r
 
 * LEAP - 동적으로 생성된 WEP키를 사용하여 전송 데이터를 암호화하며 상호 인증을 지원한다.
 
-## 📣 시리얼 통신 (Serial Communication)
+## 📣 [시리얼 통신 (Serial Communication)](https://ko.wikipedia.org/wiki/%EC%A7%81%EB%A0%AC_%ED%86%B5%EC%8B%A0)
 
 <p align="center">
 	<img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Parallel_and_Serial_Transmission.gif" />
@@ -784,6 +784,6 @@ BOOL PurgeComm(
 );
 ```
 
-## ★ REFERENCE
+## 🚀 REFERENCE
 
 :airplane: [NETWORK REFERENCE URL](https://github.com/ChangYeop-Yang/Study-ComputerScience/issues/5)
