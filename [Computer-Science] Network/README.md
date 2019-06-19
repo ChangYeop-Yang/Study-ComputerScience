@@ -461,6 +461,8 @@ Selective Repeat is part of the automatic repeat-request (ARQ). With selective r
 
 * In telecommunication and data transmission, serial communication is the process of sending data one bit at a time, sequentially, over a communication channel or computer bus. This is in contrast to parallel communication, where several bits are sent as a whole, on a link with several parallel channels. </br></br> Serial communication is used for all long-haul communication and most computer networks, where the cost of cable and synchronization difficulties make parallel communication impractical. Serial computer buses are becoming more common even at shorter distances, as improved signal integrity and transmission speeds in newer serial technologies have begun to outweigh the parallel bus's advantage of simplicity (no need for serializer and deserializer, or SerDes) and to outstrip its disadvantages (clock skew, interconnect density). The migration from PCI to PCI Express is an example.
 
+* 전기 통신과 컴퓨터 과학 분야에서 직렬 통신(Serial Bus,시리얼버스)은 연속적으로 통신 채널이나 컴퓨터 버스를 거쳐 한 번에 하나의 비트 단위로 데이터를 전송하는 과정을 말한다. 이 용어는 여러 개의 병렬 채널을 갖춘 링크 위에서 동시에 여러 개의 비트를 보내는 병렬 통신과 대조된다. </br></br>컴퓨터에서 데이터 처리가 병렬로 되는데, 통신을 위해 병렬 통신을 하려면 여러개의 채널이 필요하다. 거리와 비용을 고려하면 많을 경우 병렬 통신은 문제가 될 수 있다. 결국 병렬로 처리되는 데이터를 통신할 때 시간으로 나누어 차례대로 전송함으로써 문제를 해결할 수 있다. </br></br>직렬 통신에서 데이터가 계속되어 전송되면, 각 비트를 구별할 방법이 필요하다. 디지털 회로의 입장에서 수신된 데이터의 비트가 시간적으로 어디서 부터 시작이고 끝인지를 알 필요가 있다. 이렇게 데이터 비트를 복구하기 위해 데이터의 시간적 위치를 알리기 위해 동기신호를 보내는 경우와 동기 신호 없이 신호 자체에서 데이터 비트를 복원하는 방식으로 나눌 수 있다.
+
 ## ★ REFERENCE
 
 :airplane: [NETWORK REFERENCE URL](https://github.com/ChangYeop-Yang/Study-ComputerScience/issues/5)
