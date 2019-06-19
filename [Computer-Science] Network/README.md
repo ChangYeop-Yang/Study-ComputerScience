@@ -567,7 +567,7 @@ if (!GetCommState(this->handler, &dcbSerialParameters)) {
 	}
 ```
 
-##### 2️⃣↔️1️⃣　[GetCommState](https://docs.microsoft.com/en-us/windows/desktop/api/winbase/nf-winbase-getcommstate)
+##### 2️⃣ ↔️ 1️⃣　[GetCommState](https://docs.microsoft.com/en-us/windows/desktop/api/winbase/nf-winbase-getcommstate)
 
 * Retrieves the current control settings for a specified communications device.
 
@@ -578,7 +578,7 @@ BOOL GetCommState(
 );
 ```
 
-##### 2️⃣↔️2️⃣　[SetCommState](https://docs.microsoft.com/en-us/windows/desktop/api/winbase/nf-winbase-setcommstate)
+##### 2️⃣ ↔️ 2️⃣　[SetCommState](https://docs.microsoft.com/en-us/windows/desktop/api/winbase/nf-winbase-setcommstate)
 
 * Configures a communications device according to the specifications in a device-control block (a DCB structure). The function reinitializes all hardware and control settings, but it does not empty output or input queues.
 
@@ -619,7 +619,7 @@ timeouts.WriteTotalTimeoutMultiplier		= 0;
 SetCommTimeouts(this->handler, &timeouts);
 ```
 
-##### 3️⃣↔️1️⃣　[SetCommTimeouts](https://docs.microsoft.com/en-us/windows/desktop/api/winbase/nf-winbase-setcommtimeouts)
+##### 3️⃣ ↔️ 1️⃣　[SetCommTimeouts](https://docs.microsoft.com/en-us/windows/desktop/api/winbase/nf-winbase-setcommtimeouts)
 
 * Sets the time-out parameters for all read and write operations on a specified communications device.
 
@@ -628,6 +628,40 @@ BOOL SetCommTimeouts(
   HANDLE         hFile,
   LPCOMMTIMEOUTS lpCommTimeouts
 );
+```
+
+#### 4️⃣　[OVERLAPPED](https://docs.microsoft.com/en-us/windows/desktop/api/minwinbase/ns-minwinbase-_overlapped)
+
+* Contains information used in asynchronous (or overlapped) input and output (I/O).
+
+###### 📋 OVERLAPPED Syntax
+
+```C++
+typedef struct _OVERLAPPED {
+  ULONG_PTR Internal;
+  ULONG_PTR InternalHigh;
+  union {
+    struct {
+      DWORD Offset;
+      DWORD OffsetHigh;
+    } DUMMYSTRUCTNAME;
+    PVOID Pointer;
+  } DUMMYUNIONNAME;
+  HANDLE    hEvent;
+} OVERLAPPED, *LPOVERLAPPED;
+```
+
+###### 📋 OVERLAPPED Source Code
+
+```C++
+// MARK: https://wwwi.tistory.com/215
+					this->overlaped_event.second.Offset			= 0;
+					this->overlaped_event.second.OffsetHigh		= 0;
+					this->overlaped_event.second.hEvent			= CreateEvent(0, 1, 0, 0);
+
+					this->overlaped_event.first.Offset			= 0;
+					this->overlaped_event.first.OffsetHigh		= 0;
+					this->overlaped_event.first.hEvent			= CreateEvent(0, 1, 0, 0);
 ```
 
 ## ★ REFERENCE
