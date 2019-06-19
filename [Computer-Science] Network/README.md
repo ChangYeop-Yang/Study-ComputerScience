@@ -469,9 +469,11 @@ Selective Repeat is part of the automatic repeat-request (ARQ). With selective r
 
 ###### 🔍 시리얼 통신 순서 (Serial Communication Logic)
 
-**1️⃣ CreateFile**
+#### 1️⃣ CreateFile
 
 * Creates or opens a file or I/O device. The most commonly used I/O devices are as follows: file, file stream, directory, physical disk, volume, console buffer, tape drive, communications resource, mailslot, and pipe. The function returns a handle that can be used to access the file or device for various types of I/O depending on the file or device and the flags and attributes specified.
+
+###### 📋 CreateFile Syntax
 
 ```C++
 HANDLE CreateFileA(
@@ -484,6 +486,8 @@ HANDLE CreateFileA(
   HANDLE                hTemplateFile
 );
 ```
+
+###### 📋 CreateFile Source Code
 
 ```C++
 this->handler = CreateFileA(static_cast<LPCSTR>(port.second.c_str()),
