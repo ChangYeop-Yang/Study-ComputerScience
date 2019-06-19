@@ -694,40 +694,6 @@ BOOL SetCommMask(
 SetCommMask(this->handler, EV_RXCHAR);
 ```
 
-```C++
-// MARK: https://github.com/xanthium-enterprises/Serial-Programming-Win32API-C/blob/master/USB2SERIAL_Read/Reciever%20(PC%20Side)/USB2SERIAL_Read_W32.c
-	auto handle = (WinSerial *)_mothod;
-	std::string message = std::string();
-
-	while (handle->connected) {
-
-		if (WaitCommEvent(handle->handler, &handle->dwEventMask, 0)) {
-			handle->critical.Lock();
-			{
-				DWORD read_Byte = 0;
-				message.clear();
-
-				if (handle->dwEventMask & EV_RXCHAR) {
-
-					char temp;
-					while (ReadFile(handle->handler, &temp, sizeof(char), &read_Byte, &handle->overlaped_event.first) && temp != EOF) {
-						Sleep(SERIAL_SLEEP_TIME), message.push_back(temp);
-					}
-					
-					const auto * delivery = new CString(message.c_str());
-					if (!delivery->IsEmpty()) {
-						PostMessage(handle->hWindow, SERIAL_RECIVE_MESSAGE, NULL, (LPARAM)delivery);
-					}
-				}
-			}
-			handle->critical.Unlock();
-		}
-	}
-
-	handle->WinSerial::CloseWinSerial();
-	return 0;
-```
-
 #### 6️⃣　[WriteFile](https://docs.microsoft.com/en-us/windows/desktop/api/fileapi/nf-fileapi-writefile)
 
 * Writes data to the specified file or input/output (I/O) device. This function is designed for both synchronous and asynchronous operation. For a similar function designed solely for asynchronous operation, see WriteFileEx.
