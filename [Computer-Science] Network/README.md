@@ -663,7 +663,7 @@ this->overlaped_event.first.OffsetHigh			= 0;
 this->overlaped_event.first.hEvent			= CreateEvent(0, 1, 0, 0);
 ```
 
-#### 5️⃣ [SetCommMask](https://docs.microsoft.com/en-us/windows/desktop/api/winbase/nf-winbase-setcommmask)
+#### 5️⃣　[SetCommMask](https://docs.microsoft.com/en-us/windows/desktop/api/winbase/nf-winbase-setcommmask)
 
 * Specifies a set of events to be monitored for a communications device.
 
@@ -692,6 +692,72 @@ BOOL SetCommMask(
 */
 
 SetCommMask(this->handler, EV_RXCHAR);
+```
+
+```C++
+// MARK: https://github.com/xanthium-enterprises/Serial-Programming-Win32API-C/blob/master/USB2SERIAL_Read/Reciever%20(PC%20Side)/USB2SERIAL_Read_W32.c
+	auto handle = (WinSerial *)_mothod;
+	std::string message = std::string();
+
+	while (handle->connected) {
+
+		if (WaitCommEvent(handle->handler, &handle->dwEventMask, 0)) {
+			handle->critical.Lock();
+			{
+				DWORD read_Byte = 0;
+				message.clear();
+
+				if (handle->dwEventMask & EV_RXCHAR) {
+
+					char temp;
+					while (ReadFile(handle->handler, &temp, sizeof(char), &read_Byte, &handle->overlaped_event.first) && temp != EOF) {
+						Sleep(SERIAL_SLEEP_TIME), message.push_back(temp);
+					}
+					
+					const auto * delivery = new CString(message.c_str());
+					if (!delivery->IsEmpty()) {
+						PostMessage(handle->hWindow, SERIAL_RECIVE_MESSAGE, NULL, (LPARAM)delivery);
+					}
+				}
+			}
+			handle->critical.Unlock();
+		}
+	}
+
+	handle->WinSerial::CloseWinSerial();
+	return 0;
+```
+
+#### 6️⃣　[WriteFile](https://docs.microsoft.com/en-us/windows/desktop/api/fileapi/nf-fileapi-writefile)
+
+* Writes data to the specified file or input/output (I/O) device. This function is designed for both synchronous and asynchronous operation. For a similar function designed solely for asynchronous operation, see WriteFileEx.
+
+###### 📋 WriteFile Syntax
+
+```C++
+BOOL WriteFile(
+  HANDLE       hFile,
+  LPCVOID      lpBuffer,
+  DWORD        nNumberOfBytesToWrite,
+  LPDWORD      lpNumberOfBytesWritten,
+  LPOVERLAPPED lpOverlapped
+);
+```
+
+#### 7️⃣　[ReadFile](https://docs.microsoft.com/en-us/windows/desktop/api/fileapi/nf-fileapi-readfile)
+
+* Reads data from the specified file or input/output (I/O) device. Reads occur at the position specified by the file pointer if supported by the device. This function is designed for both synchronous and asynchronous operations. For a similar function designed solely for asynchronous operation, see ReadFileEx.
+
+###### 📋 ReadFile Syntax
+
+```C++
+BOOL ReadFile(
+  HANDLE       hFile,
+  LPVOID       lpBuffer,
+  DWORD        nNumberOfBytesToRead,
+  LPDWORD      lpNumberOfBytesRead,
+  LPOVERLAPPED lpOverlapped
+);
 ```
 
 ## ★ REFERENCE
