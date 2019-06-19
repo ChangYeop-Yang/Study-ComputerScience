@@ -785,6 +785,39 @@ while (true) {
 }
 ```
 
+#### 8️⃣　[CloseHandle](https://docs.microsoft.com/en-us/windows/desktop/api/handleapi/nf-handleapi-closehandle)
+
+* Closes an open object handle.
+
+###### 📋 CloseHandle Syntax
+
+```C++
+BOOL CloseHandle(
+  HANDLE hObject
+);
+```
+
+###### 📋 CloseHandle Source Code
+
+```C++
+// MARK: http://www.devpia.com/MAEUL/Contents/Detail.aspx?BoardID=50&MAEULNo=20&no=232925&ref=232925
+PurgeComm(this->handler, PURGE_RXCLEAR | PURGE_TXCLEAR | PURGE_RXABORT | PURGE_TXABORT);
+CloseHandle(this->handler);
+```
+
+##### 8️⃣ ↔️ 1️⃣　[PurgeComm](https://docs.microsoft.com/en-us/windows/desktop/api/winbase/nf-winbase-purgecomm)
+
+* Discards all characters from the output or input buffer of a specified communications resource. It can also terminate pending read or write operations on the resource.
+
+###### 📋 PurgeComm Syntax
+
+```C++
+BOOL PurgeComm(
+  HANDLE hFile,
+  DWORD  dwFlags
+);
+```
+
 ## ★ REFERENCE
 
 :airplane: [NETWORK REFERENCE URL](https://github.com/ChangYeop-Yang/Study-ComputerScience/issues/5)
