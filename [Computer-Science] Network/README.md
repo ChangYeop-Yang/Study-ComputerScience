@@ -569,7 +569,7 @@ if (!GetCommState(this->handler, &dcbSerialParameters)) {
 
 ##### 2️⃣↔️1️⃣　[GetCommState](https://docs.microsoft.com/en-us/windows/desktop/api/winbase/nf-winbase-getcommstate)
 
-###### 📋 GetCommState Syntax
+* Retrieves the current control settings for a specified communications device.
 
 ```C++
 BOOL GetCommState(
@@ -580,7 +580,7 @@ BOOL GetCommState(
 
 ##### 2️⃣↔️2️⃣　[SetCommState](https://docs.microsoft.com/en-us/windows/desktop/api/winbase/nf-winbase-setcommstate)
 
-###### 📋 SetCommState Syntax
+* Configures a communications device according to the specifications in a device-control block (a DCB structure). The function reinitializes all hardware and control settings, but it does not empty output or input queues.
 
 ```C++
 BOOL SetCommState(
@@ -619,11 +619,9 @@ timeouts.WriteTotalTimeoutMultiplier		= 0;
 SetCommTimeouts(this->handler, &timeouts);
 ```
 
-##### 3️⃣↔️1️⃣ [SetCommTimeouts](https://docs.microsoft.com/en-us/windows/desktop/api/winbase/nf-winbase-setcommtimeouts)
+##### 3️⃣↔️1️⃣　[SetCommTimeouts](https://docs.microsoft.com/en-us/windows/desktop/api/winbase/nf-winbase-setcommtimeouts)
 
 * Sets the time-out parameters for all read and write operations on a specified communications device.
-
-###### 📋 SetCommTimeouts Syntax
 
 ```C++
 BOOL SetCommTimeouts(
