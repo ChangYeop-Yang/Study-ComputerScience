@@ -548,7 +548,6 @@ typedef struct _DCB {
 ###### 📋 DCB Source Code
 
 ```C++
-/*------------------------------- Setting the Parameters for the SerialPort ------------------------------*/
 DCB dcbSerialParameters = { 0 };
 
 if (!GetCommState(this->handler, &dcbSerialParameters)) {
@@ -614,7 +613,7 @@ timeouts.ReadIntervalTimeout				= 0xFFFFFFFF; // 0xFFFFFFFF
 timeouts.ReadTotalTimeoutMultiplier			= 0;
 timeouts.ReadTotalTimeoutConstant			= 0;
 timeouts.WriteTotalTimeoutConstant			= 5000;
-timeouts.WriteTotalTimeoutMultiplier		= 0;
+timeouts.WriteTotalTimeoutMultiplier			= 0;
 
 SetCommTimeouts(this->handler, &timeouts);
 ```
@@ -655,13 +654,44 @@ typedef struct _OVERLAPPED {
 
 ```C++
 // MARK: https://wwwi.tistory.com/215
-					this->overlaped_event.second.Offset			= 0;
-					this->overlaped_event.second.OffsetHigh		= 0;
-					this->overlaped_event.second.hEvent			= CreateEvent(0, 1, 0, 0);
+this->overlaped_event.second.Offset			= 0;
+this->overlaped_event.second.OffsetHigh			= 0;
+this->overlaped_event.second.hEvent			= CreateEvent(0, 1, 0, 0);
 
-					this->overlaped_event.first.Offset			= 0;
-					this->overlaped_event.first.OffsetHigh		= 0;
-					this->overlaped_event.first.hEvent			= CreateEvent(0, 1, 0, 0);
+this->overlaped_event.first.Offset			= 0;
+this->overlaped_event.first.OffsetHigh			= 0;
+this->overlaped_event.first.hEvent			= CreateEvent(0, 1, 0, 0);
+```
+
+#### 5️⃣ [SetCommMask](https://docs.microsoft.com/en-us/windows/desktop/api/winbase/nf-winbase-setcommmask)
+
+* Specifies a set of events to be monitored for a communications device.
+
+###### 📋 SetCommMask Syntax
+
+```C++
+BOOL SetCommMask(
+  HANDLE hFile,
+  DWORD  dwEvtMask
+);
+```
+
+###### 📋 SetCommMask Source Code
+
+```C++
+/* 
+	EV_BREAK: A break was detected on input.
+	EV_CTS: The CTS (clear-to-send) signal changed state.
+	EV_DSR: The DSR (data-set-ready) signal changed state.
+	EV_ERR: A line-status error occurred. Line-status errors are CE_FRAME, CE_OVERRUN, and CE_RXPARITY.
+	EV_RING: A ring indicator was detected.
+	EV_RLSD: The RLSD (receive-line-signal-detect) signal changed state.
+	EV_RXCHAR: A character was received and placed in the input buffer.
+	EV_RXFLAG: The event character was received and placed in the input buffer. The event character is specified in the 		device's DCB structure, which is applied to a serial port by using the SetCommState function.
+	EV_TXEMPTY: The last character in the output buffer was sent.
+*/
+
+SetCommMask(this->handler, EV_RXCHAR);
 ```
 
 ## ★ REFERENCE
