@@ -275,7 +275,21 @@ if (this->hServSock == INVALID_SOCKET) {
 }
 ```
 
-2. `Connect()` - 연결요청
+#### 2️⃣ `Connect()` - 연결요청
+
+* The connect function establishes a connection to a specified socket.
+
+###### 📋 Connect() Syntax
+
+```C++
+int WSAAPI connect(
+  SOCKET         s,
+  const sockaddr *name,
+  int            namelen
+);
+```
+
+###### 📋 Connect() Source Code
 
 ```C++
 std::memset( &this->servAddr, 0, sizeof(SOCKADDR_IN) );
