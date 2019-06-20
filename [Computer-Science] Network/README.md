@@ -151,7 +151,7 @@ if (bind(this->hServSock, (sockaddr *)&this->servAddr, sizeof(SOCKADDR_IN)) == S
 }
 ```
 
-#### 3️⃣ `Listen()` - 연결요청 대기상태
+#### 3️⃣　`Listen()` - 연결요청 대기상태
 
 * The listen function places a socket in a state in which it is listening for an incoming connection.
 
@@ -173,7 +173,7 @@ if (listen(this->hServSock, MAX_REQUEST_QUEUE_SIZE) == SOCKET_ERROR) {
 }
 ```
 
-#### 4️⃣ `Accept()` - 연결허용
+#### 4️⃣　`Accept()` - 연결허용
 
 * The accept function permits an incoming connection attempt on a socket.
 
@@ -200,7 +200,7 @@ if (hClientSock == INVALID_SOCKET || hClientSock == SOCKET_ERROR) {
 }
 ```
 
-#### 5️⃣ `Read()/Write()` - 데이터 송수신
+#### 5️⃣　`Read()/Write()` - 데이터 송수신
 
 * The recv function receives data from a connected socket or a bound connectionless socket.
 
@@ -238,7 +238,7 @@ const int OnReceiveMessage(const SOCKET sock) {
 }
 ```
 
-#### 6️⃣ `Close()` - 연결종료
+#### 6️⃣　`Close()` - 연결종료
 
 ###### 📋 Close() Syntax
 
@@ -260,7 +260,21 @@ closesocket(this->hServSock);
 
 ###### 🔍 TCP Client 함수호출 순서
 
-1. `Socket()` - 소켓생성
+#### 1️⃣　`Socket()` - 소켓생성
+
+* The socket function creates a socket that is bound to a specific transport service provider.
+
+###### 📋 Socket() Syntax
+
+```C++
+SOCKET WSAAPI socket(
+  int af,
+  int type,
+  int protocol
+);
+```
+
+###### 📋 Socket() Source Code
 
 ```C++
 private:		
@@ -275,7 +289,7 @@ if (this->hServSock == INVALID_SOCKET) {
 }
 ```
 
-#### 2️⃣ `Connect()` - 연결요청
+#### 2️⃣　`Connect()` - 연결요청
 
 * The connect function establishes a connection to a specified socket.
 
@@ -303,7 +317,31 @@ if ( connect(this->hServSock, (SOCKADDR *)&servAddr, sizeof(SOCKADDR)) == SOCKET
 }
 ```
 
-3. `Read()/Write()` - 데이터 송수신
+#### 3️⃣　`Read()/Write()` - 데이터 송수신
+
+* The recv function receives data from a connected socket or a bound connectionless socket.
+
+* The send function sends data on a connected socket.
+
+###### 📋 Read()/Write() Syntax
+
+```C++
+int WSAAPI send(
+  SOCKET     s,
+  const char *buf,
+  int        len,
+  int        flags
+);
+
+int recv(
+  SOCKET s,
+  char   *buf,
+  int    len,
+  int    flags
+);
+```
+
+###### 📋 Read()/Write() Source Code
 
 ```C++
 const bool OnSendMessage(const SOCKET sock, const std::string message) {
@@ -317,7 +355,17 @@ const int OnReceiveMessage(const SOCKET sock) {
 }
 ```
 
-4. `Close()` - 연결종료
+#### 4️⃣　`Close()` - 연결종료
+
+###### 📋 Close() Syntax
+
+```C++
+int closesocket(
+  IN SOCKET s
+);
+```
+
+###### 📋 Close() Source Code
 
 ```C++
 closesocket(this->hServSock);
