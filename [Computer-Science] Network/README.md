@@ -240,6 +240,8 @@ const int OnReceiveMessage(const SOCKET sock) {
 
 #### 6️⃣　`Close()` - 연결종료
 
+* The closesocket function closes an existing socket.
+
 ###### 📋 Close() Syntax
 
 ```C++
@@ -356,6 +358,8 @@ const int OnReceiveMessage(const SOCKET sock) {
 ```
 
 #### 4️⃣　`Close()` - 연결종료
+
+* The closesocket function closes an existing socket.
 
 ###### 📋 Close() Syntax
 
