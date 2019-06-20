@@ -92,7 +92,21 @@
 	<img src="https://www.wut.de/pics/misc/e-58www-16-grus-000.gif" />
 </p>
 
-1. `Socket()` - 소켓생성
+#### 1️⃣　`Socket()` - 소켓생성
+
+* The socket function creates a socket that is bound to a specific transport service provider.
+
+###### 📋 Socket() Syntax
+
+```C++
+SOCKET WSAAPI socket(
+  int af,
+  int type,
+  int protocol
+);
+```
+
+###### 📋 Socket() Source Code
 
 ```C++
 private:		
@@ -109,7 +123,21 @@ if (this->hServSock == INVALID_SOCKET) {
 }
 ```
 
-2. `Bind()` - 소켓 주소할당
+#### 2️⃣　`Bind()` - 소켓 주소할당
+
+* The bind function associates a local address with a socket.
+
+###### 📋 Bind() Syntax
+
+```C++
+int bind(
+  SOCKET         s,
+  const sockaddr *addr,
+  int            namelen
+);
+```
+
+###### 📋 Bind() Source Code
 
 ```C++
 std::memset(&this->servAddr, 0, sizeof(SOCKADDR_IN));
@@ -123,7 +151,20 @@ if (bind(this->hServSock, (sockaddr *)&this->servAddr, sizeof(SOCKADDR_IN)) == S
 }
 ```
 
-3. `Listen()` - 연결요청 대기상태
+#### 3️⃣ `Listen()` - 연결요청 대기상태
+
+* The listen function places a socket in a state in which it is listening for an incoming connection.
+
+###### 📋 Listen() Syntax
+
+```C++
+int WSAAPI listen(
+  SOCKET s,
+  int    backlog
+);
+```
+
+###### 📋 Listen() Source Code
 
 ```C++
 // MARK: listen 함수는 소켓을 들어오는 연결에 대해 listening 상태에 배치합니다.
@@ -132,7 +173,21 @@ if (listen(this->hServSock, MAX_REQUEST_QUEUE_SIZE) == SOCKET_ERROR) {
 }
 ```
 
-4. `Accept()` - 연결허용
+#### 4️⃣ `Accept()` - 연결허용
+
+* The accept function permits an incoming connection attempt on a socket.
+
+###### 📋 Accept() Syntax
+
+```C++
+SOCKET WSAAPI accept(
+  SOCKET   s,
+  sockaddr *addr,
+  int      *addrlen
+);
+```
+
+###### 📋 Accept() Source Code
 
 ```C++
 // MARK: Accpet 함수는 소켓에 들어오는 연결 시도에 대해서 허가한다.
@@ -145,7 +200,31 @@ if (hClientSock == INVALID_SOCKET || hClientSock == SOCKET_ERROR) {
 }
 ```
 
-5. `Read()/Write()` - 데이터 송수신
+#### 5️⃣ `Read()/Write()` - 데이터 송수신
+
+* The recv function receives data from a connected socket or a bound connectionless socket.
+
+* The send function sends data on a connected socket.
+
+###### 📋 Read()/Write() Syntax
+
+```C++
+int WSAAPI send(
+  SOCKET     s,
+  const char *buf,
+  int        len,
+  int        flags
+);
+
+int recv(
+  SOCKET s,
+  char   *buf,
+  int    len,
+  int    flags
+);
+```
+
+###### 📋 Read()/Write() Source Code
 
 ```C++
 const bool OnSendMessage(const SOCKET sock, const std::string message) {
@@ -159,7 +238,19 @@ const int OnReceiveMessage(const SOCKET sock) {
 }
 ```
 
-6. `Close()` - 연결종료
+#### 6️⃣ `Close()` - 연결종료
+
+###### 📋 Close() Syntax
+
+```C++
+int closesocket(
+  IN SOCKET s
+);
+```
+
+###### 📋 Close() Source Code
+
+* The closesocket function closes an existing socket.
 
 ```C++
 closesocket(this->hServSock);
