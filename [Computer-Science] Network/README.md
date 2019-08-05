@@ -953,6 +953,8 @@ BOOL PurgeComm(
 
 * 터미널 하이재킹 (Terminal Hijacking): 다른 사람이 사용 중인 터미널 상태를 도청하거나 세션을 제어하는 해킹 기법이다. 사용자 터미널의 모든 입출력 내용이 실시간으로 도청되어 심각한 보안 문제를 야기할 수 있는 데, 대응책으로는 평소 암호화와 보안 프로토콜의 사용이 요구되며, 특히 상대적으로 보안이 취약한 무선 랜 등을 사용할 때에는 각별한 주의가 필요하다.
 
+* 세션 (Session): 사용자와 컴퓨터, 또는 두 대의 컴퓨터간의 활성화된 접속을 의미하며, 프로그램 사용과 관련해서는 한 응용프로그램의 기동을 시작해서 종료할 때까지의 시간을 가리킨다.
+
 ## 🚀 REFERENCE
 
 :airplane: [NETWORK REFERENCE URL](https://github.com/ChangYeop-Yang/Study-ComputerScience/issues/5)
