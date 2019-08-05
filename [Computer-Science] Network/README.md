@@ -955,6 +955,8 @@ BOOL PurgeComm(
 
 * 세션 (Session): 사용자와 컴퓨터, 또는 두 대의 컴퓨터간의 활성화된 접속을 의미하며, 프로그램 사용과 관련해서는 한 응용프로그램의 기동을 시작해서 종료할 때까지의 시간을 가리킨다.
 
+* SQL 인젝션 (SQL injection): SQL 인젝션은 웹사이트 취약점을 찾아, DB를 관리하는 SQL 명령어에 악성코드를 삽입해 해커가 원하는 식으로 조작하는 웹 해킹 공격 중 하나다. 개발자가 의도하지 않은 SQL 명령을 실행해 DB를 비정상적으로 조작한다. 이런 식으로 개발자 모르게 DB에 저장한 정보를 유출할 수 있다.
+
 ## 🚀 REFERENCE
 
 :airplane: [NETWORK REFERENCE URL](https://github.com/ChangYeop-Yang/Study-ComputerScience/issues/5)
