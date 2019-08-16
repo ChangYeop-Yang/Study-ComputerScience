@@ -62,21 +62,11 @@
 
 ## 📣 [전송 제어 프로토콜 (TCP, Transmission Control Protocol, `SOCK_STREAM`)](https://ko.wikipedia.org/wiki/%EC%A0%84%EC%86%A1_%EC%A0%9C%EC%96%B4_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C)
 
+|📌 Connection Establishment (3 Way handshaking)|📌 Connection Termination (4 Way handshaking)|
+|:----------------------------------------------:|:-------------------------------------------:|
+|![](https://dbscthumb-phinf.pstatic.net/4520_000_1/20160721171939853_XY3WCWLA7.jpg/ka27_87_i1.jpg?type=w406_fst_n&wm=Y)|![](https://dbscthumb-phinf.pstatic.net/4520_000_1/20160721171942147_1CW4Y9IQG.jpg/ka27_87_i2.jpg?type=w406_fst_n&wm=Y)|
+
 * 전송 제어 프로토콜(Transmission Control Protocol, TCP, 문화어: 전송조종규약)은 인터넷 프로토콜 스위트(IP)의 핵심 프로토콜 중 하나로, IP와 함께 TCP/IP라는 명칭으로도 널리 불린다. **TCP는 근거리 통신망이나 인트라넷, 인터넷에 연결된 컴퓨터에서 실행되는 프로그램 간에 일련의 옥텟을 안정적으로, 순서대로, 에러없이 교환할 수 있게 한다. TCP는 전송 계층에 위치한다.** 네트워크의 정보 전달을 통제하는 프로토콜이자 인터넷을 이루는 핵심 프로토콜의 하나로서 국제 인터넷 표준화 기구(IETF)의 RFC 793에 기술되어 있다.
-
-###### 📌 Connection Establishment (3 Way handshaking)
-
-<p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Three-way-handshake-example.gif/500px-Three-way-handshake-example.gif" width="300" height="300" />
-</p>
-
-###### 📌 Connection Termination (4 Way handshaking)
-
-<p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/TCP_CLOSE.svg/1280px-TCP_CLOSE.svg.png" width="300" height="300" />
-</p>
-
-* In telecommunications, a handshake is an automated process of negotiation between two communicating in between participants (example "Alice and Bob") through the exchange of information that establishes the protocols of a communication link at the start of the communication, before full communication begins. The handshaking process usually takes place in order to establish rules for communication when a computer attempts to communicate with another device. Signals are usually exchanged between two devices to establish a communication link. For example, when a computer communicates with another device such as a modem, the two devices will signal each other that they are switched on and ready to work, as well as to agree to which protocols are being used.
 
 ###### 📌 전송 제어 프로토콜의 특징 (Transmission Control Protocol Features)
 
