@@ -532,7 +532,7 @@ closesocket(this->hServSock);
 ## 📣 [멀티캐스트 (Multicast) - UDP](https://ko.wikipedia.org/wiki/%EB%A9%80%ED%8B%B0%EC%BA%90%EC%8A%A4%ED%8A%B8)
 
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Multicast.svg/250px-Multicast.svg.png" />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Multicast.svg/250px-Multicast.svg.png" width="350" height="350" />
 </p>
 
 * 인터넷에서 같은 내용의 데이터를 여러 명의 특정한 그룹의 수신자들에게 동시에 전송하는 방식을 말한다. 데이터 중복전송으로 인한 정보체증을 완화하며, 그룹 멤버십 정보를 관리할 수 있다. 즉, 멀티캐스트 전송방식은 데이터 중복전송으로 인한 네트워크 자원낭비를 막고, 그 정보를 필요로 하지 않는 곳에는 부담을 주지 않으면서 실시간 공동작업을 효율적으로 보장하는 전송기법이다.
@@ -544,7 +544,7 @@ closesocket(this->hServSock);
 ## 📣 [유니캐스트 (Unicast) - TCP](https://terms.naver.com/entry.nhn?docId=1207832&cid=40942&categoryId=32851)
 
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Unicast.svg/200px-Unicast.svg.png" />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Unicast.svg/200px-Unicast.svg.png" width="350" height="350" />
 </p>
 
 * 한 사람의 특정 수신자에게만 데이터 패킷을 전송하는 방식. 인터넷에서 전자메일, 화상회의를 위한 화상·음성 데이터 등을 하나의 송신자가 다른 하나의 수신자에게 1:1로 전송하는 방식이다. </br></br>이 전송방식은 데이터를 보내는 송신자측에서 지정된 수신자측의 IP 주소로만 데이터가 전송된다. **즉 여러 수신자가 같은 데이터를 원할 때 송신자는 데이터를 여러 번 복사하여 각각의 수신자의 IP 주소로 전송해야 한다. 따라서 받는 사람의 수만큼 데이터 패킷을 반복해서 보내야 하기 때문에 통신망의 효율을 저하시키고, 제한된 회선용량을 접속자들이 서로 나누어 가져야 한다는 문제점 때문에 전송 부담도 크다.**
@@ -554,7 +554,7 @@ closesocket(this->hServSock);
 ## 📣 [브로드캐스트 (Broadcast) - UDP](https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Broadcast.svg/100px-Broadcast.svg.png)
 
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Broadcast.svg/1024px-Broadcast.svg.png" />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Broadcast.svg/1024px-Broadcast.svg.png" width="350" height="350" />
 </p>
 
 * IP 네트워크에 있는 모든 로컬 네트워크 호스트로 데이터를 전송하는 방식이다. 또한 브로드캐스트(Broadcast)는 두 가지의 방식으로 구분이 된다. 첫번째는 Directed Broadcast 방식으로 네트워크 주소를 제외한 나머지 호스트 주소를 전부 1로 설정하여 얻을 수 있는 방식이다. 두번째는 Local Broadcast 방식으로 255.255.255.255의 특별 예약 주소를 사용하여 IP 주소의 모든 호스트에 데이터를 전달하는 방법이 있다.
