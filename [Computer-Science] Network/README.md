@@ -569,14 +569,29 @@ closesocket(this->hServSock);
 
 * SOAP은 XML을 근간으로 헤더와 바디를 조합하는 디자인 패턴으로 설계되어 있다. 「헤더」는 선택사항으로 반복이나 보안 및 트랜잭션을 정보로 하는 메타 정보를 가지고 있다. 「바디」부분은 주요한 정보인 정보를 가지고 있다.
 
+## 📣 [ARP (Address Resolution Protocol)](https://terms.naver.com/entry.nhn?docId=857661&cid=42346&categoryId=42346)
+
+<p align="center">
+	<img src="https://dbscthumb-phinf.pstatic.net/3578_000_1/20141023224401228_989KZEJ5A.jpg/ka8_118_i1.jpg?type=m4500_4500_fst_n&wm=Y" width="480" height="280" />
+</p>
+
+* IP 주소를 물리적 네트워크 주소로 대응시키기 위해 사용되는 프로토콜. 사용자는 IP 주소를 이용하여 인터넷과 연결하지만 이더넷상에서는 이더넷 주소를 이용하게 된다. 이를 위하여 IP 주소를 이더넷 주소로 변환시켜 주어야 하는데 이와 같이 IP 주소를 물리적 주소로 변환시키는 프로토콜을 주소 결정 프로토콜(ARP)이라 한다.
+
+## 📣 [RARP (Reverse Address Resolution Protocol)](https://terms.naver.com/entry.nhn?docId=854172&ref=y&cid=50373&categoryId=50373)
+
+<p align="center">
+	<img src="https://dbscthumb-phinf.pstatic.net/3578_000_1/20141023224401459_HWTX4NB5F.jpg/ka8_118_i2.jpg?type=m4500_4500_fst_n&wm=Y" width="480" height="280" />
+</p>
+
+* 인터넷 환경에서의 호스트 상호 간 통신에서, 상대방 호스트의 데이터 링크 주소로부터 IP 주소를 필요에 따라 역동적으로 얻기 위한 절차를 제공하는 프로토콜(REC.903)이다.
+
 ## 📣 Sliding Window
-두 개의 네트워크 호스트간의 패킷의 흐름을 제어하기 위한 방법이다. (슬라이딩 윈도우 방식 = 연속적 ARQ(Continuous ARQ) = Go Back n ARQ)
 
 <p align="center">
   <img src="https://images.slideplayer.com/33/8175417/slides/slide_4.jpg" />
 </p>
 
-* TCP와 같이 데이터의 전달을 보증하는 프로토콜에서는 패킷 하나 하나가 정상적으로 전달되었음을 알리는 확인 신호(acknowledgement, 이하 ACK)를 받아야하며, 만약 패킷이 중도에 잘못되었거나 분실되어 확인받지 못하는 경우, 해당 패킷을 재전송해야하는 필요가 있다. 슬라이딩 윈도는 일단 '윈도(메모리 버퍼의 일정 영역)'에 포함되는 모든 패킷을 전송하고, 그 패킷들의 전달이 확인되는대로 이 윈도를 옆으로 옮김(slide)으로서 그 다음 패킷들을 전송하는 방식이다. 
+* 두 개의 네트워크 호스트간의 패킷의 흐름을 제어하기 위한 방법이다. (슬라이딩 윈도우 방식 = 연속적 ARQ(Continuous ARQ) = Go Back n ARQ) TCP와 같이 데이터의 전달을 보증하는 프로토콜에서는 패킷 하나 하나가 정상적으로 전달되었음을 알리는 확인 신호(acknowledgement, 이하 ACK)를 받아야하며, 만약 패킷이 중도에 잘못되었거나 분실되어 확인받지 못하는 경우, 해당 패킷을 재전송해야하는 필요가 있다. 슬라이딩 윈도는 일단 '윈도(메모리 버퍼의 일정 영역)'에 포함되는 모든 패킷을 전송하고, 그 패킷들의 전달이 확인되는대로 이 윈도를 옆으로 옮김(slide)으로서 그 다음 패킷들을 전송하는 방식이다. 
 
 * 슬라이딩 윈도는 아직 확인을 받지 않고도 여러 패킷을 보내는 것을 가능케 하기 때문에, 매번 전송한 패킷에 대해 확인을 받아야만 그 다음 패킷을 전송하는 방법(stop-and-wait)을 사용하는 것보다 훨씬 네트워크를 효율적으로 사용할 수 있다.
 
